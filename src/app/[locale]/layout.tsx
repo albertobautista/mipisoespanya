@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { LocaleSwitcher } from "@/app/components/LocaleSwitcher";
+import "@fontsource/poiret-one";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -51,7 +52,10 @@ export default async function LocaleLayout({
                 Numa-like
               </a>
               <nav style={{ display: "flex", gap: 16, alignItems: "center" }}>
-                <a href={`/${locale}/about`}>About</a>
+                <a href={`/${locale}/about`}>Cocomat Pro</a>
+                <a href={`/${locale}/about`}>
+                  <h1 className="font-poiret">POIRET</h1>
+                </a>
                 <LocaleSwitcher locale={locale as "es" | "en"} />
               </nav>
             </div>

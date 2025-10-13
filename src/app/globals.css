@@ -4,3 +4,23 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+@font-face {
+  font-family: 'CocomatPro';
+  src: url('/fonts/CocomatPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-light-green: #aab257;
+  --color-green:#8b924a ;
+  --color-dark-green: #637569; 
+  --color-gray: #bbb6a3;
+  --color-light-gray: #f7f5ef;
+
+  --font-poiret:'Poiret One', system-ui;
+  --font-cocomat: 'CocomatPro', sans-serif;
+}
+
