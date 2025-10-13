@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "Your stay, simplified",
+    "subtitle": "Modern stays with digital check‑in and 24/7 support.",
+    "ctaPrimary": "How it works",
+    "ctaSecondary": "See benefits",
+    "how": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Pick your destination",
+          "desc": "Search, compare and book in minutes."
+        },
+        {
+          "title": "Digital check‑in",
+          "desc": "Get your code and enter—no keys, no lines."
+        },
+        {
+          "title": "Enjoy your stay",
+          "desc": "Fast Wi‑Fi, modern design and support whenever you need it."
+        }
+      ]
+    },
+    "benefits": {
+      "benefit1": {
+        "title": "Central locations",
+        "desc": "Close to what matters: work, culture and food."
+      },
+      "benefit2": {
+        "title": "Design & comfort",
+        "desc": "Modern spaces for rest and work."
+      },
+      "benefit3": {
+        "title": "Total flexibility",
+        "desc": "Self check‑in/out and clear policies."
+      }
+    }
+  },
+  "about": {
+    "title": "About us",
+    "content": "We provide modern stays with digital check-in and 24/7 support."
+  }
+}

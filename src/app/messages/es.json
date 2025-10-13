@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "Tu estadía, sin complicaciones",
+    "subtitle": "Alojamientos modernos con check‑in digital y soporte 24/7.",
+    "ctaPrimary": "Cómo funciona",
+    "ctaSecondary": "Ver beneficios",
+    "how": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Elige tu destino",
+          "desc": "Busca, compara y reserva en minutos."
+        },
+        {
+          "title": "Check‑in digital",
+          "desc": "Recibe tu código y entra sin filas ni llaves."
+        },
+        {
+          "title": "Disfruta tu estancia",
+          "desc": "Wi‑Fi rápido, diseño moderno y soporte cuando lo necesites."
+        }
+      ]
+    },
+    "benefits": {
+      "benefit1": {
+        "title": "Ubicaciones céntricas",
+        "desc": "Cerca de lo que te importa: trabajo, cultura y gastronomía."
+      },
+      "benefit2": {
+        "title": "Diseño y confort",
+        "desc": "Espacios modernos pensados para descansar y trabajar."
+      },
+      "benefit3": {
+        "title": "Flexibilidad total",
+        "desc": "Check‑in/Out autónomo y políticas claras."
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "content": "Somos una empresa dedicada a ofrecer estadías modernas con check-in digital y soporte 24/7."
+  }
+}
