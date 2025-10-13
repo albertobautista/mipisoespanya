@@ -1,9 +1,17 @@
 {
   "home": {
-    "title": "Your stay, simplified",
-    "subtitle": "Modern stays with digital check‑in and 24/7 support.",
+    "title": "We do the searching, you do the living",
+    "logoSubtitle": "Your trusrty home hunters",
+    "subtitle": "WE DO THE HOUSING, YOU DO THE CITY",
     "ctaPrimary": "How it works",
     "ctaSecondary": "See benefits",
+    "menu": {
+      "home": "Home",
+      "how-we-work": "How we work",
+      "our-story": "Our story",
+      "reviews": "Reviews",
+      "faqs": "FAQs"
+    },
     "how": {
       "title": "How it works",
       "steps": [

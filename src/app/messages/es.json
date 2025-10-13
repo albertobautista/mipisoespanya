@@ -1,9 +1,17 @@
 {
   "home": {
-    "title": "Tu estadía, sin complicaciones",
-    "subtitle": "Alojamientos modernos con check‑in digital y soporte 24/7.",
+    "title": "NOSOTROS HACEMOS LA BÚSQUEDA, USTED VIVE",
+    "logoSubtitle": "Sus confiables cazadores de casas",
+    "subtitle": "NOSOTROS HACEMOS LA VIVIENDA, TÚ LA CIUDAD",
     "ctaPrimary": "Cómo funciona",
     "ctaSecondary": "Ver beneficios",
+    "menu": {
+      "home": "Inicio",
+      "how-we-work": "Cómo trabajamos",
+      "our-story": "Nuestra historia",
+      "reviews": "Opiniones",
+      "faqs": "Preguntas frecuentes"
+    },
     "how": {
       "title": "Cómo funciona",
       "steps": [

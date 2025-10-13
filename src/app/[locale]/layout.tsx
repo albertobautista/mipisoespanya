@@ -1,4 +1,5 @@
 import "../globals.css";
+import { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -6,6 +7,16 @@ import { setRequestLocale, getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { LocaleSwitcher } from "@/app/components/LocaleSwitcher";
 import "@fontsource/poiret-one";
+
+export const metadata: Metadata = {
+  title: "Mi Piso España",
+  description:
+    "We are Ana and Paloma, two Mexicans who turned our own housing challenges in Spain into a mission to help others.",
+  icons: {
+    icon: "/images/logos/logo.webp",
+    apple: "/images/logos/logo.webp",
+  },
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
