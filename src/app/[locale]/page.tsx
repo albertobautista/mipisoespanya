@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import FeatureStack from "../components/FeatureStack";
 import { Hero } from "../components/Hero";
+import { StickyMobileBar } from "../components/StickyMobileBar";
 
 export default function Page({
   params,
@@ -16,6 +17,7 @@ export default function Page({
   return (
     <main>
       {/* HERO con video */}
+      <StickyMobileBar title="Mi piso" />
       <Hero
         logoText="mipiso"
         title={t("title")}

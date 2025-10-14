@@ -43,7 +43,7 @@ export default function Footer({
     { icon: "facebook", href: "#" },
     { icon: "linkedin", href: "#" },
   ],
-  bigLogoText = "Mi Piso",
+  bigLogoText = "MiPiso",
   claimLine1 = "We do the room.",
   claimLine2 = "You do the city.",
   legal = [
@@ -131,12 +131,15 @@ export default function Footer({
         <div className="mt-16 grid grid-cols-1 items-end gap-8 md:mt-20 md:grid-cols-4">
           {/* Logo ocupa las tres primeras columnas */}
           <div className="md:col-span-3">
-            <div
-              className="select-none uppercase font-extrabold font-poiret leading-none tracking-tight text-[#121212]"
-              style={{ fontSize: "clamp(120px, 18vw, 200px)" }}
+            <h1
+              className=" select-none uppercase whitespace-pre-wrap font-poiret leading-none font-extrabold tracking-tight text-[#121212] drop-shadow-sm"
+              style={{
+                fontSize: "clamp(120px, 18vw, 250px)",
+                lineHeight: "1.05",
+              }}
             >
               {bigLogoText}
-            </div>
+            </h1>
           </div>
 
           {/* Claim alineado con la columna Stay social */}

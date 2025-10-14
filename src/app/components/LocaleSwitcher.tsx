@@ -13,7 +13,10 @@ export function LocaleSwitcher({ locale }: { locale: "es" | "en" }) {
     normalized.replace(/^\/(en|es)/, `/${target}`);
 
   return (
-    <nav aria-label="Language" className="flex items-center gap-3 text-sm">
+    <nav
+      aria-label="Language"
+      className="flex items-center gap-1 text-sm font-cocomat font-bold text-white"
+    >
       <Link
         href={to("es")}
         prefetch
