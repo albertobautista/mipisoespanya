@@ -29,7 +29,7 @@ export default function Page({
         <h2 style={{ fontSize: 32, fontWeight: 600, marginBottom: 24 }}>
           {t("how.title")}
         </h2>
-        <FeatureStack />
+        {/* <FeatureStack /> */}
       </section>
 
       {/* Beneficios */}

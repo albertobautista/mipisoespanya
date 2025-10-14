@@ -7,6 +7,7 @@ import { setRequestLocale, getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { LocaleSwitcher } from "@/app/components/LocaleSwitcher";
 import "@fontsource/poiret-one";
+import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Mi Piso España",
@@ -71,19 +72,11 @@ export default async function LocaleLayout({
               </nav>
             </div>
           </header>
-
-          {children}
+          <body>{children}</body>
 
           {/* Evita Date() dinámico en el markup que se hidrata */}
-          <footer
-            style={{
-              borderTop: "1px solid #eee",
-              marginTop: 64,
-              padding: "24px 16px",
-              color: "#666",
-            }}
-          >
-            © 2025 Numa-like
+          <footer>
+            <Footer />
           </footer>
         </NextIntlClientProvider>
       </body>
