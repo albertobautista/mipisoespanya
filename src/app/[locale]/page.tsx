@@ -1,9 +1,9 @@
 import { use } from "react";
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import FeatureStack from "../components/FeatureStack";
 import { Hero } from "../components/Hero";
 import { StickyMobileBar } from "../components/StickyMobileBar";
+import FeatureStack from "../components/FeatureStack";
 
 export default function Page({
   params,
@@ -31,7 +31,7 @@ export default function Page({
         <h2 style={{ fontSize: 32, fontWeight: 600, marginBottom: 24 }}>
           {t("how.title")}
         </h2>
-        {/* <FeatureStack /> */}
+        <FeatureStack />
       </section>
 
       {/* Beneficios */}
