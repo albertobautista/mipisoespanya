@@ -4,8 +4,13 @@ import { useTranslations } from "next-intl";
 import { Hero } from "../components/Hero";
 import { StickyMobileBar } from "../components/StickyMobileBar";
 import Information from "../sections/Information/Information";
-import { items as baseItems } from "../sections/data";
+import {
+  items as baseItems,
+  cards as baseCards,
+  items,
+} from "../sections/data";
 import { Cities } from "../sections/Cities";
+import { HowWeWork } from "../sections/HowWeWork";
 // import FeatureStack from "../components/FeatureStack";
 
 export default function Page({
@@ -25,6 +30,12 @@ export default function Page({
     },
   }));
 
+  const cards = baseCards.map((card, i) => ({
+    ...card,
+    title: t(`howWeWork.cards.${i}.title`),
+    body: t(`howWeWork.cards.${i}.body`),
+  }));
+
   return (
     <main>
       {/* HERO con video */}
@@ -40,6 +51,12 @@ export default function Page({
       <Information items={items} />
 
       <Cities />
+
+      <HowWeWork
+        title={t("howWeWork.title")}
+        subtitle={t("howWeWork.subtitle")}
+        items={cards}
+      />
     </main>
   );
 }

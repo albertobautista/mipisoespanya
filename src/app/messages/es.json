@@ -29,6 +29,44 @@
         "title": "Siempre hay un lugar para ti.",
         "alt": "Recepción acogedora"
       }
+    },
+    "howWeWork": {
+      "title": "RELOCALIZACIÓN FÁCIL",
+      "subtitle": "Somos una agencia de reubicación especializada en el sector inmobiliario de Madrid y Barcelona, brindando asesoramiento y orientación para ayudarle a encontrar el hogar que mejor se adapte a sus necesidades.",
+      "cards": {
+        "0": {
+          "title": "Orientación completa:",
+          "body": "Te apoyamos en cada paso del proceso de alquiler.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+            "alt": "Demo 1"
+          }
+        },
+        "1": {
+          "title": "Búsqueda personalizada:",
+          "body": "Encontramos y visitamos propiedades que se adaptan a tus necesidades y evaluamos cada opción de manera objetiva.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+            "alt": "Demo 1"
+          }
+        },
+        "2": {
+          "title": "Gestión completa:",
+          "body": "Nos encargamos de la documentación, negociación, contratos y pagos.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+            "alt": "Demo 1"
+          }
+        },
+        "3": {
+          "title": "Bienvenida cálida:",
+          "body": "Te damos la bienvenida a tu nuevo hogar en España, te entregamos las llaves y hacemos un inventario completo de la casa.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+            "alt": "Demo 1"
+          }
+        }
+      }
     }
   },
   "about": {

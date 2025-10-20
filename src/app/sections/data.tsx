@@ -26,3 +26,38 @@ export const items: ShowcaseItem[] = [
     },
   },
 ];
+
+export const cards = [
+  {
+    title: "Texto a la izquierda, imagen a la derecha",
+    image: {
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      alt: "Demo 1",
+    },
+    backgroundClass: "bg-neutral-100",
+  },
+  {
+    title: "Texto a la izquierda, imagen a la derecha",
+    image: {
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      alt: "Demo 1",
+    },
+    backgroundClass: "bg-neutral-100",
+  },
+  {
+    title: "Texto a la izquierda, imagen a la derecha",
+    image: {
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      alt: "Demo 1",
+    },
+    backgroundClass: "bg-neutral-100",
+  },
+  {
+    title: "Texto a la izquierda, imagen a la derecha",
+    image: {
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      alt: "Demo 1",
+    },
+    backgroundClass: "bg-neutral-100",
+  },
+];
