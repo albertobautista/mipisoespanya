@@ -4,10 +4,10 @@ import React from "react";
 
 const Information = ({ items }: { items: ShowcaseItem[] }) => {
   return (
-    <section id="information">
+    <section id="information" className="bg-light-green">
       <TextImageScrollTransition
         items={items}
-        colors={{ inactive: "#d1c2c8", active: "#0a0a0a" }}
+        colors={{ inactive: "#757273", active: "#0a0a0a" }}
       />
     </section>
   );

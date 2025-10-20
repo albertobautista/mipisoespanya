@@ -5,6 +5,7 @@ import { Hero } from "../components/Hero";
 import { StickyMobileBar } from "../components/StickyMobileBar";
 import Information from "../sections/Information/Information";
 import { items as baseItems } from "../sections/data";
+import { Cities } from "../sections/Cities";
 // import FeatureStack from "../components/FeatureStack";
 
 export default function Page({
@@ -17,10 +18,10 @@ export default function Page({
   const t = useTranslations("home");
 
   const items = baseItems.map((item, i) => ({
-    title: t(`information.${i}.title`), // ✅ Traduce por índice
+    title: t(`information.${i}.title`),
     image: {
       ...item.image,
-      alt: t(`information.${i}.alt`), // ✅ Traduce alt también
+      alt: t(`information.${i}.alt`),
     },
   }));
 
@@ -37,6 +38,8 @@ export default function Page({
       />
 
       <Information items={items} />
+
+      <Cities />
     </main>
   );
 }
