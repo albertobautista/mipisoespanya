@@ -12,35 +12,22 @@
       "reviews": "Opiniones",
       "faqs": "Preguntas frecuentes"
     },
-    "how": {
-      "title": "Cómo funciona",
-      "steps": [
-        {
-          "title": "Elige tu destino",
-          "desc": "Busca, compara y reserva en minutos."
-        },
-        {
-          "title": "Check‑in digital",
-          "desc": "Recibe tu código y entra sin filas ni llaves."
-        },
-        {
-          "title": "Disfruta tu estancia",
-          "desc": "Wi‑Fi rápido, diseño moderno y soporte cuando lo necesites."
-        }
-      ]
-    },
-    "benefits": {
-      "benefit1": {
-        "title": "Ubicaciones céntricas",
-        "desc": "Cerca de lo que te importa: trabajo, cultura y gastronomía."
+    "information": {
+      "0": {
+        "title": "Negocios o placer.",
+        "alt": "Estancia de trabajo cómoda"
       },
-      "benefit2": {
-        "title": "Diseño y confort",
-        "desc": "Espacios modernos pensados para descansar y trabajar."
+      "1": {
+        "title": "Larga estancia o fin de semana.",
+        "alt": "Sala moderna"
       },
-      "benefit3": {
-        "title": "Flexibilidad total",
-        "desc": "Check‑in/Out autónomo y políticas claras."
+      "2": {
+        "title": "Habitaciones o apartamentos.",
+        "alt": "Apartamento luminoso"
+      },
+      "3": {
+        "title": "Siempre hay un lugar para ti.",
+        "alt": "Recepción acogedora"
       }
     }
   },

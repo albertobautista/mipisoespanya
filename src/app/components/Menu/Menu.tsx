@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { menuItems } from "./contants"; // corrige a ./constants si aplica
 import { LocaleSwitcher } from "../LocaleSwitcher";
 import React from "react";
+import { WhatsappButton } from "../Buttons/WhatsappButton";
 
 export default function Menu() {
   const t = useTranslations("home");
@@ -30,15 +31,18 @@ export default function Menu() {
           <Link
             key={item.id}
             href={item.href}
-            className="transition-opacity font-cocomat font-bold text-base lg:text-lg hover:opacity-80 text-light-green"
+            className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
           >
             {t(`menu.${item.id}`)}
           </Link>
         ))}
 
         {/* Locale Switcher */}
-        <div className="ml-2 flex items-center gap-4">
+        <div className="ml-2 flex  gap-4">
           <LocaleSwitcher locale={locale} />
+        </div>
+        <div className="ml-2 flex gap-4">
+          <WhatsappButton phone="+523338098751" variant="icon" />
         </div>
       </div>
 

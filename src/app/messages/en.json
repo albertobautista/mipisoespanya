@@ -12,35 +12,22 @@
       "reviews": "Reviews",
       "faqs": "FAQs"
     },
-    "how": {
-      "title": "How it works",
-      "steps": [
-        {
-          "title": "Pick your destination",
-          "desc": "Search, compare and book in minutes."
-        },
-        {
-          "title": "Digital check‑in",
-          "desc": "Get your code and enter—no keys, no lines."
-        },
-        {
-          "title": "Enjoy your stay",
-          "desc": "Fast Wi‑Fi, modern design and support whenever you need it."
-        }
-      ]
-    },
-    "benefits": {
-      "benefit1": {
-        "title": "Central locations",
-        "desc": "Close to what matters: work, culture and food."
+    "information": {
+      "0": {
+        "title": "Business or pleasure.",
+        "alt": "Comfortable work stay"
       },
-      "benefit2": {
-        "title": "Design & comfort",
-        "desc": "Modern spaces for rest and work."
+      "1": {
+        "title": "Long stay or weekend.",
+        "alt": "Modern living room"
       },
-      "benefit3": {
-        "title": "Total flexibility",
-        "desc": "Self check‑in/out and clear policies."
+      "2": {
+        "title": "Rooms or apartments.",
+        "alt": "Bright apartment"
+      },
+      "3": {
+        "title": "There's always a place for you.",
+        "alt": "Cozy reception"
       }
     }
   },

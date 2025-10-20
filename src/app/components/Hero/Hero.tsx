@@ -64,13 +64,13 @@ export default function Hero({
         <div className="mt-1 flex flex-col gap-1 text-white/90">
           <p
             className="uppercase font-poiret"
-            style={{ fontSize: "clamp(28px, 5vw, 48px)", lineHeight: "1" }}
+            style={{ fontSize: "clamp(28px, 5vw, 60px)", lineHeight: "1" }}
           >
             {country}
           </p>
           <p
             className="uppercase font-poiret"
-            style={{ fontSize: "clamp(18px, 3.5vw, 20px)", lineHeight: "1.1" }}
+            style={{ fontSize: "clamp(18px, 3.5vw, 26px)", lineHeight: "1.1" }}
           >
             {logoSubtitle}
           </p>
