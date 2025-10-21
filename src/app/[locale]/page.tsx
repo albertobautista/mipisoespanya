@@ -41,7 +41,7 @@ export default function Page({
       {/* HERO con video */}
       <StickyMobileBar title="Mi piso" />
       <Hero
-        logoText="mipiso"
+        logoText="mi piso"
         title={t("title")}
         subtitle={t("subtitle")}
         logoSubtitle={t("logoSubtitle")}

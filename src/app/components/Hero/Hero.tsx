@@ -54,7 +54,7 @@ export default function Hero({
       <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8">
         {/* Logo grande (fluido) */}
         <div
-          className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold tracking-wider uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
+          className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold  uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
           style={{ fontSize: "clamp(96px, 12vw, 150px)", lineHeight: "0.9" }}
         >
           {logoText}

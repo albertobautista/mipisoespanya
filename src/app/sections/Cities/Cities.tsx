@@ -3,7 +3,7 @@ import React from "react";
 
 const Cities = () => {
   return (
-    <section>
+    <section className="bg-light-green/60">
       <CitiesData
         cities={[
           {
@@ -42,7 +42,7 @@ const Cities = () => {
           {
             name: "Barcelona",
             href: "https://numa-barcelona.com",
-            accent: "text-green",
+            accent: "text-red-500",
             leftImages: [
               {
                 src: "https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",

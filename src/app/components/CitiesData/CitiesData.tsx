@@ -31,14 +31,14 @@ type Props = {
 export default function NumaCitiesHover({
   cities,
   accentClassName = "text-green",
-  hideSidesBelow = "lg",
+  hideSidesBelow = "sm",
   className = "",
 }: Props) {
   const [active, setActive] = React.useState(0);
   const debounceRef = React.useRef<number | null>(null);
 
   const hideSidesClass = React.useMemo(
-    () => `hidden ${hideSidesBelow}:flex`,
+    () => `${hideSidesBelow}:flex`,
     [hideSidesBelow]
   );
   const current = cities[active] ?? cities[0];
