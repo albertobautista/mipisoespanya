@@ -1,10 +1,11 @@
 import { StackedCards } from "@/app/components/StackedCards";
+import { StackedItem } from "@/app/components/StackedCards/StackedCards";
 import React from "react";
 
 interface HowWeWorkProps {
   title: string;
   subtitle: string;
-  items: any[];
+  items: StackedItem[];
 }
 
 const HowWeWork: React.FC<HowWeWorkProps> = ({ title, subtitle, items }) => {

@@ -7,10 +7,11 @@ import Information from "../sections/Information/Information";
 import {
   items as baseItems,
   cards as baseCards,
-  items,
+  services as baseServices,
 } from "../sections/data";
 import { Cities } from "../sections/Cities";
 import { HowWeWork } from "../sections/HowWeWork";
+import { WhatMakesUsUnique } from "../sections/WhatMakesUsUnique";
 // import FeatureStack from "../components/FeatureStack";
 
 export default function Page({
@@ -36,6 +37,11 @@ export default function Page({
     body: t(`howWeWork.cards.${i}.body`),
   }));
 
+  const services = baseServices.map((service, i) => ({
+    ...service,
+    title: t(`whatMakesUsUnique.services.${i}.title`),
+  }));
+
   return (
     <main>
       {/* HERO con video */}
@@ -49,6 +55,11 @@ export default function Page({
       />
 
       <Information items={items} />
+
+      <WhatMakesUsUnique
+        title={t("whatMakesUsUnique.title")}
+        items={services}
+      />
 
       <Cities />
 

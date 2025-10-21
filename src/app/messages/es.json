@@ -67,6 +67,29 @@
           }
         }
       }
+    },
+    "whatMakesUsUnique": {
+      "title": "Lo que nos hace únicos",
+      "services": {
+        "0": {
+          "title": "Tu casa ideal, a tu medida"
+        },
+        "1": {
+          "title": "Sin fraudes, sin riesgos"
+        },
+        "2": {
+          "title": "Propiedades minuciosamente verificadas"
+        },
+        "3": {
+          "title": "Búsqueda profesional y confiable"
+        },
+        "4": {
+          "title": "Orientación sobre la zona y consejos sobre el estilo de vida"
+        },
+        "5": {
+          "title": "Más de 300 estudiantes satisfechos"
+        }
+      }
     }
   },
   "about": {

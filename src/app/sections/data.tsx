@@ -1,5 +1,14 @@
 import { ShowcaseItem } from "../components/TextImageScrollTransition/TextImageScrollTransition";
 
+import {
+  House,
+  HandHelping,
+  ShieldCheck,
+  Search,
+  MapPinned,
+  Star,
+} from "lucide-react";
+
 export const items: ShowcaseItem[] = [
   {
     image: {
@@ -59,5 +68,38 @@ export const cards = [
       alt: "Demo 1",
     },
     backgroundClass: "bg-neutral-100",
+  },
+];
+
+export const services = [
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <House size={70} />,
+  },
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <HandHelping size={70} />,
+  },
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <ShieldCheck size={70} />,
+  },
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <Search size={70} />,
+  },
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <MapPinned size={70} />,
+  },
+  {
+    title: "Servicio 1",
+    description: "Descripción del servicio 1",
+    icon: <Star size={70} />,
   },
 ];

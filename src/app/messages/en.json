@@ -67,6 +67,29 @@
           }
         }
       }
+    },
+    "whatMakesUsUnique": {
+      "title": "What makes us unique",
+      "services": {
+        "0": {
+          "title": "Your ideal home, tailored to you"
+        },
+        "1": {
+          "title": "Zero fraud, zero risk"
+        },
+        "2": {
+          "title": "Thoroughly verified properties"
+        },
+        "3": {
+          "title": "Professional and reliable search"
+        },
+        "4": {
+          "title": "Local area guidance and lifestyle tips"
+        },
+        "5": {
+          "title": "Over 300 satisfied students"
+        }
+      }
     }
   },
   "about": {
