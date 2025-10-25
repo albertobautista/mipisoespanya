@@ -11,7 +11,7 @@ import { Footer } from "../components/Footer";
 export const metadata: Metadata = {
   title: "Mi Piso España",
   description:
-    "We are Ana and Paloma, two Mexicans who turned our own housing challenges in Spain into a mission to help others.",
+    "Somos una agencia de reubicación especializada en el sector inmobiliario de Madrid y Barcelona, brindando asesoramiento y orientación para ayudarle a encontrar el hogar que mejor se adapte a sus necesidades.",
   icons: {
     icon: "/images/logos/logo.webp",
     apple: "/images/logos/logo.webp",
