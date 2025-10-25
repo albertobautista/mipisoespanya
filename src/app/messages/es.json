@@ -1,13 +1,11 @@
 {
   "home": {
-    "title": "NOSOTROS HACEMOS LA BÚSQUEDA, USTED VIVE",
+    "title": "NOSOTROS HACEMOS LA VIVIENDA, TÚ LA CIUDAD",
     "logoSubtitle": "Sus confiables cazadores de casas",
-    "subtitle": "NOSOTROS HACEMOS LA VIVIENDA, TÚ LA CIUDAD",
     "ctaPrimary": "Cómo funciona",
     "ctaSecondary": "Ver beneficios",
     "menu": {
       "home": "Inicio",
-      "how-we-work": "Cómo trabajamos",
       "our-story": "Nuestra historia",
       "reviews": "Opiniones",
       "faqs": "Preguntas frecuentes"
@@ -95,5 +93,20 @@
   "about": {
     "title": "Sobre nosotros",
     "content": "Somos una empresa dedicada a ofrecer estadías modernas con check-in digital y soporte 24/7."
+  },
+  "footer": {
+    "contact": {
+      "label": "Contacto y Ayuda",
+      "whatsapp": "Chatea con nosotros por WhatsApp",
+      "phone": "Llámanos",
+      "faq": "Preguntas frecuentes"
+    },
+    "about": {
+      "ourStory": "Nuestra historia",
+      "reviews": "Opiniones"
+    },
+    "social": {
+      "followUs": "Síguenos"
+    }
   }
 }

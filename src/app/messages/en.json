@@ -1,32 +1,34 @@
 {
   "home": {
-    "title": "We do the searching, you do the living",
+    "title": "WE DO THE HOUSING, YOU DO THE CITY",
     "logoSubtitle": "Your trusrty home hunters",
-    "subtitle": "WE DO THE HOUSING, YOU DO THE CITY",
     "ctaPrimary": "How it works",
     "ctaSecondary": "See benefits",
     "menu": {
       "home": "Home",
-      "how-we-work": "How we work",
       "our-story": "Our story",
       "reviews": "Reviews",
       "faqs": "FAQs"
     },
     "information": {
       "0": {
-        "title": "Business or pleasure.",
+        "title": "Your move to spain, simplified",
         "alt": "Comfortable work stay"
       },
       "1": {
-        "title": "Long stay or weekend.",
+        "title": "guidance & housing, tailored to you",
         "alt": "Modern living room"
       },
       "2": {
-        "title": "Rooms or apartments.",
+        "title": "we search, we visit, you choose",
         "alt": "Bright apartment"
       },
       "3": {
-        "title": "There's always a place for you.",
+        "title": "safe, verified & reliable homes",
+        "alt": "Cozy reception"
+      },
+      "4": {
+        "title": "welcome home, spain is waiting",
         "alt": "Cozy reception"
       }
     },
@@ -95,5 +97,20 @@
   "about": {
     "title": "About us",
     "content": "We provide modern stays with digital check-in and 24/7 support."
+  },
+  "footer": {
+    "contact": {
+      "label": "Contact and Help",
+      "whatsapp": "Chat with us on WhatsApp",
+      "phone": "Call us",
+      "faq": "FAQs"
+    },
+    "about": {
+      "ourStory": "Our Story",
+      "reviews": "Reviews"
+    },
+    "social": {
+      "followUs": "Follow us"
+    }
   }
 }
