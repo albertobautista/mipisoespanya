@@ -7,7 +7,6 @@ interface HeroProps {
   videoPoster?: string;
   logoText?: string;
   title?: string;
-  subtitle?: string;
   logoSubtitle?: string;
   country?: string;
 }
@@ -17,7 +16,6 @@ export default function Hero({
   videoPoster = "/video/hero-poster.jpg",
   logoText = "Mi piso",
   title = "We do the room. You do the city.",
-  subtitle = "",
   logoSubtitle = "Your trusty home hunters",
   country = "spain",
 }: HeroProps) {
@@ -78,13 +76,7 @@ export default function Hero({
 
         {/* Headline (centrado en móvil, balanceado en desktop) */}
         <div className="mt-auto max-w-6xl pb-16 sm:pb-20 md:pb-24 font-poiret flex flex-col gap-4 sm:gap-6 md:gap-8 mx-auto">
-          <h1
-            className="whitespace-pre-wrap uppercase text-center font-extrabold tracking-tight text-white drop-shadow-sm"
-            style={{ fontSize: "clamp(28px, 4.5vw, 56px)", lineHeight: "1.05" }}
-          >
-            {title}
-          </h1>
-          {!!subtitle && (
+          {!!title && (
             <h2
               className="whitespace-pre-wrap uppercase text-center font-extrabold tracking-tight text-white/95 drop-shadow-sm"
               style={{
@@ -92,7 +84,7 @@ export default function Hero({
                 lineHeight: "1.05",
               }}
             >
-              {subtitle}
+              {title}
             </h2>
           )}
         </div>
