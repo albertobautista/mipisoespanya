@@ -10,7 +10,7 @@ interface HowWeWorkProps {
 
 const HowWeWork: React.FC<HowWeWorkProps> = ({ title, subtitle, items }) => {
   return (
-    <section className="relative w-full py-20 md:py-28 bg-green">
+    <section className="relative w-full py-10 md:py-10 bg-green">
       {/* HEADER */}
       <header className="text-center max-w-6xl mx-auto mb-16 px-6">
         <h2 className="text-3xl uppercase font-poiret md:text-7xl font-bold tracking-tight text-neutral-900">

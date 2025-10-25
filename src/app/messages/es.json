@@ -12,19 +12,23 @@
     },
     "information": {
       "0": {
-        "title": "Negocios o placer.",
+        "title": "Tu mudanza a España, simplificada",
         "alt": "Estancia de trabajo cómoda"
       },
       "1": {
-        "title": "Larga estancia o fin de semana.",
+        "title": "Orientación y vivienda, adaptadas a ti",
         "alt": "Sala moderna"
       },
       "2": {
-        "title": "Habitaciones o apartamentos.",
+        "title": "buscamos, visitamos, eliges",
         "alt": "Apartamento luminoso"
       },
       "3": {
-        "title": "Siempre hay un lugar para ti.",
+        "title": "hogares seguros, verificados y confiables",
+        "alt": "Recepción acogedora"
+      },
+      "4": {
+        "title": "bienvenido a casa, España te está esperando",
         "alt": "Recepción acogedora"
       }
     },
@@ -93,6 +97,25 @@
   "about": {
     "title": "Sobre nosotros",
     "content": "Somos una empresa dedicada a ofrecer estadías modernas con check-in digital y soporte 24/7."
+  },
+  "ourStory": {
+    "points": {
+      "0": {
+        "title": "Somos Ana y Paloma, dos mexicanas que viven en España. Cuando llegamos por primera vez como estudiantes, nos enfrentamos al difícil proceso de encontrar un hogar en un nuevo país."
+      },
+      "1": {
+        "title": "Con la experiencia de 10 años de Ana en servicios de reubicación y la experiencia de Paloma en la industria inmobiliaria, pronto nos dimos cuenta de que muchos otros estudiantes internacionales estaban pasando por la misma lucha: búsquedas interminables, estafas y mucha incertidumbre."
+      },
+      "2": {
+        "title": "Con la intención de hacer esta experiencia más fácil, segura y humana, decidimos crear una agencia que apoyara a las personas que llegaban a España y les ayudara a encontrar su nuevo hogar con confianza y tranquilidad."
+      },
+      "3": {
+        "title": "Con el tiempo, el boca a boca nos llevó a ayudar a más de 300 estudiantes de diferentes países a encontrar vivienda en ciudades como Madrid y Barcelona."
+      },
+      "4": {
+        "title": "Hoy en día, colaboramos con universidades y agencias inmobiliarias que respaldan nuestro profesionalismo y confían en nuestro compromiso de brindar un servicio confiable y personalizado."
+      }
+    }
   },
   "footer": {
     "contact": {

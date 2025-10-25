@@ -98,6 +98,25 @@
     "title": "About us",
     "content": "We provide modern stays with digital check-in and 24/7 support."
   },
+  "ourStory": {
+    "points": {
+      "0": {
+        "title": "We are Ana and Paloma, two Mexicans living in Spain. When we first arrived as students, we faced the challenging process of finding a home in a new country. "
+      },
+      "1": {
+        "title": "With Ana’s 10-year experience in relocation services and Paloma’s expertise in the Real Estate industry. We soon realized that many other international students were going through the same struggle — endless searches, scams, and a lot of uncertainty."
+      },
+      "2": {
+        "title": "Intending to make this experience easier, safer, and more human, we decided to create an agency that supports people arriving in Spain and helps them find their new home with confidence and peace of mind."
+      },
+      "3": {
+        "title": "Over time, word of mouth led us to help more than 300 students from different countries find housing in cities like Madrid and Barcelona."
+      },
+      "4": {
+        "title": "Today, we collaborate with universities and real estate agencies that endorse our professionalism and trust our commitment to providing a reliable and personalized service."
+      }
+    }
+  },
   "footer": {
     "contact": {
       "label": "Contact and Help",

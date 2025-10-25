@@ -61,7 +61,7 @@ export default function Footer({
   return (
     <footer className={`${bg} text-[#0f0f0f]`}>
       {/* Top grid */}
-      <div className="mx-auto max-w-7xl px-6 pt-16 md:pt-2">
+      <div className="mx-auto max-w-7xl px-6 pt-16 md:pt-20">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Contacto y ayuda */}
           <div>
@@ -122,7 +122,7 @@ export default function Footer({
             <h1
               className=" select-none uppercase whitespace-pre-wrap font-poiret leading-none font-extrabold tracking-tight text-[#121212] drop-shadow-sm"
               style={{
-                fontSize: "clamp(120px, 18vw, 230px)",
+                fontSize: "clamp(90px, 18vw, 230px)",
                 lineHeight: "1.05",
               }}
             >
