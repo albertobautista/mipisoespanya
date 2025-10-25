@@ -86,7 +86,7 @@ function TextLine({
   return (
     <motion.h2
       style={{ color, opacity, y }}
-      className="leading-[0.98] font-semibold tracking-tight text-[clamp(28px,8vw,72px)] md:text-[clamp(32px,6vw,64px)]"
+      className="leading-[0.98] uppercase font-semibold tracking-tight text-[clamp(28px,8vw,72px)] md:text-[clamp(32px,6vw,50px)]"
     >
       {title}
     </motion.h2>

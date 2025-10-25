@@ -34,6 +34,12 @@ export const items: ShowcaseItem[] = [
       alt: "Recepción acogedora",
     },
   },
+  {
+    image: {
+      src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+      alt: "Apartamento luminoso",
+    },
+  },
 ];
 
 export const cards = [
