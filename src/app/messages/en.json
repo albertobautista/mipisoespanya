@@ -141,6 +141,43 @@
       }
     }
   },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "faqs": {
+      "0": {
+        "question": "Are you a real estate agency?",
+        "answer": "No, we are a relocation agency that specializes in helping individuals find housing in Madrid and Barcelona. We work closely with various real estate agencies to provide our clients with a wide range of verified properties."
+      },
+      "1": {
+        "question": "What documents do i need to rent a property?",
+        "answer": "To rent a property in Spain, you typically need to provide a valid ID or passport, proof of income (such as payslips or bank statements), and a rental application form. Additional documents may be required depending on the landlord's requirements."
+      },
+      "2": {
+        "question": "What payments are needed to rent an apartment?",
+        "answer": "To rent an apartment in Spain, you typically need to pay the first month's rent, a security deposit (usually one month's rent), and possibly a agency fee (if you use a relocation agency). Please contact us for detailed pricing information."
+      },
+      "3": {
+        "question": "Can agency fees be avoided?",
+        "answer": "Agency fees are a standard part of the rental process in Spain. However, we strive to provide transparent pricing and will inform you of any fees upfront."
+      },
+      "4": {
+        "question": "Is it only for students?",
+        "answer": "No, we assist with reviewing lease agreements, negotiating terms, and handling all necessary paperwork to ensure a smooth transition into your new home."
+      },
+      "5": {
+        "question": "What does your service include?",
+        "answer": "Our service includes assistance with finding suitable properties, arranging viewings, negotiating lease terms, and handling all necessary paperwork to ensure a smooth transition into your new home."
+      },
+      "6": {
+        "question": "What are the steps to follow?",
+        "answer": "1. Contact us to discuss your needs. 2. We will help you find suitable properties. 3. Arrange viewings and assist with negotiations. 4. Complete all necessary paperwork for a smooth transition."
+      },
+      "7": {
+        "question": "What should my cover letter include?",
+        "answer": "1. Your contact information (name, phone number, email). 2. A brief introduction about yourself. 3. Your reasons for moving and what you're looking for in a new home. 4. Any specific requirements or preferences you have."
+      }
+    }
+  },
   "footer": {
     "contact": {
       "label": "Contact and Help",
