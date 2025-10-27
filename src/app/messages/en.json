@@ -117,6 +117,30 @@
       }
     }
   },
+  "reviews": {
+    "reviews": {
+      "0": {
+        "title": "Excellent service and support throughout the entire process.",
+        "subtitle": "From start to finish, they were there to help."
+      },
+      "1": {
+        "title": "They made finding a home in a new country so much easier.",
+        "subtitle": "I felt supported every step of the way."
+      },
+      "2": {
+        "title": "Professional, reliable, and truly caring about their clients.",
+        "subtitle": "I couldn't have asked for a better experience."
+      },
+      "3": {
+        "title": "Highly recommend for anyone moving to Spain.",
+        "subtitle": "They made the process so much easier."
+      },
+      "4": {
+        "title": "They went above and beyond to ensure I found the perfect place.",
+        "subtitle": "I truly appreciate their dedication."
+      }
+    }
+  },
   "footer": {
     "contact": {
       "label": "Contact and Help",

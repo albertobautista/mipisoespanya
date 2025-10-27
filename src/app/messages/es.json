@@ -117,6 +117,30 @@
       }
     }
   },
+  "reviews": {
+    "reviews": {
+      "0": {
+        "title": "Excelente servicio y apoyo durante todo el proceso.",
+        "subtitle": "Desde el principio hasta el final, estuvieron allí para ayudar."
+      },
+      "1": {
+        "title": "Hicieron que encontrar un hogar en un nuevo país fuera mucho más fácil.",
+        "subtitle": "Me sentí apoyado en cada paso del camino."
+      },
+      "2": {
+        "title": "Profesionales, confiables y realmente preocupados por sus clientes.",
+        "subtitle": "No podría haber pedido una mejor experiencia."
+      },
+      "3": {
+        "title": "Recomiendo encarecidamente a cualquiera que se mude a España.",
+        "subtitle": "Hicieron que el proceso fuera mucho más fácil."
+      },
+      "4": {
+        "title": "Se esforzaron al máximo para asegurarse de que encontrara el lugar perfecto.",
+        "subtitle": "Aprecio sinceramente su dedicación."
+      }
+    }
+  },
   "footer": {
     "contact": {
       "label": "Contacto y Ayuda",
