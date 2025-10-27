@@ -30,7 +30,7 @@ export default function AboutPage({
         videoSrc="https://www.datocms-assets.com/49893/1755596941-2025_numa_berlin-rome_homepage_1440x607_v3.mp4"
       />
 
-      <Faqs items={faqsItems} />
+      <Faqs items={faqsItems} title={t("title")} />
     </main>
   );
 }

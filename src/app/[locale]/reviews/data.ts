@@ -13,7 +13,7 @@ export const reviewsItems: Review[] = [
     title: "Great Location",
     subtitle: "The apartment was in a fantastic location, close to everything.",
     image: {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
       alt: "Review 2",
     },
   },
@@ -29,7 +29,7 @@ export const reviewsItems: Review[] = [
     title: "Affordable Prices",
     subtitle: "Great value for money. Will definitely book again!",
     image: {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
+      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
       alt: "Review 4",
     },
   },

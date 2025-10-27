@@ -17,6 +17,7 @@ export default function PromoCard({ title, subtitle, image }: PromoCardProps) {
           alt={image.alt}
           fill
           sizes="(min-width: 768px) 32rem, (min-width: 640px) 24rem, 20rem"
+          className="object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
 
