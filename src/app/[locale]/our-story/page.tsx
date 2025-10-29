@@ -6,6 +6,8 @@ import { Points } from "@/app/sections/OurStory";
 import { PointItem } from "@/app/sections/OurStory/Points/Points";
 import { pointsItems as pointsItemsBase } from "./data";
 
+const heroVideoSrc = "/videos/hero_video.mp4";
+
 export default function AboutPage({
   params,
 }: {
@@ -22,10 +24,7 @@ export default function AboutPage({
 
   return (
     <main>
-      <Hero
-        logoText="mi piso"
-        videoSrc="https://www.datocms-assets.com/49893/1755596941-2025_numa_berlin-rome_homepage_1440x607_v3.mp4"
-      />
+      <Hero logoText="mi piso" videoSrc={heroVideoSrc} />
 
       <Points items={pointsItems} />
     </main>

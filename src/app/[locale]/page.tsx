@@ -13,6 +13,8 @@ import { Cities } from "../sections/Cities";
 import { HowWeWork } from "../sections/HowWeWork";
 import { WhatMakesUsUnique } from "../sections/WhatMakesUsUnique";
 
+const heroVideoSrc = "/videos/hero_video.mp4";
+
 export default function Page({
   params,
 }: {
@@ -45,11 +47,7 @@ export default function Page({
     <main>
       {/* HERO con video */}
       <StickyMobileBar title="Mi piso" />
-      <Hero
-        logoText="mi piso"
-        title={t("title")}
-        videoSrc="https://www.datocms-assets.com/49893/1755596941-2025_numa_berlin-rome_homepage_1440x607_v3.mp4"
-      />
+      <Hero logoText="mi piso" title={t("title")} videoSrc={heroVideoSrc} />
 
       <Information items={items} />
 
