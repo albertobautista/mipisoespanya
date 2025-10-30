@@ -70,13 +70,14 @@ export default function Footer({
         </div>
       </header>
       <div className="w-full overflow-x-auto bg-transparent my-10">
-        <div className="flex gap-6 px-4 md:px-8 snap-x snap-mandatory">
+        <div className="flex gap-6 px-4 md:px-8 snap-x snap-mandatory after:content-[''] after:flex-shrink-0 after:w-8 md:after:w-3">
           {items.map((item, idx) => (
             <div key={idx} className="snap-start flex-shrink-0 w-64 md:w-80">
               <HoverVideoCard
                 city={item.city}
                 videoSrc={item.videoSrc}
                 pillClassName={item.pillClassName}
+                posterSrc={item.posterSrc}
               />
             </div>
           ))}

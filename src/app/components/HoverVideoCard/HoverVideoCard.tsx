@@ -1,118 +1,119 @@
 "use client";
-import React, { useRef, useState, useEffect, useCallback } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useInView } from "framer-motion";
 
-/**
- * HoverVideoCard
- * - Solo video
- * - Desktop: al hacer hover/focus -> play; al salir/blur -> pause (sin reiniciar el tiempo)
- * - Móvil: click/tap para alternar play/pause
- * - Muestra un ícono de play cuando está pausado y uno de pausa cuando está reproduciendo
- * - Etiqueta tipo pill en la esquina superior izquierda
- */
-export default function HoverVideoCard({
-  city,
-  videoSrc,
-  className,
-  pillClassName = "bg-rose-200/95 text-rose-900",
-}: {
+interface HoverVideoCardProps {
   city: string;
   videoSrc: string;
+  posterSrc?: string;
   className?: string;
   pillClassName?: string;
-}) {
+}
+
+function HoverVideoCard({
+  city,
+  videoSrc,
+  posterSrc = "/images/fallback.jpg",
+  className,
+  pillClassName,
+}: HoverVideoCardProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [reducedMotion, setReducedMotion] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(containerRef, { amount: 0.3 });
 
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const handler = () => setReducedMotion(mq.matches);
-    handler();
-    mq.addEventListener?.("change", handler);
-    return () => mq.removeEventListener?.("change", handler);
-  }, []);
-
+  // Control play/pause según visibilidad
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    const onPlay = () => setPlaying(true);
-    const onPause = () => setPlaying(false);
-    v.addEventListener("play", onPlay);
-    v.addEventListener("pause", onPause);
-    return () => {
-      v.removeEventListener("play", onPlay);
-      v.removeEventListener("pause", onPause);
-    };
-  }, []);
-
-  const play = useCallback(async () => {
-    if (reducedMotion) return;
-    try {
-      await videoRef.current?.play();
-    } catch (_) {}
-  }, [reducedMotion]);
-
-  const pause = useCallback(() => {
-    videoRef.current?.pause();
-  }, []);
-
-  const toggle = useCallback(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    if (v.paused) v.play().catch(() => {});
+    if (inView && playing) v.play().catch(() => {});
     else v.pause();
+  }, [inView, playing]);
+
+  // Safari fix: asegurar primer frame visible
+  useEffect(() => {
+    const v = videoRef.current;
+    if (v) v.load();
   }, []);
 
-  const onKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === " " || e.key === "Enter") {
-      e.preventDefault();
-      toggle();
+  const togglePlay = async () => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (playing) {
+      v.pause();
+      setPlaying(false);
+    } else {
+      try {
+        await v.play();
+        setPlaying(true);
+      } catch {
+        /* autoplay bloqueado, espera interacción */
+      }
     }
   };
 
   return (
     <div
+      ref={containerRef}
       className={[
-        "relative overflow-hidden rounded-xl bg-black group aspect-[10/16] select-none",
+        "relative overflow-hidden rounded-3xl bg-black select-none aspect-[9/16]",
         "shadow-xl ring-1 ring-black/5",
         className || "",
       ].join(" ")}
-      onMouseEnter={play}
-      onMouseLeave={pause}
-      onFocus={play}
-      onBlur={pause}
-      onClick={toggle}
+      onMouseEnter={() => setPlaying(true)}
+      onMouseLeave={() => setPlaying(false)}
+      onClick={togglePlay}
       role="button"
       tabIndex={0}
-      onKeyDown={onKeyDown}
     >
-      <video
-        ref={videoRef}
-        className="absolute inset-0 h-full w-full object-cover"
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      >
-        <source src={videoSrc} />
-      </video>
+      {/* 🖼️ Capa combinada: poster y video con cross-fade */}
+      <div className="absolute inset-0">
+        {/* Poster visible cuando no está en reproducción */}
+        <img
+          src={posterSrc}
+          alt={`${city} poster`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+            playing ? "opacity-0" : "opacity-100"
+          }`}
+          draggable={false}
+        />
 
+        {/* Video sobre el poster */}
+        <video
+          ref={videoRef}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+            playing ? "opacity-100" : "opacity-0"
+          }`}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          onLoadedData={() => setLoaded(true)}
+        >
+          <source src={videoSrc} />
+        </video>
+      </div>
+
+      {/* Degradado inferior */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent" />
 
+      {/* Pill superior izquierda */}
       <span
         className={[
-          "absolute left-3 top-3 z-10 rounded-lg px-3 py-1 text-lg font-semibold",
-          "shadow-sm",
+          "absolute left-3 top-3 z-10 rounded-lg px-3 py-1 text-sm font-semibold",
+          "bg-rose-200/95 text-rose-900 shadow-sm",
           pillClassName || "",
         ].join(" ")}
       >
         {city}
       </span>
 
+      {/* Icono de control */}
       <div
         className={[
           "absolute right-4 bottom-4 z-10 grid place-items-center rounded-full w-12 h-12",
-          "bg-white/15 backdrop-blur-md ring-1 ring-white/25 transition-opacity duration-200",
+          "bg-white/15 backdrop-blur-md ring-1 ring-white/25 transition-opacity duration-300",
         ].join(" ")}
         aria-hidden
       >
@@ -142,6 +143,4 @@ export default function HoverVideoCard({
   );
 }
 
-/** Ejemplo de uso
- * <HoverVideoCard city="Madrid" videoSrc="/videos/script.mp4" />
- */
+export default HoverVideoCard;

@@ -237,34 +237,42 @@
     "title": "Preguntas Frecuentes",
     "faqs": {
       "0": {
-        "question": "¿Eres una agencia inmobiliaria?",
+        "question": "¿Son agencia inmobiliaria?",
         "answer": "No, somos una agencia de reubicación que se especializa en ayudar a las personas a encontrar vivienda en Madrid y Barcelona. Trabajamos en estrecha colaboración con varias agencias inmobiliarias para ofrecer a nuestros clientes una amplia gama de propiedades verificadas."
       },
       "1": {
-        "question": "¿Qué documentos necesito para alquilar una propiedad?",
+        "question": "¿Cuál es la diferencia entre un piso temporal y de larga estancia?",
         "answer": "Para alquilar una propiedad en España, normalmente necesitas proporcionar una identificación válida o pasaporte, comprobante de ingresos (como nóminas o extractos bancarios) y un formulario de solicitud de alquiler. Pueden requerirse documentos adicionales según los requisitos del propietario."
       },
       "2": {
-        "question": "¿Qué pagos se necesitan para alquilar un apartamento?",
+        "question": "¿Qué necesito para aplicar a un piso temporal?",
         "answer": "Para alquilar un apartamento en España, normalmente necesitas pagar el primer mes de alquiler, un depósito de seguridad (generalmente un mes de alquiler) y posiblemente una tarifa de agencia (si utilizas una agencia de reubicación). Por favor, contáctanos para obtener información detallada sobre precios."
       },
       "3": {
-        "question": "¿Se pueden evitar las tarifas de agencia?",
+        "question": "¿Qué documentos necesito para alquilar?",
         "answer": "Las tarifas de agencia son una parte estándar del proceso de alquiler en España. Sin embargo, nos esforzamos por proporcionar precios transparentes y te informaremos sobre cualquier tarifa por adelantado."
       },
       "4": {
-        "question": "¿Es solo para estudiantes?",
+        "question": "¿Qué pagos se requieren?",
         "answer": "No, ayudamos a revisar contratos de arrendamiento, negociar términos y manejar toda la documentación necesaria para garantizar una transición sin problemas a tu nuevo hogar."
       },
       "5": {
-        "question": "¿Qué incluye su servicio?",
+        "question": "¿Se pueden evitar los honorarios de agencia?",
         "answer": "Nuestro servicio incluye asistencia para encontrar propiedades adecuadas, organizar visitas, negociar términos de arrendamiento y manejar toda la documentación necesaria para garantizar una transición sin problemas a tu nuevo hogar."
       },
       "6": {
-        "question": "¿Cuáles son los pasos a seguir?",
+        "question": "¿Es solo para estudiantes?",
         "answer": "1. Contáctanos para discutir tus necesidades. 2. Te ayudaremos a encontrar propiedades adecuadas. 3. Organizaremos visitas y asistiremos con las negociaciones. 4. Completa toda la documentación necesaria para una transición sin problemas."
       },
       "7": {
+        "question": "¿Qué incluye su servicio?",
+        "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
+      },
+      "8": {
+        "question": "Cuáles son los pasos a seguir?",
+        "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
+      },
+      "9": {
         "question": "¿Qué debe incluir mi carta de presentación?",
         "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
       }
