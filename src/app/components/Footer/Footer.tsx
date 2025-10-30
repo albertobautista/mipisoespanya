@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { CityStrickers } from "../CittyStickers";
 import { useTranslations } from "next-intl";
+import { HoverVideoCard } from "../HoverVideoCard";
+import { items } from "./data";
 
 type LinkItem = { label: string; href: string };
 
@@ -59,110 +61,134 @@ export default function Footer({
     href: item.href,
   }));
   return (
-    <footer className={`${bg} text-[#0f0f0f]`}>
+    <footer>
+      <header className="w-screen bg-green py-12 text-center">
+        <div className="max-w-8xl mx-auto px-6">
+          <h2 className="text-3xl uppercase font-poiret md:text-5xl font-bold tracking-tight text-neutral-900">
+            {t("title")}
+          </h2>
+        </div>
+      </header>
+      <div className="w-full overflow-x-auto bg-transparent my-10">
+        <div className="flex gap-6 px-4 md:px-8 snap-x snap-mandatory">
+          {items.map((item, idx) => (
+            <div key={idx} className="snap-start flex-shrink-0 w-64 md:w-80">
+              <HoverVideoCard
+                city={item.city}
+                videoSrc={item.videoSrc}
+                pillClassName={item.pillClassName}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
       {/* Top grid */}
-      <div className="mx-auto max-w-7xl px-6 pt-16 md:pt-20">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-          {/* Contacto y ayuda */}
-          <div>
-            <h3 className="mb-4 font-semibold text-lg font-cocomat">
-              {t("contact.label")}
-            </h3>
-            <ul className="space-y-3">
-              {contact.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href} className="hover:underline">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Numa */}
-          <div>
-            <h3 className="mb-4 font-semibold text-lg font-cocomat">Mi piso</h3>
-            <ul className="space-y-3">
-              {about.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href} className="hover:underline">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Social */}
-          <div className="space-y-6">
+      <div className={`${bg} text-[#0f0f0f]`}>
+        <div className="mx-auto max-w-7xl px-6 pt-16 md:pt-20">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+            {/* Contacto y ayuda */}
             <div>
-              <h3 className="mb-3 font-semibold text-lg font-cocomat">
-                {t("social.followUs")}
+              <h3 className="mb-4 font-semibold text-lg font-cocomat">
+                {t("contact.label")}
               </h3>
-              <div className="flex items-center gap-4">
-                {social.map((s, idx) => (
-                  <Link
-                    key={idx}
-                    href={s.href}
-                    className="grid h-12 w-12 place-items-center rounded-full bg-black/10 hover:bg-black/20 transition"
-                    aria-label={s.icon}
-                  >
-                    {getSocialIcon(s.icon)}
-                  </Link>
+              <ul className="space-y-3">
+                {contact.map((item) => (
+                  <li key={item.label}>
+                    <Link href={item.href} className="hover:underline">
+                      {item.label}
+                    </Link>
+                  </li>
                 ))}
+              </ul>
+            </div>
+
+            {/* Numa */}
+            <div>
+              <h3 className="mb-4 font-semibold text-lg font-cocomat">
+                Mi piso
+              </h3>
+              <ul className="space-y-3">
+                {about.map((item) => (
+                  <li key={item.label}>
+                    <Link href={item.href} className="hover:underline">
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Social */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="mb-3 font-semibold text-lg font-cocomat">
+                  {t("social.followUs")}
+                </h3>
+                <div className="flex items-center gap-4">
+                  {social.map((s, idx) => (
+                    <Link
+                      key={idx}
+                      href={s.href}
+                      className="grid h-12 w-12 place-items-center rounded-full bg-black/10 hover:bg-black/20 transition"
+                      aria-label={s.icon}
+                    >
+                      {getSocialIcon(s.icon)}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Big logo + claim */}
-        <div className="mt-10 grid  grid-cols-1 items-end gap-8 md:mt-2 md:grid-cols-6">
-          {/* Logo ocupa las tres primeras columnas */}
-          <div className="md:col-span-4">
-            <h1
-              className=" select-none uppercase whitespace-pre-wrap font-poiret leading-none font-extrabold tracking-tight text-[#121212] drop-shadow-sm"
-              style={{
-                fontSize: "clamp(90px, 18vw, 230px)",
-                lineHeight: "1.05",
-              }}
-            >
-              {bigLogoText}
-            </h1>
-          </div>
-          <div className="md:col-span-2 ">
-            <CityStrickers
-              items={[
-                { label: "Salamanca", bg: "#3ec4a0" },
-                { label: "Chamberi", bg: "#eea37a" },
-                { label: "El retiro", bg: "#f0a400" },
-                { label: "lista", bg: "#0a5dd8", fg: "#081a2f" },
-                { label: "almagro", bg: "#8aa0b6" },
-                { label: "gracia", bg: "#5e63ff" },
-                { label: "eixample", bg: "#7cc8ff", fg: "#0b2746" },
-                { label: "sariiá", bg: "#ff4b2e" },
-                { label: "san gervasi ", bg: "#d11669" },
-              ]}
-              fontSize="sm"
-            />
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="mt-10 border-t border-black/10 py-6 text-sm text-black/70">
-          <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-              {legal.map((l, i) => (
-                <span key={l.label} className="flex items-center">
-                  <Link href={l.href} className="hover:underline">
-                    {l.label}
-                  </Link>
-                  {i !== legal.length - 1 && (
-                    <span className="mx-3 opacity-60">|</span>
-                  )}
-                </span>
-              ))}
+          {/* Big logo + claim */}
+          <div className="mt-10 grid  grid-cols-1 items-end gap-8 md:mt-2 md:grid-cols-6">
+            {/* Logo ocupa las tres primeras columnas */}
+            <div className="md:col-span-4">
+              <h1
+                className=" select-none uppercase whitespace-pre-wrap font-poiret leading-none font-extrabold tracking-tight text-[#121212] drop-shadow-sm"
+                style={{
+                  fontSize: "clamp(90px, 18vw, 230px)",
+                  lineHeight: "1.05",
+                }}
+              >
+                {bigLogoText}
+              </h1>
             </div>
-            <p>© Mi Piso Todos los derechos reservados.</p>
+            <div className="md:col-span-2 ">
+              <CityStrickers
+                items={[
+                  { label: "Salamanca", bg: "#3ec4a0" },
+                  { label: "Chamberi", bg: "#eea37a" },
+                  { label: "El retiro", bg: "#f0a400" },
+                  { label: "lista", bg: "#0a5dd8", fg: "#081a2f" },
+                  { label: "almagro", bg: "#8aa0b6" },
+                  { label: "gracia", bg: "#5e63ff" },
+                  { label: "eixample", bg: "#7cc8ff", fg: "#0b2746" },
+                  { label: "sariiá", bg: "#ff4b2e" },
+                  { label: "san gervasi ", bg: "#d11669" },
+                ]}
+                fontSize="sm"
+              />
+            </div>
+          </div>
+
+          {/* Bottom bar */}
+          <div className="mt-10 border-t border-black/10 py-6 text-sm text-black/70">
+            <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                {legal.map((l, i) => (
+                  <span key={l.label} className="flex items-center">
+                    <Link href={l.href} className="hover:underline">
+                      {l.label}
+                    </Link>
+                    {i !== legal.length - 1 && (
+                      <span className="mx-3 opacity-60">|</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+              <p>© Mi Piso Todos los derechos reservados.</p>
+            </div>
           </div>
         </div>
       </div>

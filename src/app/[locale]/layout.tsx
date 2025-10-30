@@ -7,6 +7,7 @@ import { setRequestLocale, getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "@fontsource/poiret-one";
 import { Footer } from "../components/Footer";
+import { HoverVideoCard } from "../components/HoverVideoCard";
 
 export const metadata: Metadata = {
   title: "Mi Piso España",
@@ -44,6 +45,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <main>{children}</main>
           {/* Evita Date() dinámico en el markup que se hidrata */}
+
           <footer>
             <Footer />
           </footer>

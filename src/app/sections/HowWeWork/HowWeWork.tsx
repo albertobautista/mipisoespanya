@@ -10,15 +10,16 @@ interface HowWeWorkProps {
 
 const HowWeWork: React.FC<HowWeWorkProps> = ({ title, subtitle, items }) => {
   return (
-    <section className="relative w-full py-10 md:py-10 bg-green">
-      {/* HEADER */}
-      <header className="text-center max-w-6xl mx-auto mb-16 px-6">
-        <h2 className="text-3xl uppercase font-poiret md:text-7xl font-bold tracking-tight text-neutral-900">
-          {title}
-        </h2>
-        <p className="text-lg md:text-xl font-cocomat text-neutral-600 mt-10">
-          {subtitle}
-        </p>
+    <section className="relative w-full">
+      <header className="w-screen bg-green py-12 text-center">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl uppercase font-poiret md:text-7xl font-bold tracking-tight text-neutral-900">
+            {title}
+          </h2>
+          <p className="text-lg md:text-xl font-cocomat text-neutral-600 mt-10">
+            {subtitle}
+          </p>
+        </div>
       </header>
 
       {/* CARDS */}
