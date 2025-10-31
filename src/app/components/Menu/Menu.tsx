@@ -1,10 +1,11 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { menuItems } from "./contants"; // corrige a ./constants si aplica
 import { LocaleSwitcher } from "../LocaleSwitcher";
 import React from "react";
 import { WhatsappButton } from "../Buttons/WhatsappButton";
+import { Link } from "@/app/navigation";
 
 export default function Menu() {
   const t = useTranslations("home");
@@ -30,8 +31,7 @@ export default function Menu() {
         {menuItems.map((item) => (
           <Link
             key={item.id}
-            href={item.href}
-            locale={locale}
+            href={{ pathname: item.href }}
             className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
           >
             {t(`menu.${item.id}`)}
@@ -90,7 +90,11 @@ export default function Menu() {
         <div className="bg-black/70 backdrop-blur-sm">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="font-bold tracking-wide text-white">
+              <Link
+                href="/"
+                locale={locale}
+                className="font-bold tracking-wide text-white"
+              >
                 Mi piso
               </Link>
               <button
@@ -107,6 +111,7 @@ export default function Menu() {
                 <li key={item.id}>
                   <Link
                     href={item.href}
+                    locale={locale}
                     className="block rounded-md px-3 py-3 text-base font-semibold tracking-wide text-white/90 hover:bg-white/10"
                     onClick={() => setOpen(false)}
                   >
