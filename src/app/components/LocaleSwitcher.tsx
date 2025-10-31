@@ -1,9 +1,11 @@
 "use client";
 
+import { useLocale } from "next-intl";
 import { Link, usePathname } from "../navigation";
 
 export function LocaleSwitcher() {
   const pathname = usePathname();
+  const locale = useLocale();
 
   return (
     <nav
@@ -13,7 +15,14 @@ export function LocaleSwitcher() {
       <Link
         href={{ pathname }}
         locale="es"
-        className="opacity-70 hover:opacity-100"
+        className={`
+          transition-opacity
+          ${
+            locale === "es"
+              ? "font-bold underline underline-offset-2"
+              : "opacity-70 hover:opacity-100"
+          }
+        `}
       >
         ES
       </Link>
@@ -21,7 +30,14 @@ export function LocaleSwitcher() {
       <Link
         href={{ pathname }}
         locale="en"
-        className="opacity-70 hover:opacity-100"
+        className={`
+          transition-opacity
+          ${
+            locale === "en"
+              ? "font-bold underline underline-offset-2"
+              : "opacity-70 hover:opacity-100"
+          }
+        `}
       >
         EN
       </Link>

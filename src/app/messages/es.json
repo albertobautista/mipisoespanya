@@ -7,7 +7,7 @@
     "menu": {
       "home": "Inicio",
       "our-story": "Nuestra historia",
-      "reviews": "Opiniones",
+      "reviews": "Reseñas",
       "faqs": "Preguntas frecuentes"
     },
     "information": {
@@ -288,7 +288,7 @@
     },
     "about": {
       "ourStory": "Nuestra historia",
-      "reviews": "Opiniones"
+      "reviews": "Reseñas"
     },
     "social": {
       "followUs": "Síguenos"
