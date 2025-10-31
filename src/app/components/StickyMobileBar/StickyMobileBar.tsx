@@ -61,7 +61,7 @@ export default function StickyMobileBar({
         </Link>
 
         {/* Selector de idioma */}
-        <LocaleSwitcher locale={locale} />
+        <LocaleSwitcher />
       </div>
     </div>
   );

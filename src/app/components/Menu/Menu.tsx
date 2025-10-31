@@ -40,7 +40,7 @@ export default function Menu() {
 
         {/* Locale Switcher */}
         <div className="ml-2 flex  gap-4">
-          <LocaleSwitcher locale={locale} />
+          <LocaleSwitcher />
         </div>
         <div className="ml-2 flex gap-4">
           <WhatsappButton
@@ -53,7 +53,7 @@ export default function Menu() {
 
       {/* Mobile right: locale + burger */}
       <div className="flex w-full justify-end items-center gap-3 md:hidden">
-        <LocaleSwitcher locale={locale} />
+        <LocaleSwitcher />
         {/* <button
           className="grid h-10 w-10 place-items-center rounded-full bg-black/40 text-white ring-1 ring-white/30"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
@@ -122,7 +122,7 @@ export default function Menu() {
             </ul>
 
             <div className="mt-4 border-t border-white/10 pt-4">
-              <LocaleSwitcher locale={locale} />
+              <LocaleSwitcher />
             </div>
 
             <div className="pt-6 pb-4 text-xs text-white/60">
