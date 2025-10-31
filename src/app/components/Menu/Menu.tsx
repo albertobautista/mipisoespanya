@@ -42,7 +42,11 @@ export default function Menu() {
           <LocaleSwitcher locale={locale} />
         </div>
         <div className="ml-2 flex gap-4">
-          <WhatsappButton phone="+523338098751" variant="icon" />
+          <WhatsappButton
+            phone="+34658509768"
+            variant="icon"
+            message="Ponte en contacto"
+          />
         </div>
       </div>
 

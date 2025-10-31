@@ -23,30 +23,34 @@ interface FooterProps {
     href: string;
   }[];
   bigLogoText?: string;
-  legal?: LinkItem[];
   bg?: string; // tailwind color class para fondo
 }
 
 export default function Footer({
   contact: baseContact = [
-    { label: "faq", href: "#" },
-    { label: "whatsapp", href: "#" },
+    { label: "faq", href: "/faqs" },
+    {
+      label: "whatsapp",
+      href: `https://wa.me/+34658509768?text=${encodeURIComponent(
+        "Hola, me gustaría más información."
+      )}`,
+    },
   ],
   about: baseAbout = [
-    { label: "ourStory", href: "#" },
-    { label: "reviews", href: "#" },
+    { label: "ourStory", href: "/our-story" },
+    { label: "reviews", href: "/reviews" },
   ],
   social = [
-    { icon: "instagram", href: "#" },
-    { icon: "whatsapp", href: "#" },
+    { icon: "instagram", href: "https://www.instagram.com/mipiso_es/" },
+    {
+      icon: "whatsapp",
+      href: `https://wa.me/+34658509768?text=${encodeURIComponent(
+        "Hola, me gustaría más información."
+      )}`,
+    },
   ],
   bigLogoText = "MiPiso",
-  legal = [
-    { label: "Términos y Condiciones", href: "#" },
-    { label: "Política de privacidad", href: "#" },
-    { label: "Imprint", href: "#" },
-    { label: "Configuración de privacidad", href: "#" },
-  ],
+
   bg = "bg-green",
 }: FooterProps) {
   const t = useTranslations("footer");
@@ -95,7 +99,11 @@ export default function Footer({
               <ul className="space-y-3">
                 {contact.map((item) => (
                   <li key={item.label}>
-                    <Link href={item.href} className="hover:underline">
+                    <Link
+                      href={item.href}
+                      className="hover:underline"
+                      target="_blank"
+                    >
                       {item.label}
                     </Link>
                   </li>
@@ -132,6 +140,7 @@ export default function Footer({
                       href={s.href}
                       className="grid h-12 w-12 place-items-center rounded-full bg-black/10 hover:bg-black/20 transition"
                       aria-label={s.icon}
+                      target="_blank"
                     >
                       {getSocialIcon(s.icon)}
                     </Link>
@@ -175,19 +184,7 @@ export default function Footer({
 
           {/* Bottom bar */}
           <div className="mt-10 border-t border-black/10 py-6 text-sm text-black/70">
-            <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                {legal.map((l, i) => (
-                  <span key={l.label} className="flex items-center">
-                    <Link href={l.href} className="hover:underline">
-                      {l.label}
-                    </Link>
-                    {i !== legal.length - 1 && (
-                      <span className="mx-3 opacity-60">|</span>
-                    )}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-col justify-end md:flex-row">
               <p>© Mi Piso Todos los derechos reservados.</p>
             </div>
           </div>
