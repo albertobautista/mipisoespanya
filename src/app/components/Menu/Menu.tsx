@@ -31,6 +31,7 @@ export default function Menu() {
           <Link
             key={item.id}
             href={item.href}
+            locale={locale}
             className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
           >
             {t(`menu.${item.id}`)}
