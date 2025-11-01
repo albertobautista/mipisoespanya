@@ -29,7 +29,7 @@ export default function AboutPage({
     <main>
       <Hero
         logoText="mi piso"
-        title={t("title")}
+        title={`${t("title")} / ${t("partners")}`}
         media={{
           kind: "image",
           src: heroImageSrc,

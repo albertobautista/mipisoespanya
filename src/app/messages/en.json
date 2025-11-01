@@ -8,7 +8,7 @@
       "home": "Home",
       "our-story": "Our story",
       "reviews": "Reviews",
-      "faqs": "FAQs"
+      "faqs": "FAQs / Partners"
     },
     "information": {
       "0": {
@@ -239,6 +239,7 @@
   },
   "faqs": {
     "title": "FAQs",
+    "partners": "Partners",
     "partnersTitle": "Some of the partners who trust us",
     "universities": "Universities",
     "agencies": "Agencies",

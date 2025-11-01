@@ -8,7 +8,7 @@
       "home": "Inicio",
       "our-story": "Nuestra historia",
       "reviews": "Reseñas",
-      "faqs": "Preguntas frecuentes"
+      "faqs": "Preguntas frecuentes / Socios"
     },
     "information": {
       "0": {
@@ -239,6 +239,7 @@
   },
   "faqs": {
     "title": "Preguntas Frecuentes",
+    "partners": "Socios",
     "partnersTitle": "Algunos de los socios que confían en nosotros",
     "universities": "Universidades",
     "agencies": "Agencias",
