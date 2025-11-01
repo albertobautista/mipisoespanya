@@ -19,7 +19,8 @@ interface FooterProps {
       | "linkedin"
       | "twitter"
       | "youtube"
-      | "whatsapp";
+      | "whatsapp"
+      | "email";
     href: string;
   }[];
   bigLogoText?: string;
@@ -48,6 +49,10 @@ export default function Footer({
         "Hola, me gustaría más información."
       )}`,
     },
+    {
+      icon: "email",
+      href: `mailto:mipisorelocation@gmail.com`,
+    },
   ],
   bigLogoText = "MiPiso",
 
@@ -66,7 +71,7 @@ export default function Footer({
   }));
   return (
     <footer>
-      <header className="w-screen bg-green py-12 text-center">
+      <header className="w-screen  bg-green py-12 text-center">
         <div className="max-w-8xl mx-auto px-6">
           <h2 className="text-3xl uppercase font-poiret md:text-5xl font-bold tracking-tight text-neutral-900">
             {t("title")}
@@ -108,6 +113,11 @@ export default function Footer({
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <a href="mailto:mipisorelocation@gmail.com" target="_blank">
+                    mipisorelocation@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -178,6 +188,7 @@ export default function Footer({
                   { label: "san gervasi ", bg: "#d11669" },
                 ]}
                 fontSize="sm"
+                height={300}
               />
             </div>
           </div>
@@ -204,6 +215,7 @@ function getSocialIcon(
     | "twitter"
     | "youtube"
     | "whatsapp"
+    | "email"
 ) {
   const cls = "h-7 w-7 text-black";
   switch (kind) {
@@ -259,5 +271,13 @@ function getSocialIcon(
           <path d="M380.9 97.1C339 55.1 283.2 32 224 32C106.8 32 12.7 126.1 12.7 243.3c0 43.2 11.4 85 33.1 121.9L0 480l118.6-45.5c35.2 19.2 74.6 29.3 115.3 29.3h.1c117.1 0 211.3-94.1 211.3-211.2 0-59.2-23-114.9-64.4-156.5zM224 438.6c-35.9 0-71.2-9.6-102-27.9l-7.3-4.3-70.3 27 26.1-72.4-4.8-7.5c-20.7-32.5-31.7-70.1-31.7-108.6C34 141.3 121.9 53.4 224 53.4c52.2 0 101.3 20.3 138.2 57.2 36.9 36.9 57.2 85.9 57.2 138.1 0 102.1-88 189.9-195.4 189.9zm101.6-138.3c-5.5-2.7-32.6-16.1-37.7-18-5.1-1.9-8.8-2.7-12.6 2.7-3.7 5.3-14.4 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-5.5-2.7-23.1-8.5-44-27.1-16.2-14.4-27.1-32.3-30.3-37.7-3.2-5.3-.3-8.2 2.4-11 2.5-2.5 5.5-6.5 8.2-9.7 2.7-3.2 3.7-5.3 5.6-8.8 1.9-3.5.9-6.6-.5-9.4-1.4-2.7-12.6-30.3-17.3-41.5-4.5-10.8-9.1-9.3-12.6-9.5-3.2-.2-6.9-.2-10.6-.2s-9.6 1.4-14.7 6.9c-5.1 5.5-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.7 3.7 39.1 59.7 94.7 83.8 13.2 5.7 23.5 9.1 31.5 11.7 13.2 4.2 25.2 3.6 34.7 2.2 10.6-1.6 32.6-13.3 37.2-26.2 4.6-12.8 4.6-23.8 3.2-26.2-1.3-2.4-5-3.7-10.5-6.4z" />
         </svg>
       );
+    case "email":
+      return (
+        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 11 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" />
+        </svg>
+      );
+    default:
+      return null;
   }
 }
