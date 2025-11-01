@@ -47,7 +47,14 @@ export default function Page({
     <main>
       {/* HERO con video */}
       <StickyMobileBar title="Mi piso" />
-      <Hero logoText="mi piso" title={t("title")} videoSrc={heroVideoSrc} />
+      <Hero
+        logoText="mi piso"
+        title={t("title")}
+        media={{
+          kind: "video",
+          src: heroVideoSrc,
+        }}
+      />
 
       <Information items={items} />
 

@@ -6,7 +6,7 @@ import { Points } from "@/app/sections/OurStory";
 import { PointItem } from "@/app/sections/OurStory/Points/Points";
 import { pointsItems as pointsItemsBase } from "./data";
 
-const heroVideoSrc = "/videos/hero_video.mp4";
+const heroImageSrc = "/images/heros/our-story.webp";
 
 export default function AboutPage({
   params,
@@ -24,7 +24,15 @@ export default function AboutPage({
 
   return (
     <main>
-      <Hero logoText="mi piso" videoSrc={heroVideoSrc} />
+      <Hero
+        logoText="mi piso"
+        title={t("title")}
+        media={{
+          kind: "image",
+          src: heroImageSrc,
+          priority: true,
+        }}
+      />
 
       <Points items={pointsItems} />
     </main>

@@ -8,7 +8,7 @@ import { faqsItems as faqsItemsBase } from "./data";
 import { Faqs } from "@/app/sections/Faqs";
 import { FAQItem } from "@/app/components/FAQAccordion/FAQAccordion";
 
-const heroVideoSrc = "/videos/hero_video.mp4";
+const heroImageSrc = "/images/heros/our-story.webp";
 
 export default function AboutPage({
   params,
@@ -27,7 +27,15 @@ export default function AboutPage({
 
   return (
     <main>
-      <Hero logoText="mi piso" videoSrc={heroVideoSrc} />
+      <Hero
+        logoText="mi piso"
+        title={t("title")}
+        media={{
+          kind: "image",
+          src: heroImageSrc,
+          priority: true,
+        }}
+      />
 
       <Faqs items={faqsItems} title={t("title")} />
     </main>
