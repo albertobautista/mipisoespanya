@@ -8,10 +8,10 @@ interface ReviewsProps {
 
 const Reviews = ({ items }: ReviewsProps) => {
   return (
-    <section className="max-w-7xl grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {items.map((item, index) => (
         <PromoCard
-          key={item.title + item.subtitle + index}
+          key={item.title + index}
           title={item.title}
           subtitle={item.subtitle}
           image={item.image}

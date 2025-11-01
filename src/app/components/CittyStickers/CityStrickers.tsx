@@ -26,8 +26,8 @@ export default function CityStickersCloud({
     return items.map((it, i) => {
       const col = i % 4;
       const row = Math.floor(i / 4);
-      let x = 20 + col * 21;
-      let y = 50 + row * 13;
+      let x = 20 + col * 18;
+      let y = 50 + row * 15;
       // subtle horizontal/vertical offsets
       if (i % 2 === 0) x += 2;
       if (i % 3 === 0) y -= 3;
