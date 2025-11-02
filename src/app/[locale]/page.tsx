@@ -46,7 +46,7 @@ export default function Page({
   return (
     <main>
       {/* HERO con video */}
-      <StickyMobileBar title="Mi piso" />
+      {/* <StickyMobileBar title="Mi piso" /> */}
       <Hero
         logoText="mi piso"
         title={t("title")}

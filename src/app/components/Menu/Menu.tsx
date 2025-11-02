@@ -1,118 +1,200 @@
 "use client";
-// import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
-import { menuItems } from "./contants"; // corrige a ./constants si aplica
-import { LocaleSwitcher } from "../LocaleSwitcher";
-import React from "react";
-import { WhatsappButton } from "../Buttons/WhatsappButton";
-import { Link } from "@/app/navigation";
 
-export default function Menu() {
+import React from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
+import { Link } from "@/app/navigation";
+import { Menu as MenuIcon, X } from "lucide-react"; // íconos limpios
+import { LocaleSwitcher } from "../LocaleSwitcher";
+import { WhatsappButton } from "../Buttons/WhatsappButton";
+import { menuItems } from "./contants";
+import Image from "next/image";
+import { getSocialIcon } from "@/app/helpers/utils";
+
+type MenuProps = {
+  /** Clase Tailwind para el fondo del header fijo */
+  barBg?: string; // ej: "bg-black/70", "bg-[#101010]/80", "bg-emerald-900/80"
+  /** Aplica blur al fondo del header */
+  blur?: boolean;
+  /** Color de texto (Tailwind) */
+  textClass?: string; // ej: "text-white", "text-gray-100"
+};
+
+const HEADER_H = 56; // h-14
+
+const social: {
+  icon:
+    | "instagram"
+    | "tiktok"
+    | "facebook"
+    | "linkedin"
+    | "twitter"
+    | "youtube"
+    | "whatsapp"
+    | "email";
+  href: string;
+}[] = [
+  { icon: "instagram", href: "https://www.instagram.com/mipiso_es/" },
+  {
+    icon: "whatsapp",
+    href: `https://wa.me/+34658509768?text=${encodeURIComponent(
+      "Hola, me gustaría más información."
+    )}`,
+  },
+  {
+    icon: "email",
+    href: `mailto:mipisorelocation@gmail.com`,
+  },
+];
+
+export default function Menu({
+  barBg = "bg-[#0B0B0B]/80", // cambia aquí tu color por defecto
+  blur = true,
+  textClass = "text-white",
+}: MenuProps) {
   const t = useTranslations("home");
   const locale = useLocale() as "es" | "en";
+  const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
 
-  // Cierra el menú al cambiar de tamaño a md+
+  React.useEffect(() => setOpen(false), [pathname]);
+
   React.useEffect(() => {
-    const onResize = () => {
-      if (window.innerWidth >= 768) setOpen(false);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    const original = document.body.style.overflow;
+    if (open) document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = original;
     };
+  }, [open]);
+
+  React.useEffect(() => {
+    const onResize = () => window.innerWidth >= 768 && setOpen(false);
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
   return (
-    <nav
-      aria-label="Main"
-      className="mx-auto flex items-center justify-between px-4 sm:px-6 py-3 md:py-5 text-white "
-    >
-      {/* Desktop menu */}
-      <div className="hidden md:flex justify-end w-full gap-6 text-sm font-medium text-white/90">
-        {menuItems.map((item) => (
-          <Link
-            key={item.id}
-            href={{ pathname: item.href }}
-            className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
+    <>
+      {/* HEADER FIJO */}
+      <nav
+        aria-label="Main"
+        className={`fixed top-0 inset-x-0 z-50 ${barBg} ${
+          blur ? "backdrop-blur-md" : ""
+        }`}
+        style={{ paddingTop: "env(safe-area-inset-top)" }}
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div
+            className={`h-14 flex items-center justify-between ${textClass}`}
           >
-            {t(`menu.${item.id}`)}
-          </Link>
-        ))}
+            {/* Marca */}
+            <Link href="/" locale={locale} className="flex items-center gap-2">
+              <Image
+                src="/images/logos/text-white.png" // cambia por tu ruta real
+                alt="Mi Piso Logo"
+                width={220} // ajusta el tamaño según tu diseño
+                height={52}
+                className="object-contain"
+                priority
+              />
+            </Link>
+            {/* Desktop */}
+            <div className="hidden md:flex justify-end w-full gap-6 text-sm font-medium text-white/90">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.id}
+                  href={{ pathname: item.href }}
+                  className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
+                >
+                  {t(`menu.${item.id}`)}
+                </Link>
+              ))}
+              <div className="ml-2 flex gap-4">
+                <LocaleSwitcher />
+              </div>
+              <div className="ml-2 flex gap-4">
+                <WhatsappButton
+                  phone="+34658509768"
+                  variant="icon"
+                  message="Ponte en contacto"
+                />
+              </div>
+            </div>
 
-        {/* Locale Switcher */}
-        <div className="ml-2 flex  gap-4">
-          <LocaleSwitcher />
+            {/* Mobile */}
+            <div className="flex w-full justify-end items-center gap-3 md:hidden">
+              <LocaleSwitcher />
+              <button
+                className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/20"
+                aria-label={open ? "Cerrar menú" : "Abrir menú"}
+                aria-expanded={open}
+                aria-controls="mobile-menu"
+                type="button"
+                onClick={() => setOpen((v) => !v)}
+              >
+                {open ? (
+                  <X size={20} strokeWidth={2.25} />
+                ) : (
+                  <MenuIcon size={20} strokeWidth={2.25} />
+                )}
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="ml-2 flex gap-4">
-          <WhatsappButton
-            phone="+34658509768"
-            variant="icon"
-            message="Ponte en contacto"
-          />
-        </div>
-      </div>
+        <div className="h-px bg-white/10" />
+      </nav>
 
-      {/* Mobile right: locale + burger */}
-      <div className="flex w-full justify-end items-center gap-3 md:hidden">
-        <LocaleSwitcher />
-        {/* <button
-          className="grid h-10 w-10 place-items-center rounded-full bg-black/40 text-white ring-1 ring-white/30"
-          aria-label={open ? "Cerrar menú" : "Abrir menú"}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span
-            className={`block h-0.5 w-5 bg-white transition-transform ${
-              open ? "translate-y-[7px] rotate-45" : ""
-            }`}
-          />
-          <span
-            className={`mt-1 block h-0.5 w-5 bg-white transition-opacity ${
-              open ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <span
-            className={`mt-1 block h-0.5 w-5 bg-white transition-transform ${
-              open ? "-translate-y-[7px] -rotate-45" : ""
-            }`}
-          />
-        </button> */}
-      </div>
+      {/* Spacer bajo header */}
+      <div style={{ height: HEADER_H }} aria-hidden />
 
-      {/* Mobile drawer */}
+      {/* DRAWER MÓVIL */}
       <div
         id="mobile-menu"
-        className={`md:hidden fixed inset-x-0 top-0 z-40 transform transition-transform duration-300 ${
-          open ? "translate-y-0" : "-translate-y-full"
+        className={`md:hidden fixed inset-0 z-40 transition-opacity duration-200 ${
+          open
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
+        onClick={() => setOpen(false)}
       >
-        <div className="bg-black/70 backdrop-blur-sm">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
-            <div className="flex items-center justify-between">
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+        <div
+          className={`absolute inset-x-0 top-0 transition-transform duration-300 ${
+            open ? "translate-y-0" : "-translate-y-full"
+          }`}
+          style={{
+            paddingTop: `calc(${HEADER_H}px + env(safe-area-inset-top))`,
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-8 text-white">
+            <div className="absolute top-0 left-0 right-0 h-14 flex items-center justify-between px-4 sm:px-6">
               <Link
                 href="/"
                 locale={locale}
-                className="font-bold tracking-wide text-white"
+                className="font-bold tracking-wide"
               >
                 Mi piso
               </Link>
               <button
-                className="grid h-10 w-10 place-items-center rounded-full bg-black/40 text-white ring-1 ring-white/30"
+                className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/20"
                 aria-label="Cerrar menú"
                 onClick={() => setOpen(false)}
               >
-                ✕
+                <X size={20} strokeWidth={2.25} />
               </button>
             </div>
 
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-2 space-y-2">
               {menuItems.map((item) => (
                 <li key={item.id}>
                   <Link
                     href={item.href}
                     locale={locale}
-                    className="block rounded-md px-3 py-3 text-base font-semibold tracking-wide text-white/90 hover:bg-white/10"
+                    className="block rounded-md font-cocomat px-3 py-3 text-base font-semibold tracking-wide text-white hover:bg-white/10"
                     onClick={() => setOpen(false)}
                   >
                     {t(`menu.${item.id}`)}
@@ -121,16 +203,23 @@ export default function Menu() {
               ))}
             </ul>
 
-            <div className="mt-4 border-t border-white/10 pt-4">
-              <LocaleSwitcher />
-            </div>
-
-            <div className="pt-6 pb-4 text-xs text-white/60">
-              © {new Date().getFullYear()} Mi piso
+            <div className="mt-6 ml-2 flex gap-3">
+              {social.map((s, idx) => (
+                <a
+                  key={idx}
+                  href={s.href}
+                  className="grid h-10 w-10 place-items-center rounded-full bg-light-green hover:bg-light-green/80 transition"
+                  aria-label={s.icon}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {getSocialIcon(s.icon)}
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 }
