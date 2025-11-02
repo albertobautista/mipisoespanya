@@ -12,31 +12,31 @@ import {
 export const items: ShowcaseItem[] = [
   {
     image: {
-      src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop",
+      src: "/images/information/information-1.webp",
       alt: "Estancia de trabajo cómoda",
     },
   },
   {
     image: {
-      src: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop",
+      src: "/images/information/information-2.webp",
       alt: "Sala moderna",
     },
   },
   {
     image: {
-      src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+      src: "/images/information/information-3.webp",
       alt: "Apartamento luminoso",
     },
   },
   {
     image: {
-      src: "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop",
+      src: "/images/information/information-4.webp",
       alt: "Recepción acogedora",
     },
   },
   {
     image: {
-      src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+      src: "/images/information/information-5.webp",
       alt: "Apartamento luminoso",
     },
   },
@@ -46,7 +46,7 @@ export const cards = [
   {
     title: "Texto a la izquierda, imagen a la derecha",
     image: {
-      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      src: "/images/how-we-work/how-we-work-1.webp",
       alt: "Demo 1",
     },
     backgroundClass: "bg-neutral-100",
@@ -54,7 +54,7 @@ export const cards = [
   {
     title: "Texto a la izquierda, imagen a la derecha",
     image: {
-      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      src: "/images/how-we-work/how-we-work-2.webp",
       alt: "Demo 1",
     },
     backgroundClass: "bg-neutral-100",
@@ -62,7 +62,7 @@ export const cards = [
   {
     title: "Texto a la izquierda, imagen a la derecha",
     image: {
-      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      src: "/images/how-we-work/how-we-work-3.webp",
       alt: "Demo 1",
     },
     backgroundClass: "bg-neutral-100",
@@ -70,7 +70,7 @@ export const cards = [
   {
     title: "Texto a la izquierda, imagen a la derecha",
     image: {
-      src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&q=80&w=1470",
+      src: "/images/how-we-work/how-we-work-4.webp",
       alt: "Demo 1",
     },
     backgroundClass: "bg-neutral-100",

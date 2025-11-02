@@ -1,5 +1,6 @@
 // StepShowcase.tsx
 "use client";
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -8,11 +9,13 @@ type Props = {
   /** Título del bloque de texto */
   title: string;
   /** Imagen única */
-  image: { src: string; alt: string };
+  image: { src: string; alt: string; width?: number; height?: number };
   /** Lado donde se coloca la imagen en desktop */
   imageSide?: "right" | "left";
   /** Clase extra opcional para el contenedor */
   className?: string;
+  /** Altura fija (opcional) */
+  imageHeight?: number;
 };
 
 export default function StepShowcase({
@@ -21,6 +24,7 @@ export default function StepShowcase({
   image,
   imageSide = "right",
   className = "",
+  imageHeight = 300,
 }: Props) {
   const imageFirst = imageSide === "left";
 
@@ -35,9 +39,7 @@ export default function StepShowcase({
       {/* Número */}
       <div
         className={[
-          "md:col-span-1",
-          "text-2xl md:text-3xl font-medium tracking-wide font-cocomat",
-          "text-neutral-800",
+          "md:col-span-1 text-2xl md:text-3xl font-medium tracking-wide font-cocomat text-neutral-800",
           imageFirst ? "order-1" : "order-1",
         ].join(" ")}
         aria-hidden
@@ -45,33 +47,36 @@ export default function StepShowcase({
         {typeof number === "number" && number < 10 ? `0${number}` : number}
       </div>
 
-      {/* Texto (un solo bloque) */}
+      {/* Texto */}
       <div
         className={[
-          "md:col-span-7",
-          "order-2",
+          "md:col-span-7 order-2",
           imageFirst ? "md:order-2" : "md:order-2",
         ].join(" ")}
       >
-        <h2 className="text-2xl  font-cocomat leading-tight font-semibold text-neutral-900">
+        <h2 className="text-2xl font-cocomat leading-tight font-semibold text-neutral-900">
           {title}
         </h2>
       </div>
 
-      {/* Imagen única */}
+      {/* Imagen */}
       <div
         className={[
-          "md:col-span-4",
-          "order-3",
-          imageFirst ? "md:order-1" : "md:order-3", // controla izquierda/derecha en desktop
+          "md:col-span-4 order-3",
+          imageFirst ? "md:order-1" : "md:order-3",
         ].join(" ")}
       >
-        <div className="relative w-full overflow-hidden rounded-2xl shadow-sm">
-          {/* Usa <Image> de Next si quieres; aquí dejo <img> para ser agnóstico */}
-          <img
+        <div
+          className="relative w-full overflow-hidden rounded-2xl shadow-sm"
+          style={{ height: imageHeight }}
+        >
+          <Image
             src={image.src}
             alt={image.alt}
-            className="block w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={false}
           />
         </div>
       </div>
