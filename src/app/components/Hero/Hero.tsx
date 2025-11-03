@@ -89,7 +89,7 @@ export default function Hero({
 
       {/* TOP NAV sobre el fondo */}
       <div className="absolute inset-x-0 top-0 z-20">
-        <Menu />
+        <Menu variant="hero" barBg="bg-green/90" />
       </div>
 
       {/* CONTENIDO */}
