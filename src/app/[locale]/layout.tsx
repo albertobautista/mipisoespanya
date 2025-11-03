@@ -1,35 +1,48 @@
-import "../globals.css";
-import { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale, getMessages } from "next-intl/server";
+import {
+  setRequestLocale,
+  getMessages,
+  getTranslations,
+} from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "@fontsource/poiret-one";
 import { Footer } from "../components/Footer";
-import { HoverVideoCard } from "../components/HoverVideoCard";
+import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Mi Piso España",
-  description:
-    "Somos una agencia de reubicación especializada en el sector inmobiliario de Madrid y Barcelona, brindando asesoramiento y orientación para ayudarle a encontrar el hogar que mejor se adapte a sus necesidades.",
-  icons: {
-    icon: "/images/logos/logo.webp",
-    apple: "/images/logos/logo.webp",
-  },
+type Props = {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("home.title"),
+    description: t("home.description"),
+    openGraph: {
+      title: t("home.title"),
+      description: t("home.description"),
+      locale: locale === "es" ? "es_ES" : "en_US",
+      alternateLocale: locale === "es" ? "en_US" : "es_ES",
+    },
+    alternates: {
+      languages: {
+        es: "/es",
+        en: "/en",
+      },
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) notFound();
@@ -39,18 +52,11 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    // 4) Evita mismatches si el cliente tarda en hidratar
-    <html lang={locale} suppressHydrationWarning>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <main>{children}</main>
-          {/* Evita Date() dinámico en el markup que se hidrata */}
-
-          <footer>
-            <Footer />
-          </footer>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div className="min-h-screen flex flex-col">
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
+    </NextIntlClientProvider>
   );
 }

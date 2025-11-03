@@ -1,4 +1,36 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Mi Piso España - Agencia de Reubicación en Madrid y Barcelona",
+      "description": "Encuentra tu hogar ideal en Madrid y Barcelona con nuestra agencia de reubicación especializada. Servicios personalizados para expatriados y familias.",
+      "ogTitle": "Mi Piso España - Tu Hogar Perfecto te Espera",
+      "ogDescription": "Servicios completos de reubicación en España. Te ayudamos a encontrar y alquilar tu vivienda ideal en Madrid y Barcelona.",
+      "ogImageAlt": "Mi Piso España - Agencia de Reubicación",
+      "twitterTitle": "Mi Piso España - Expertos en Reubicación",
+      "twitterDescription": "Encuentra tu hogar ideal en España con nuestra ayuda especializada."
+    },
+    "about": {
+      "title": "Nuestra Historia | Mi Piso España",
+      "description": "Conoce la historia de Mi Piso España, tu agencia de confianza especializada en reubicación y servicios inmobiliarios en Madrid y Barcelona.",
+      "ogTitle": "Nuestra Historia - Mi Piso España",
+      "ogDescription": "Descubre cómo Mi Piso España se convirtió en la agencia de reubicación de referencia en Madrid y Barcelona.",
+      "ogImageAlt": "Equipo Mi Piso España"
+    },
+    "reviews": {
+      "title": "Reseñas de Clientes | Mi Piso España",
+      "description": "Lee las experiencias reales de nuestros clientes que encontraron su hogar ideal en Madrid y Barcelona con Mi Piso España.",
+      "ogTitle": "Reseñas - Mi Piso España",
+      "ogDescription": "Testimonios reales de clientes satisfechos con nuestros servicios de reubicación en España.",
+      "ogImageAlt": "Clientes satisfechos Mi Piso España"
+    },
+    "faqs": {
+      "title": "Preguntas Frecuentes | Mi Piso España",
+      "description": "Resuelve todas tus dudas sobre nuestros servicios de reubicación en Madrid y Barcelona. Información sobre socios y proceso de alquiler.",
+      "ogTitle": "FAQ - Mi Piso España",
+      "ogDescription": "Respuestas a las preguntas más frecuentes sobre reubicación y alquiler en España.",
+      "ogImageAlt": "Preguntas frecuentes Mi Piso España"
+    }
+  },
   "home": {
     "title": "NOSOTROS HACEMOS LA VIVIENDA, TÚ LA CIUDAD",
     "logoSubtitle": "Sus confiables cazadores de casas",

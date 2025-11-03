@@ -1,4 +1,36 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Mi Piso España - Relocation Agency in Madrid and Barcelona",
+      "description": "Find your ideal home in Madrid and Barcelona with our specialized relocation agency. Personalized services for expatriates and families.",
+      "ogTitle": "Mi Piso España - Your Perfect Home Awaits",
+      "ogDescription": "Complete relocation services in Spain. We help you find and rent your ideal home in Madrid and Barcelona.",
+      "ogImageAlt": "Mi Piso España - Relocation Agency",
+      "twitterTitle": "Mi Piso España - Relocation Experts",
+      "twitterDescription": "Find your ideal home in Spain with our specialized assistance."
+    },
+    "about": {
+      "title": "Our Story | Mi Piso España",
+      "description": "Learn about Mi Piso España's story, your trusted agency specialized in relocation and real estate services in Madrid and Barcelona.",
+      "ogTitle": "Our Story - Mi Piso España",
+      "ogDescription": "Discover how Mi Piso España became the leading relocation agency in Madrid and Barcelona.",
+      "ogImageAlt": "Mi Piso España Team"
+    },
+    "reviews": {
+      "title": "Client Reviews | Mi Piso España",
+      "description": "Read real experiences from our clients who found their ideal home in Madrid and Barcelona with Mi Piso España.",
+      "ogTitle": "Reviews - Mi Piso España",
+      "ogDescription": "Real testimonials from satisfied clients with our relocation services in Spain.",
+      "ogImageAlt": "Satisfied Mi Piso España clients"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions | Mi Piso España",
+      "description": "Get answers to all your questions about our relocation services in Madrid and Barcelona. Information about partners and rental process.",
+      "ogTitle": "FAQ - Mi Piso España",
+      "ogDescription": "Answers to the most frequently asked questions about relocation and rentals in Spain.",
+      "ogImageAlt": "Mi Piso España FAQs"
+    }
+  },
   "home": {
     "title": "WE DO THE HOUSING, YOU DO THE CITY",
     "logoSubtitle": "Your trusrty home hunters",

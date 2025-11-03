@@ -25,11 +25,12 @@ type ImageMedia = {
 type Media = VideoMedia | ImageMedia;
 
 interface HeroProps {
-  media?: Media; // <-- ahora controlas imagen o video
+  media?: Media;
   logoText?: string;
   title?: string;
   logoSubtitle?: string;
   country?: string;
+  priority?: boolean; // Para optimizar la carga above-the-fold
 }
 
 export default function Hero({
@@ -47,9 +48,13 @@ export default function Hero({
   title = "We do the room. You do the city.",
   logoSubtitle = "Your trusty home hunters",
   country = "spain",
+  priority = true,
 }: HeroProps) {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section
+      className="relative w-full overflow-hidden"
+      aria-label="Hero section"
+    >
       {/* MEDIA DE FONDO */}
       {media.kind === "video" ? (
         <>
@@ -95,12 +100,12 @@ export default function Hero({
       {/* CONTENIDO */}
       <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8">
         {/* Logo */}
-        <div
+        <h1
           className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
           style={{ fontSize: "clamp(96px, 12vw, 150px)", lineHeight: "0.9" }}
         >
           {logoText}
-        </div>
+        </h1>
 
         {/* País + subtítulo */}
         <div className="mt-1 flex flex-col gap-1 text-white/90">

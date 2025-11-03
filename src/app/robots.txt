@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mipisoespana.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow admin areas (if you have any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow search engines to index important pages
+Allow: /es/
+Allow: /en/
+Allow: /es/about
+Allow: /en/about
+Allow: /es/reviews
+Allow: /en/reviews
+Allow: /es/faqs
+Allow: /en/faqs

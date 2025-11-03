@@ -1,5 +1,5 @@
 import { use } from "react";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { Hero } from "../components/Hero";
 import { StickyMobileBar } from "../components/StickyMobileBar";
@@ -12,14 +12,44 @@ import {
 import { Cities } from "../sections/Cities";
 import { HowWeWork } from "../sections/HowWeWork";
 import { WhatMakesUsUnique } from "../sections/WhatMakesUsUnique";
+import type { Metadata } from "next";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("home.title"),
+    description: t("home.description"),
+    openGraph: {
+      title: t("home.ogTitle"),
+      description: t("home.ogDescription"),
+      type: "website",
+      images: [
+        {
+          url: "/images/og-home.jpg",
+          width: 1200,
+          height: 630,
+          alt: t("home.ogImageAlt"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("home.twitterTitle"),
+      description: t("home.twitterDescription"),
+      images: ["/images/twitter-home.jpg"],
+    },
+  };
+}
 
 const heroVideoSrc = "/videos/hero_video.mp4";
 
-export default function Page({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function Page({ params }: Props) {
   const { locale } = use(params);
   setRequestLocale(locale);
   const t = useTranslations("home");
@@ -44,9 +74,31 @@ export default function Page({
   }));
 
   return (
-    <main>
+    <>
+      {/* Structured Data para la página principal */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: t("title"),
+            description: t("whatMakesUsUnique.title"),
+            url: `https://mipisoespana.com/${locale}`,
+            mainEntity: {
+              "@type": "Service",
+              name: "Servicios de Reubicación",
+              provider: {
+                "@type": "RealEstateAgent",
+                name: "Mi Piso España",
+              },
+              areaServed: ["Madrid", "Barcelona"],
+            },
+          }),
+        }}
+      />
+
       {/* HERO con video */}
-      {/* <StickyMobileBar title="Mi piso" /> */}
       <Hero
         logoText="mi piso"
         title={t("title")}
@@ -70,6 +122,6 @@ export default function Page({
         subtitle={t("howWeWork.subtitle")}
         items={cards}
       />
-    </main>
+    </>
   );
 }
