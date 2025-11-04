@@ -38,7 +38,7 @@ export default function PartnersGrid({
         <h2
           className="text-center font-poiret text-black font-semibold uppercase tracking-wide"
           style={{
-            fontSize: "clamp(20px, 3vw, 36px)",
+            fontSize: "clamp(30px, 3vw, 36px)",
             lineHeight: "1.15",
           }}
         >

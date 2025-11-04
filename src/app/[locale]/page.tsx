@@ -8,7 +8,6 @@ import {
   cards as baseCards,
   services as baseServices,
 } from "../sections/data";
-import { Cities } from "../sections/Cities";
 import { HowWeWork } from "../sections/HowWeWork";
 import { WhatMakesUsUnique } from "../sections/WhatMakesUsUnique";
 import type { Metadata } from "next";

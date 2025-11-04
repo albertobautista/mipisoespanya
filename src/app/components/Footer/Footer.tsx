@@ -162,7 +162,7 @@ export default function Footer({
           </div>
 
           {/* Big logo + claim */}
-          <div className="mt-10 grid  grid-cols-1 items-end gap-8 md:mt-2 md:grid-cols-6">
+          <div className="mt-10 grid  grid-cols-1 items-end md:gap-8 md:mt-2 md:grid-cols-6">
             {/* Logo ocupa las tres primeras columnas */}
             <div className="md:col-span-4">
               <h1
@@ -197,7 +197,7 @@ export default function Footer({
           {/* Bottom bar */}
           <div className="mt-10 border-t border-black/10 py-6 text-sm text-black/70">
             <div className="flex flex-col justify-end md:flex-row">
-              <p>© Mi Piso Todos los derechos reservados.</p>
+              <p>© Mi Piso {t("rights")}</p>
             </div>
           </div>
         </div>
