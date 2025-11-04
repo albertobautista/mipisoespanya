@@ -318,6 +318,20 @@
       }
     }
   },
+  "cities": {
+    "findHome": "Your ideal home in",
+    "aboutCity": "About {city}",
+    "population": "Population",
+    "inhabitants": "inhabitants",
+    "averageRent": "Average rent",
+    "region": "Region",
+    "bestNeighborhoods": "Best Neighborhoods",
+    "whyChoose": "Why choose {city}?",
+    "transport": "Transport",
+    "readyToMove": "Ready to move to {city}?",
+    "ctaDescription": "Our expert team is here to help you through every step of the relocation process.",
+    "discover": "Discover {city}"
+  },
   "footer": {
     "title": "Success stories from our clients",
     "contact": {

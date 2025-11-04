@@ -2,8 +2,7 @@ import { use } from "react";
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { Hero } from "@/app/components/Hero";
-import { Points } from "@/app/sections/OurStory";
-import { PointItem } from "@/app/sections/OurStory/Points/Points";
+
 import { faqsItems as faqsItemsBase } from "./data";
 import { Faqs } from "@/app/sections/Faqs";
 import { FAQItem } from "@/app/components/FAQAccordion/FAQAccordion";

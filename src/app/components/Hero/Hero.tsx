@@ -48,7 +48,6 @@ export default function Hero({
   title = "We do the room. You do the city.",
   logoSubtitle = "Your trusty home hunters",
   country = "spain",
-  priority = true,
 }: HeroProps) {
   return (
     <section

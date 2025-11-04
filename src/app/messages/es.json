@@ -318,6 +318,20 @@
       }
     }
   },
+  "cities": {
+    "findHome": "Tu hogar ideal en",
+    "aboutCity": "Sobre {city}",
+    "population": "Población",
+    "inhabitants": "habitantes",
+    "averageRent": "Alquiler promedio",
+    "region": "Región",
+    "bestNeighborhoods": "Mejores Barrios",
+    "whyChoose": "¿Por qué elegir {city}?",
+    "transport": "Transporte",
+    "readyToMove": "¿Listo para mudarte a {city}?",
+    "ctaDescription": "Nuestro equipo de expertos está aquí para ayudarte en cada paso del proceso de reubicación.",
+    "discover": "Descubre {city}"
+  },
   "footer": {
     "title": "Historias de éxito de nuestros clientes",
     "contact": {

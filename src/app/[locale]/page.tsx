@@ -2,7 +2,6 @@ import { use } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { Hero } from "../components/Hero";
-import { StickyMobileBar } from "../components/StickyMobileBar";
 import Information from "../sections/Information/Information";
 import {
   items as baseItems,
@@ -13,6 +12,7 @@ import { Cities } from "../sections/Cities";
 import { HowWeWork } from "../sections/HowWeWork";
 import { WhatMakesUsUnique } from "../sections/WhatMakesUsUnique";
 import type { Metadata } from "next";
+import { CitiesData } from "../sections/CitiesData";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -115,7 +115,7 @@ export default function Page({ params }: Props) {
         items={services}
       />
 
-      <Cities />
+      <CitiesData />
 
       <HowWeWork
         title={t("howWeWork.title")}
