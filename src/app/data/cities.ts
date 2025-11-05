@@ -83,7 +83,7 @@ export const cities: CityData[] = [
       { zone: "Justicia", rooms: "1 hab", priceRange: "1,800-2,000" },
       { zone: "Justicia", rooms: "2 hab", priceRange: "1,800-2000" },
       { zone: "Chamartín", rooms: "1 hab", priceRange: "1,500-1,800" },
-      { zone: "Justicia", rooms: "2 hab", priceRange: "1,800-2,000" },
+      { zone: "Chamartín", rooms: "2 hab", priceRange: "1,800-2,000" },
     ],
     coordinates: {
       lat: 40.4168,
