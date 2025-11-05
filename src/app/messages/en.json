@@ -282,15 +282,48 @@
     "findHome": "Your ideal home in",
     "aboutCity": "About {city}",
     "population": "Population",
-    "inhabitants": "inhabitants",
-    "averageRent": "Average rent",
+    "inhabitants": "Inhabitants",
+    "language": "Language",
     "region": "Region",
     "bestNeighborhoods": "Best Neighborhoods",
     "whyChoose": "Why choose {city}?",
     "transport": "Transport",
     "readyToMove": "Ready to move to {city}?",
     "ctaDescription": "Our expert team is here to help you through every step of the relocation process.",
-    "discover": "Discover {city}"
+    "discover": "Discover {city}",
+    "features": {
+      "culture": "Culture",
+      "nightlife": "Nightlife",
+      "connectivity": "Connectivity",
+      "gastronomy": "Gastronomy",
+      "education": "Education",
+      "health": "Health",
+      "lifestyle": "Healthy lifestyle",
+      "localLife": "Local life",
+      "cosmopolitan": "Cosmopolitan city",
+      "architecture": "Unique architecture (Gaudí)",
+      "beach": "Mediterranean beach",
+      "techSector": "Tech hub",
+      "weather": "Weather",
+      "catalanCulture": "Catalan culture"
+    },
+    "languages": {
+      "spanish": "Spanish",
+      "catalanSpanish": "Catalan/Spanish"
+    },
+    "transportOptions": {
+      "metro13Lines": "Metro (13 lines)",
+      "busNetwork": "Bus network",
+      "cercanias": "Commuter trains",
+      "trainSystem": "Railway system",
+      "publicBikes": "Public bike system",
+      "metro8Lines": "Metro (8 lines)",
+      "tmbBusNetwork": "Bus",
+      "railway": "Railway",
+      "funicularCableCar": "Funicular and cable car",
+      "modernTrams": "Modern trams",
+      "bicingBikes": "Bicing (public bikes)"
+    }
   },
   "footer": {
     "rights": "All rights reserved.",

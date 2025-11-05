@@ -14,8 +14,8 @@ const CityTransport = async ({ city }: CityTransportProps) => {
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900 font-poiret">
           {t("transport")}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {city.transportInfo.map((info, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {city.transportInfo.map((transportKey, index) => (
             <div
               key={index}
               className="flex items-center gap-4 bg-white p-4 rounded-lg"
@@ -23,7 +23,9 @@ const CityTransport = async ({ city }: CityTransportProps) => {
               <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-green-600 font-bold font-cocomat">✓</span>
               </div>
-              <span className="text-gray-700 font-cocomat">{info}</span>
+              <span className="text-gray-700 font-cocomat">
+                {t(`transportOptions.${transportKey}`)}
+              </span>
             </div>
           ))}
         </div>

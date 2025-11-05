@@ -282,15 +282,48 @@
     "findHome": "Tu hogar ideal en",
     "aboutCity": "Sobre {city}",
     "population": "Población",
-    "inhabitants": "habitantes",
-    "averageRent": "Alquiler promedio",
+    "inhabitants": "Habitantes",
+    "language": "Idioma",
     "region": "Región",
     "bestNeighborhoods": "Mejores Barrios",
     "whyChoose": "¿Por qué elegir {city}?",
     "transport": "Transporte",
     "readyToMove": "¿Listo para mudarte a {city}?",
     "ctaDescription": "Nuestro equipo de expertos está aquí para ayudarte en cada paso del proceso de reubicación.",
-    "discover": "Descubre {city}"
+    "discover": "Descubre {city}",
+    "features": {
+      "culture": "Cultura",
+      "nightlife": "Vida nocturna",
+      "connectivity": "Conectividad",
+      "gastronomy": "Gastronomía",
+      "education": "Educación",
+      "health": "Salud",
+      "lifestyle": "Estilo de vida saludable",
+      "localLife": "Vida local",
+      "cosmopolitan": "Ciudad cosmopolita",
+      "architecture": "Arquitectura única (Gaudí)",
+      "beach": "Playa mediterránea",
+      "techSector": "Sector tecnológico",
+      "weather": "Clima",
+      "catalanCulture": "Cultura catalana"
+    },
+    "languages": {
+      "spanish": "Español",
+      "catalanSpanish": "Catalán/Español"
+    },
+    "transportOptions": {
+      "metro13Lines": "Metro (13 líneas)",
+      "busNetwork": "Red de autobuses",
+      "cercanias": "Cercanías",
+      "trainSystem": "Sistema ferroviario",
+      "publicBikes": "Sistema bici pública",
+      "metro8Lines": "Metro (8 líneas)",
+      "tmbBusNetwork": "Autobuses",
+      "railway": "Ferrocarril",
+      "funicularCableCar": "Funicular y teleférico",
+      "modernTrams": "Tranvías modernos",
+      "bicingBikes": "Bicing (bicicletas públicas)"
+    }
   },
   "footer": {
     "rights": "Todos los derechos reservados.",

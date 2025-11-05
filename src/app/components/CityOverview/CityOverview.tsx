@@ -25,10 +25,10 @@ const CityOverview = async ({ city }: CityOverviewProps) => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-3xl font-bold text-green-600 mb-2 font-cocomat">
-                {city.averageRent}
+                {t(`languages.${city.language}`)}
               </div>
               <div className="text-gray-700 font-medium font-cocomat">
-                {t("averageRent")}
+                {t("language")}
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
