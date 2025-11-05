@@ -156,116 +156,76 @@
     "showLess": "Show less",
     "reviews": {
       "0": {
-        "title": "Andrés Lozano",
-        "subtitle": "Thank you so much, Paloma and Ana, for everything. It was a wonderful experience. You made us feel very comfortable, which is so nice when visiting a country far from home. We were a bit picky or critical about the apartments, but I think we made a great choice with this one and we'll really enjoy it. THANK YOU!"
+        "title": "Ana Sophie Mifsud",
+        "subtitle": "We’re so happy with Mi Piso, we highly recommend them! We were searching for an apartment from the United States ahead of our move to Barcelona for my master’s program. While many of my classmates spent months trying to find a place and navigate how the system works here, thanks to Ana and Paloma we found our ideal home quickly and easily. Throughout the entire process, we felt supported and accompanied during what was a huge life transition for us (and for our dog!). We truly couldn’t be more grateful."
       },
       "1": {
-        "title": "They made finding a home in a new country so much easier.",
-        "subtitle": "I felt supported every step of the way."
+        "title": "Nagib Gobera",
+        "subtitle": "Paloma y su equipo han sido simplemente increíbles. Desde el primer momento nos dieron todo su apoyo para encontrar el departamento ideal y se desvivieron por mostrarnos siempre las mejores opciones. Nos consiguieron citas de inmediato y, gracias a su dedicación, logramos cerrar el departamento de nuestros sueños aquí en Barcelona: con terraza, dos cuartos, dos baños, y cumpliendo cada una de las necesidades que teníamos en mente. Lo que más valoramos fue su disposición y cercanía: respondieron de forma inmediata a todas nuestras dudas, nos apoyaron en cada paso con las agencias inmobiliarias, y hasta se encargaron personalmente de entregarnos el departamento el día que llegamos del aeropuerto. Su atención fue fabulosa, siempre atentas, pacientes y dispuestas a ayudar más allá de lo esperado. Hoy vivimos en el lugar que tanto queríamos, y todo fue gracias a ellas. Definitivamente recomendamos su servicio: cada peso invertido valió completamente la pena."
       },
       "2": {
-        "title": "Professional, reliable, and truly caring about their clients.",
-        "subtitle": "I couldn't have asked for a better experience."
+        "title": "Andrés Lozano",
+        "subtitle": "Thank you so much, Paloma and Ana, for everything. It was a wonderful experience. You made us feel very comfortable, which is so nice when visiting a country far from home. We were a bit picky or critical about the apartments, but I think we made a great choice with this one and we'll really enjoy it. THANK YOU!."
       },
       "3": {
-        "title": "Highly recommend for anyone moving to Spain.",
-        "subtitle": "They made the process so much easier."
-      },
-      "4": {
-        "title": "They went above and beyond to ensure I found the perfect place.",
-        "subtitle": "I truly appreciate their dedication."
-      },
-      "5": {
-        "title": "A trustworthy agency that genuinely cares about its clients.",
-        "subtitle": "I felt valued and supported throughout."
-      },
-      "6": {
-        "title": "Their expertise and local knowledge were invaluable.",
-        "subtitle": "I felt confident in my decision thanks to their guidance."
-      },
-      "7": {
-        "title": "Uday Govil",
-        "subtitle": "Ana and Paloma made the apartment hunt process a breeze, providing us with a number of different options tailored to our needs, and handling all the communications/negotiations with the rental agencies not just before we moved in but till we were well settled in. 100% recommend Mi Piso to anyone looking for an apartment in Barcelona!."
-      },
-      "8": {
-        "title": "I felt supported and cared for throughout the entire process.",
-        "subtitle": "They truly go above and beyond for their clients."
-      },
-      "9": {
-        "title": "Their personalized approach made all the difference.",
-        "subtitle": "I felt like more than just a client."
-      },
-      "10": {
-        "title": "They made finding a home in a new country so much easier.",
-        "subtitle": "I felt supported every step of the way."
-      },
-      "11": {
         "title": "Kathe Garza y Javier",
         "subtitle": "Paloma and Ana are amazing!!! We just moved to Barcelona, ​​and we started looking for an apartment months in advance, but we couldn't find the right one. Ana and Paloma from MiPiso were key in this process: they helped us identify the best options, visited the apartments for us, and guided us until we found the perfect one. 🙌 They also handled all the contact and negotiations with the owners, which made the process much easier. Today we have our new home, and we couldn't be happier to start this new chapter. Thanks to MiPiso for making a move to another continent feel so much more relaxed, reliable, and friendly 🫶🏽."
       },
+      "4": {
+        "title": "Uday Sharma",
+        "subtitle": "Our experience has been incredible. After weeks of house hunting without any results, Mi Piso came through with great options and we finally ended up booking a place through them. The entire process was made incredibly easy because of the consistent and fast efforts by them. 100% recommend their services!."
+      },
+      "5": {
+        "title": "Valeria Torres",
+        "subtitle": "Ana and Paloma offered us excellent service, accompanying us on this new adventure of living on another continent. They helped us find the best option according to our requirements and budget. If you're looking for an apartment in Barcelona, ​​my apartment is the best option to guarantee the security and follow-up of the process :)."
+      },
+      "6": {
+        "title": "Uday Govil",
+        "subtitle": "Ana and Paloma made the apartment hunt process a breeze, providing us with a number of different options tailored to our needs, and handling all the communications/negotiations with the rental agencies not just before we moved in but till we were well settled in. 100% recommend Mi Piso to anyone looking for an apartment in Barcelona!."
+      },
+      "7": {
+        "title": "Jp Schaedel",
+        "subtitle": "Paloma and Ana made finding an apartment a breeze. We shared the neighborhood, price point, and specific features we wanted and they made it happen. They are incredibly proactive. Every day they were sending us new listings, offering to do house tours for us, and making sure that we were giving them all of the right information and documents. But, my favorite part about their service was their kindness and positivity. My roommates and I are thrilled with the place. I 10/10 recommend these two!."
+      },
+      "8": {
+        "title": "Valeria Giachetti",
+        "subtitle": "They make life sooo much easier! Removed a lot if the stress with finding an apartment in Barcelona and would definitely recommend them if you feel like your time and mental health are worth it!."
+      },
+      "9": {
+        "title": "Santiago de Loera",
+        "subtitle": "Excellent attention and service, they provide 100% security and confidence."
+      },
+      "10": {
+        "title": "Ximena Gonzalez",
+        "subtitle": "Ana and Palomaaaa, first day here in the apartment and my mom and I are delighted, thank you for making the process so pleasant and always giving us peace of mind!."
+      },
+      "11": {
+        "title": "Andrea",
+        "subtitle": "Finding an apartment with Ana and Paloma was the best decision. Renting remotely is incredibly complicated, between trying to stay within your budget, choosing the right area, meeting requirements, and sifting through thousands of questionable photos…From day one, Ana and Paloma made sure to listen to what I was looking for, and with their expertise, they found amazing apartments in record time. Plus, they made the paperwork process incredibly easy. I would work with them again without hesitation to find an apartment in Barcelona; it was a pleasure!."
+      },
       "12": {
-        "title": "Majo y Nico",
-        "subtitle": "We'd been looking for an apartment for months, but we couldn't find anything that was pet-friendly, had at least two bedrooms, was within our budget, and that we actually liked... it was impossible to travel from Mexico for viewings and everything else. Paloma and Ana didn't even take a week to find the perfect apartment, much bigger and nicer than anything we'd seen online, it was truly unreal. We're so happy! Thank you so much!."
+        "title": "Santiago Lavin",
+        "subtitle": "Thanks to Ana and Paloma, we now have the apartment of our dreams in Barcelona (or even better!). What was most valuable to us was their established relationships with several real estate agencies and their local experience, which made things much easier (they know tips, what to avoid, how to handle all the processes, etc.). They are available 24/7 to assist you and take care of everything as if you were doing it yourself in Barcelona, ​​from showing apartments to signing the contract and handing over the keys. Don't hesitate for a second to work with them!."
       },
       "13": {
-        "title": "They went above and beyond to ensure I found the perfect place.",
-        "subtitle": "I truly appreciate their dedication."
-      },
-      "14": {
         "title": "Laura y Gastón",
         "subtitle": "Thanks to Paloma and Ana for helping us find our ideal apartment in Barcelona! Even without knowing the city, they made us feel calm and safe, finding the best area according to our preferences and budget. They were incredibly patient with all our questions and also gave us recommendations that made our arrival much easier and more enjoyable. Highly recommended!."
+      },
+      "14": {
+        "title": "Majo y Nico",
+        "subtitle": "We'd been looking for an apartment for months, but we couldn't find anything that was pet-friendly, had at least two bedrooms, was within our budget, and that we actually liked... it was impossible to travel from Mexico for viewings and everything else. Paloma and Ana didn't even take a week to find the perfect apartment, much bigger and nicer than anything we'd seen online, it was truly unreal. We're so happy! Thank you so much!"
       },
       "15": {
         "title": "Med and Rob",
         "subtitle": "Ana and Paloma put us at ease during the whole process. We found the perfect apartment in the perfect location, meeting all our needs in a tough rental market. Being able to be in our new home from day one was the best possible start to a new chapter of life- thank you very much for helping us find our feet."
       },
       "16": {
-        "title": "They made the entire process stress-free and enjoyable.",
-        "subtitle": "I couldn't have asked for a better experience."
-      },
-      "17": {
-        "title": "Ana Sophie Mifsud",
-        "subtitle": "We’re so happy with Mi Piso, we highly recommend them! We were searching for an apartment from the United States ahead of our move to Barcelona for my master’s program. While many of my classmates spent months trying to find a place and navigate how the system works here, thanks to Ana and Paloma we found our ideal home quickly and easily. Throughout the entire process, we felt supported and accompanied during what was a huge life transition for us (and for our dog!). We truly couldn’t be more grateful."
-      },
-      "18": {
         "title": "Daniel y Eduardo",
         "subtitle": "Paloma and Ana provided us with excellent service: they were very quick to show us with options that fit our budget and area, they visited the properties for us since we lived in another city, and they remained transparent throughout the entire process. Thanks to their support, we found our new home quickly and easily."
       },
-      "19": {
-        "title": "Excellent service and support throughout the entire process.",
-        "subtitle": "From start to finish, they were there to help."
-      },
-      "20": {
-        "title": "Nagib Gobera",
-        "subtitle": "Paloma and her team have been simply incredible. From the very first moment, they gave us their full support in finding the ideal apartment and went out of their way to show us the best options. They secured appointments for us immediately, and thanks to their dedication, we were able to close on our dream apartment here in Barcelona: with a terrace, two bedrooms, two bathrooms, and fulfilling every single one of our needs. What we valued most was their helpfulness and approachability: they answered all our questions immediately, supported us every step of the way with the real estate agencies, and even personally handed over the keys to the apartment the day we arrived from the airport. Their service was fabulous; they were always attentive, patient, and willing to help beyond our expectations. Today we live in the place we've always wanted, and it's all thanks to them. We definitely recommend their service: every penny invested was completely worth it."
-      },
-      "21": {
+      "17": {
         "title": "Mario e Isabella",
-        "subtitle": "Paloma and Ana's service was excellent! The process of finding an apartment was a bit complicated for us living outside of Barcelona, ​​but thanks to them and their expertise, we were reassured that we would find the apartment we were looking for. They listened to our requirements, and we appreciate the work they did to find it. We are very grateful for all their help. We highly recommend them!!."
-      },
-      "22": {
-        "title": "Highly recommend for anyone moving to Spain.",
-        "subtitle": "They made the process so much easier."
-      },
-      "23": {
-        "title": "They went above and beyond to ensure I found the perfect place.",
-        "subtitle": "I truly appreciate their dedication."
-      },
-      "24": {
-        "title": "A trustworthy agency that genuinely cares about its clients.",
-        "subtitle": "I felt valued and supported throughout."
-      },
-      "25": {
-        "title": "Their expertise and local knowledge were invaluable.",
-        "subtitle": "I felt confident in my decision thanks to their guidance."
-      },
-      "26": {
-        "title": "Uday Sharma",
-        "subtitle": "Our experience has been incredible. After weeks of house hunting without any results, Mi Piso came through with great options and we finally ended up booking a place through them. The entire process was made incredibly easy because of the consistent and fast efforts by them. 100% recommend their services!."
-      },
-      "27": {
-        "title": "I felt supported and cared for throughout the entire process.",
-        "subtitle": "They truly go above and beyond for their clients."
+        "subtitle": "Paloma and Ana's service was excellent! The process of finding an apartment was a bit complicated for us living outside of Barcelona, ​​but thanks to them and their expertise, we were reassured that we would find the apartment we were looking for. They listened to our requirements, and we appreciate the work they did to find it. We are very grateful for all their help. We highly recommend them!!"
       }
     }
   },
