@@ -291,6 +291,13 @@
     "readyToMove": "Ready to move to {city}?",
     "ctaDescription": "Our expert team is here to help you through every step of the relocation process.",
     "discover": "Discover {city}",
+    "priceGuide": "Rental Price Guide",
+    "priceGuideSubtitle": "Estimated rental prices by area and number of rooms",
+    "zone": "Zone",
+    "rooms": "Rooms",
+    "priceRange": "Estimated price (€/month)",
+    "priceDisclaimer": "Indicative prices. Actual prices may vary according to specific property characteristics.",
+    "priceDisclaimerLong": "Indicative prices based on current market data. Actual prices may vary according to specific property characteristics, condition, exact location and market conditions.",
     "features": {
       "culture": "Culture",
       "nightlife": "Nightlife",

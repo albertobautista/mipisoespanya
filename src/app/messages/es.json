@@ -291,6 +291,13 @@
     "readyToMove": "¿Listo para mudarte a {city}?",
     "ctaDescription": "Nuestro equipo de expertos está aquí para ayudarte en cada paso del proceso de reubicación.",
     "discover": "Descubre {city}",
+    "priceGuide": "Guía de Precios de Alquiler",
+    "priceGuideSubtitle": "Precios estimados de alquiler por zona y número de habitaciones",
+    "zone": "Zona",
+    "rooms": "Habitaciones",
+    "priceRange": "Precio estimado (€/mes)",
+    "priceDisclaimer": "Precios orientativos. Los precios reales pueden variar según características específicas del inmueble.",
+    "priceDisclaimerLong": "Precios orientativos basados en datos del mercado actual. Los precios reales pueden variar según características específicas del inmueble, estado, ubicación exacta y condiciones del mercado.",
     "features": {
       "culture": "Cultura",
       "nightlife": "Vida nocturna",

@@ -1,3 +1,9 @@
+export interface PriceRange {
+  zone: string;
+  rooms: string;
+  priceRange: string;
+}
+
 export interface CityData {
   slug: string;
   name: string;
@@ -7,6 +13,7 @@ export interface CityData {
   bestNeighborhoods: string[];
   keyFeatures: string[];
   transportInfo: string[];
+  priceRanges: PriceRange[];
   coordinates: {
     lat: number;
     lng: number;
@@ -65,6 +72,18 @@ export const cities: CityData[] = [
       "cercanias",
       "trainSystem",
       "publicBikes",
+    ],
+    priceRanges: [
+      { zone: "Chamberí", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Chamberí", rooms: "2 hab", priceRange: "2,000-2,800" },
+      { zone: "Salamanca", rooms: "1 hab", priceRange: "1,800-2,000" },
+      { zone: "Salamanca", rooms: "2 hab", priceRange: "2,000-3,000" },
+      { zone: "Malasaña", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Malasaña", rooms: "2 hab", priceRange: "1,800-2,300" },
+      { zone: "Justicia", rooms: "1 hab", priceRange: "1,800-2,000" },
+      { zone: "Justicia", rooms: "2 hab", priceRange: "1,800-2000" },
+      { zone: "Chamartín", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Justicia", rooms: "2 hab", priceRange: "1,800-2,000" },
     ],
     coordinates: {
       lat: 40.4168,
@@ -146,6 +165,26 @@ export const cities: CityData[] = [
       "trainSystem",
       "funicularCableCar",
       "bicingBikes",
+    ],
+    priceRanges: [
+      { zone: "Eixample", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Eixample", rooms: "2 hab", priceRange: "1,600-2,500" },
+      { zone: "Gràcia", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Gràcia", rooms: "2 hab", priceRange: "1,800-2,300" },
+      {
+        zone: "Sarrià-Sant Gervasi",
+        rooms: "1 hab",
+        priceRange: "1,800-2,000",
+      },
+      {
+        zone: "Sarrià-Sant Gervasi",
+        rooms: "2 hab",
+        priceRange: "2,000-3,000",
+      },
+      { zone: "Les Corts", rooms: "1 hab", priceRange: "1,800-2,000" },
+      { zone: "Les Corts", rooms: "2 hab", priceRange: "2,000-2,700" },
+      { zone: "Sant Antoni", rooms: "1 hab", priceRange: "1,500-1,800" },
+      { zone: "Sant Antoni", rooms: "2 hab", priceRange: "1,800-2,000" },
     ],
     coordinates: {
       lat: 41.3851,
