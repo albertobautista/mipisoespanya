@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Encuentra tu hogar ideal en Madrid y Barcelona con nuestra ayuda especializada. Servicios completos de reubicación para expatriados.",
     images: [
       {
-        url: "/images/og-image.jpg", // ← Crear en /public/images/og-image.jpg
+        url: "/opengraph-image", // Next.js generará automáticamente
         width: 1200,
         height: 630,
         alt: "Mi Piso España - Agencia de Reubicación",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Mi Piso España - Agencia de Reubicación",
     description:
       "Encuentra tu hogar ideal en Madrid y Barcelona. Servicios especializados de reubicación.",
-    images: ["/images/twitter-card.jpg"], // ← Crear en /public/images/twitter-card.jpg
+    images: ["/twitter-image"], // Next.js generará automáticamente
   },
   icons: {
     icon: [
