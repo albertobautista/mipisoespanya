@@ -65,13 +65,21 @@ export default function Hero({
   useEffect(() => {
     // Detectar tipo de conexión si está disponible
     if ("connection" in navigator) {
-      const connection = (navigator as any).connection;
+      const connection = (
+        navigator as Navigator & {
+          connection?: {
+            effectiveType?: string;
+            downlink?: number;
+          };
+        }
+      ).connection;
       if (connection) {
-        const isEffectivelySlowConnection =
+        const isEffectivelySlowConnection = Boolean(
           connection.effectiveType === "slow-2g" ||
-          connection.effectiveType === "2g" ||
-          connection.effectiveType === "3g" ||
-          connection.downlink < 1.5;
+            connection.effectiveType === "2g" ||
+            connection.effectiveType === "3g" ||
+            (connection.downlink && connection.downlink < 1.5)
+        );
         setIsSlowConnection(isEffectivelySlowConnection);
       }
     }
