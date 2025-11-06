@@ -86,7 +86,7 @@ function TextLine({
   return (
     <motion.h2
       style={{ color, opacity, y }}
-      className="leading-[0.98] uppercase font-semibold tracking-tight text-[clamp(28px,6vw,72px)] md:text-[clamp(32px,6vw,50px)]"
+      className="leading-[0.98] uppercase font-cocomat font-semibold tracking-tight text-[clamp(28px,6vw,72px)] md:text-[clamp(32px,6vw,48px)]"
     >
       {title}
     </motion.h2>
@@ -195,7 +195,7 @@ export default function TextImageScrollTransition({
       className="relative"
       style={{ height: `${totalHeightVh}vh` }}
     >
-      <div className="sticky top-0 h-screen flex items-center justify-center px-4 sm:px-6 md:px-8">
+      <div className="sticky top-0 flex items-center justify-center h-screen px-4 sm:px-6 md:px-8">
         {/* Frame luxury opcional */}
         <div
           className={[
@@ -206,7 +206,7 @@ export default function TextImageScrollTransition({
           ].join(" ")}
           style={{ maxWidth: maxContentWidth }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-14 px-5 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-12">
+          <div className="grid items-center grid-cols-1 gap-8 px-5 py-8 lg:grid-cols-2 lg:gap-14 sm:px-8 lg:px-12 sm:py-10 lg:py-12">
             {/* TEXTO */}
             <div className="max-w-[760px]">
               {items.map((item, i) => (

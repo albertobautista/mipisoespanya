@@ -7,7 +7,7 @@ import { faqsItems as faqsItemsBase } from "./data";
 import { Faqs } from "@/app/sections/Faqs";
 import { FAQItem } from "@/app/components/FAQAccordion/FAQAccordion";
 
-const heroImageSrc = "/images/heros/our-story.webp";
+const heroImageSrc = "/images/heros/general.webp";
 
 export default function AboutPage({
   params,

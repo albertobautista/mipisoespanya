@@ -7,7 +7,7 @@ import { reviewsItems as reviewsItemsBase } from "./data";
 import { Review } from "./types";
 import { Reviews } from "@/app/sections/Reviews";
 
-const heroImageSrc = "/images/heros/our-story.webp";
+const heroImageSrc = "/images/heros/general.webp";
 
 export default function AboutPage({
   params,

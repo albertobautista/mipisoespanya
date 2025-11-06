@@ -44,23 +44,23 @@
     },
     "information": {
       "0": {
-        "title": "Tu mudanza a España, simplificada.",
+        "title": "Tu cambio a España, simplificado",
         "alt": "Estancia de trabajo cómoda"
       },
       "1": {
-        "title": "Orientación y vivienda, adaptadas a ti.",
+        "title": "Asesoría y housing, a tu medida.",
         "alt": "Sala moderna"
       },
       "2": {
-        "title": "buscamos, visitamos, eliges.",
+        "title": "Buscamos, visitamos y tú eliges.",
         "alt": "Apartamento luminoso"
       },
       "3": {
-        "title": "hogares seguros, verificados y confiables.",
+        "title": "Pisos seguros, verificados y de confianza.",
         "alt": "Recepción acogedora"
       },
       "4": {
-        "title": "bienvenido a casa, España te está esperando.",
+        "title": "Bienvenido a casa, España te espera.",
         "alt": "Recepción acogedora"
       }
     },
@@ -69,7 +69,7 @@
       "subtitle": "Somos una agencia de reubicación especializada en el sector inmobiliario de Madrid y Barcelona, brindando asesoramiento y orientación para ayudarle a encontrar el hogar que mejor se adapte a sus necesidades.",
       "cards": {
         "0": {
-          "title": "Orientación completa:",
+          "title": "Asesoría completa:",
           "body": "Te apoyamos en cada paso del proceso de alquiler.",
           "image": {
             "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
@@ -78,23 +78,23 @@
         },
         "1": {
           "title": "Búsqueda personalizada:",
-          "body": "Encontramos y visitamos propiedades que se adaptan a tus necesidades y evaluamos cada opción de manera objetiva.",
+          "body": "Encontramos y visitamos propiedades que se ajustan a sus necesidades y evaluamos cada opción de forma objetiva.",
           "image": {
             "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
             "alt": "Demo 1"
           }
         },
         "2": {
-          "title": "Gestión completa:",
-          "body": "Nos encargamos de la documentación, negociación, contratos y pagos.",
+          "title": "Gestión integral:",
+          "body": "Nos encargamos de la documentación, la negociación, los contratos y los pagos.",
           "image": {
             "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
             "alt": "Demo 1"
           }
         },
         "3": {
-          "title": "Bienvenida cálida:",
-          "body": "Te damos la bienvenida a tu nuevo hogar en España, te entregamos las llaves y hacemos un inventario completo de la casa.",
+          "title": "Bienvenida:",
+          "body": "Te damos la bienvenida a tu nuevo hogar en España, te entregamos las llaves y realizamos el inventario completo de tu piso.",
           "image": {
             "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=60&w=500",
             "alt": "Demo 1"
@@ -106,19 +106,19 @@
       "title": "Lo que nos hace únicos",
       "services": {
         "0": {
-          "title": "Tu casa ideal, a tu medida."
+          "title": "Tu hogar ideal, a tu medida."
         },
         "1": {
-          "title": "Sin fraudes, sin riesgos."
+          "title": "Cero fraude, cero riesgo."
         },
         "2": {
-          "title": "Propiedades minuciosamente verificadas."
+          "title": "Propiedades verificadas."
         },
         "3": {
           "title": "Búsqueda profesional y confiable."
         },
         "4": {
-          "title": "Orientación sobre la zona y consejos sobre el estilo de vida."
+          "title": "Guía y consejos sobre estilo de vida."
         },
         "5": {
           "title": "Más de 300 estudiantes satisfechos."
@@ -134,19 +134,19 @@
     "title": "Nuestra Historia",
     "points": {
       "0": {
-        "title": "Somos Ana y Paloma, dos mexicanas que viven en España. Cuando llegamos por primera vez como estudiantes, nos enfrentamos al difícil proceso de encontrar un hogar en un nuevo país."
+        "title": "Somos Ana y Paloma, dos Mexicanas viviendo en España. Cuando llegamos primero como estudiantes, nos enfrentamos al reto que es encontrar hogar en un país nuevo."
       },
       "1": {
-        "title": "Con la experiencia de 10 años de Ana en servicios de reubicación y la experiencia de Paloma en la industria inmobiliaria, pronto nos dimos cuenta de que muchos otros estudiantes internacionales estaban pasando por la misma lucha: búsquedas interminables, estafas y mucha incertidumbre."
+        "title": "Con más de 10 años de experiencia en reubicación por parte de Ana, y la trayectoria de Paloma en el sector inmobiliario, entendimos muy pronto que muchos estudiantes internacionales se enfrentaban a la misma realidad: horas de búsqueda, miedo a ser estafados y mucha incertidumbre al llegar a una nueva ciudad."
       },
       "2": {
-        "title": "Con la intención de hacer esta experiencia más fácil, segura y humana, decidimos crear una agencia que apoyara a las personas que llegaban a España y les ayudara a encontrar su nuevo hogar con confianza y tranquilidad."
+        "title": "Con la intención de hacer esta experiencia más fácil, segura y humana, decidimos crear una agencia de reubicación que apoye a personas que llegan a España y les ayude a encontrar su nuevo hogar con confianza y tranquilidad."
       },
       "3": {
-        "title": "Con el tiempo, el boca a boca nos llevó a ayudar a más de 300 estudiantes de diferentes países a encontrar vivienda en ciudades como Madrid y Barcelona."
+        "title": "Con el tiempo, las recomendaciones entre estudiantes nos llevaron a ayudar a más de 300 estudiantes de diferentes países a encontrar alojamiento en ciudades como Madrid y Barcelona."
       },
       "4": {
-        "title": "Hoy en día, colaboramos con universidades y agencias inmobiliarias que respaldan nuestro profesionalismo y confían en nuestro compromiso de brindar un servicio confiable y personalizado."
+        "title": "Hoy en día, colaboramos con universidades y agencias inmobiliarias que avalan nuestro profesionalismo y confían en nuestro compromiso de ofrecer un servicio fiable y personalizado."
       }
     }
   },
