@@ -104,6 +104,13 @@ export default function Page({ params }: Props) {
         media={{
           kind: "video",
           src: heroVideoSrc,
+          poster: "/images/heros/video.webp",
+          fallbackImage: "/images/heros/video.webp",
+          preload: "metadata",
+          autoPlay: true,
+          muted: true,
+          loop: true,
+          playsInline: true,
         }}
       />
 
