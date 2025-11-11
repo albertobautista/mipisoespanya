@@ -11,29 +11,29 @@ const CitiesData = () => {
           accent: "text-blue-500",
           leftImages: [
             {
-              src: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470",
+              src: "/images/cities/madrid/image-1.webp",
               alt: "Madrid Gran Vía",
             },
             {
-              src: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFkcmlkfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/madrid/image-2.webp",
               alt: "Parque del Retiro",
             },
             {
-              src: "https://images.unsplash.com/photo-1574556462575-eb106a5865a0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hZHJpZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/madrid/image-3.webp",
               alt: "Plaza Mayor",
             },
           ],
           rightImages: [
             {
-              src: "https://images.unsplash.com/photo-1518620121781-adab13a3d1ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hZHJpZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/madrid/image-4.webp",
               alt: "Madrid atardecer",
             },
             {
-              src: "https://images.unsplash.com/photo-1533403611115-5b62680b6318?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hZHJpZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/madrid/image-5.webp",
               alt: "Arquitectura en Madrid",
             },
             {
-              src: "https://images.unsplash.com/photo-1562120679-3a7feddcb926?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hZHJpZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/madrid/image-6.webp",
               alt: "Calles de Madrid",
             },
           ],
@@ -44,29 +44,29 @@ const CitiesData = () => {
           accent: "text-red-500",
           leftImages: [
             {
-              src: "https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-1.webp",
               alt: "Sagrada Familia",
             },
             {
-              src: "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-2.webp",
               alt: "Barceloneta",
             },
             {
-              src: "https://images.unsplash.com/photo-1593368858664-a7fe556ab936?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-3.webp",
               alt: "Parque Güell",
             },
           ],
           rightImages: [
             {
-              src: "https://images.unsplash.com/photo-1610213989414-acc5773ba2c6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhcmNlbG9uYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-4.webp",
               alt: "Barrio Gótico",
             },
             {
-              src: "https://images.unsplash.com/photo-1598808947498-a04aab131fe2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhcmNlbG9uYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-5.webp",
               alt: "Casa Batlló",
             },
             {
-              src: "https://images.unsplash.com/photo-1728249960363-13079cc2c6f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJhcmNlbG9uYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+              src: "/images/cities/barcelona/image-6.webp",
               alt: "Vista de Barcelona",
             },
           ],
