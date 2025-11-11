@@ -32,7 +32,7 @@
     }
   },
   "home": {
-    "title": "WE DO THE HOUSING, YOU DO THE CITY",
+    "title": "We do the housing, you do the city.",
     "logoSubtitle": "Your trusrty home hunters",
     "ctaPrimary": "How it works",
     "ctaSecondary": "See benefits",
@@ -237,44 +237,36 @@
     "agencies": "Agencies",
     "faqs": {
       "0": {
-        "question": "Are you a real estate agency?",
-        "answer": "No, we are a relocation agency that specializes in helping people find housing in Madrid and Barcelona. We work closely with several real estate agencies to offer our clients a wide range of verified properties."
+        "question": "Are you a real estate company?",
+        "answer": "No, we’re a relocation agency that specializes in helping people find housing in Madrid and Barcelona.We work closely with several real estate agencies to offer our clients a wide selection of verified properties."
       },
       "1": {
-        "question": "What is the difference between a temporary and long-term apartment?",
-        "answer": "To rent a property in Spain, you typically need to provide valid identification or a passport, proof of income (such as pay stubs or bank statements), and a rental application form. Additional documents may be required depending on the landlord's requirements."
+        "question": "What’s the difference between a short-term and a long-term apartment?",
+        "answer": "A short-term apartment is rented for a few months (usually between 1 and 11), though it can match the length of your studies. It normally comes fully furnished—perfect for study or work stays. A long-term apartment, on the other hand, is usually unfurnished and rented with a standard residential contract lasting between 3 and 5 years."
       },
       "2": {
-        "question": "What do I need to apply for a temporary apartment?",
-        "answer": "To rent an apartment in Spain, you typically need to pay the first month's rent, a security deposit (usually one month's rent), and possibly a agency fee (if you are using a relocation agency). Please contact us for detailed pricing information."
+        "question": "What do I need to apply for a short-term apartment?",
+        "answer": "To rent a short-term apartment, it’s very important to prove the length of your stay. Usually, you’ll need to provide an acceptance letter from your university or school showing your study dates, or an employment letter stating how long you’ll be working in Spain."
       },
       "3": {
-        "question": "What documents do I need to rent?",
-        "answer": "Agency fees are a standard part of the rental process in Spain. However, we strive to provide transparent pricing and will inform you of any fees upfront."
+        "question": "What do I need to rent an apartment?",
+        "answer": "For short-term rentals, you’ll typically need: Your passport and your guarantor’s (if applicable), your student ID or acceptance letter from your school or university, proof of income, such as recent bank statements, a letter of introduction and additional documents may be requested by the real estate agency if necessary."
       },
       "4": {
         "question": "What payments are required?",
-        "answer": "No, we help review lease agreements, negotiate terms, and handle all necessary documentation to ensure a smooth transition to your new home."
+        "answer": "You’ll usually need to pay: Two months’ deposit (security deposit), agency fee (equivalent to one month’s rent + VAT, or 10% of the annual rent + VAT), first month’s rent and ITP tax and utilities."
       },
       "5": {
-        "question": "Can agency fees be avoided?",
-        "answer": "Our service includes assistance in finding suitable properties, organizing viewings, negotiating lease terms, and handling all necessary documentation to ensure a smooth transition to your new home."
+        "question": "Can the agency fee be avoided?",
+        "answer": "Agency fees are a standard part of the rental process and must be covered by the tenant. Only in rare cases—when there’s a direct agreement with the property owner—can these fees be avoided, although such options are very uncommon."
       },
       "6": {
-        "question": "Is it just for students?",
-        "answer": "1. Contact us to discuss your needs. 2. We will help you find suitable properties. 3. We will organize viewings and assist with negotiations. 4. Complete all necessary documentation for a smooth transition."
+        "question": "Is your service only for students?",
+        "answer": "Our service is designed for students as well as for anyone coming to Spain for studies, work, or other temporary experiences."
       },
       "7": {
         "question": "What does your service include?",
-        "answer": "1. Your contact information (name, phone number, email). 2. A brief introduction about yourself. 3. Your reasons for moving and what you are looking for in a new home. 4. Any specific requirements or preferences you may have."
-      },
-      "8": {
-        "question": "What are the steps to follow?",
-        "answer": "1. Your contact information (name, phone number, email). 2. A brief introduction about yourself. 3. Your reasons for moving and what you are looking for in a new home. 4. Any specific requirements or preferences you may have."
-      },
-      "9": {
-        "question": "What should my cover letter include?",
-        "answer": "1. Your contact information (name, phone number, email). 2. A brief introduction about yourself. 3. Your reasons for moving and what you are looking for in a new home. 4. Any specific requirements or preferences you may have."
+        "answer": "Our service includes comprehensive assistance throughout the entire process, personalized search for 100% verified properties full management of the rental process and a welcome and detailed inventory check upon arrival."
       }
     }
   },

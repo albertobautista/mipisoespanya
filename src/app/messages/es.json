@@ -32,7 +32,7 @@
     }
   },
   "home": {
-    "title": "NOSOTROS HACEMOS LA VIVIENDA, TÚ LA CIUDAD",
+    "title": "We do the housing, you do the city.",
     "logoSubtitle": "Sus confiables cazadores de casas",
     "ctaPrimary": "Cómo funciona",
     "ctaSecondary": "Ver beneficios",
@@ -44,7 +44,7 @@
     },
     "information": {
       "0": {
-        "title": "Tu cambio a España, simplificado",
+        "title": "Tu traslado a españa, simplificado.",
         "alt": "Estancia de trabajo cómoda"
       },
       "1": {
@@ -65,8 +65,8 @@
       }
     },
     "howWeWork": {
-      "title": "RELOCALIZACIÓN FÁCIL",
-      "subtitle": "Somos una agencia de reubicación especializada en el sector inmobiliario de Madrid y Barcelona, brindando asesoramiento y orientación para ayudarle a encontrar el hogar que mejor se adapte a sus necesidades.",
+      "title": "Reubicación sencilla",
+      "subtitle": "En MiPiso, somos una agencia de reubicación especializada en el mercado inmobiliario de Madrid y Barcelona. Nuestro objetivo es ofrecerte la orientación y el apoyo necesarios para que encuentres un hogar cómodo y adaptado a ti.",
       "cards": {
         "0": {
           "title": "Asesoría completa:",
@@ -103,7 +103,7 @@
       }
     },
     "whatMakesUsUnique": {
-      "title": "Lo que nos hace únicos",
+      "title": "Qué nos hace únicos",
       "services": {
         "0": {
           "title": "Tu hogar ideal, a tu medida."
@@ -140,7 +140,7 @@
         "title": "Con más de 10 años de experiencia en reubicación por parte de Ana, y la trayectoria de Paloma en el sector inmobiliario, entendimos muy pronto que muchos estudiantes internacionales se enfrentaban a la misma realidad: horas de búsqueda, miedo a ser estafados y mucha incertidumbre al llegar a una nueva ciudad."
       },
       "2": {
-        "title": "Con la intención de hacer esta experiencia más fácil, segura y humana, decidimos crear una agencia de reubicación que apoye a personas que llegan a España y les ayude a encontrar su nuevo hogar con confianza y tranquilidad."
+        "title": "Con la intención de hacer esta experiencia más fácil, segura y humana, decidimos crear una agencia de reubicación que apoye a personas que llegan a españa y les ayude a encontrar su nuevo hogar con confianza y tranquilidad."
       },
       "3": {
         "title": "Con el tiempo, las recomendaciones entre estudiantes nos llevaron a ayudar a más de 300 estudiantes de diferentes países a encontrar alojamiento en ciudades como Madrid y Barcelona."
@@ -242,39 +242,31 @@
       },
       "1": {
         "question": "¿Cuál es la diferencia entre un piso temporal y de larga estancia?",
-        "answer": "Para alquilar una propiedad en España, normalmente necesitas proporcionar una identificación válida o pasaporte, comprobante de ingresos (como nóminas o extractos bancarios) y un formulario de solicitud de alquiler. Pueden requerirse documentos adicionales según los requisitos del propietario."
+        "answer": "Un piso temporal se alquila por pocos meses (normalmente 1-11) aunque se puede por el tiempo de tus estudios, suele venir amueblado; ideal para estancias por trabajo o estudios. Un piso de larga estancia suele ser sin muebles y con un contrato estándar de vivienda habitual (3-5 años)."
       },
       "2": {
         "question": "¿Qué necesito para aplicar a un piso temporal?",
-        "answer": "Para alquilar un apartamento en España, normalmente necesitas pagar el primer mes de alquiler, un depósito de seguridad (generalmente un mes de alquiler) y posiblemente una tarifa de agencia (si utilizas una agencia de reubicación). Por favor, contáctanos para obtener información detallada sobre precios."
+        "answer": "Para poder alquilar algo de manera temporal, es sumamente importante demostrar el periodo de tiempo por el que estarás alquilando. Normalmente solicitan la carta aceptación a la universidad o colegio que vas en donde especifique el periodo de tiempo por el que estarás. También puede ser una carta laboral donde se mencione el tiempo que estarás laborando."
       },
       "3": {
-        "question": "¿Qué documentos necesito para alquilar?",
-        "answer": "Las tarifas de agencia son una parte estándar del proceso de alquiler en España. Sin embargo, nos esforzamos por proporcionar precios transparentes y te informaremos sobre cualquier tarifa por adelantado."
+        "question": "¿Qué necesito para alquilar?",
+        "answer": "Normalmente para alquilar un piso de manera temporal te solicitarán lo siguiente: pasaporte tanto tuyo como del aval, matricula o carta de aceptación a donde vas a estudiar, comprobar ingresos por medio de estados de cuenta bancarios, carta presentación y puede que por parte de la agencia inmobiliaria soliciten más documentos si lo ven necesario."
       },
       "4": {
         "question": "¿Qué pagos se requieren?",
-        "answer": "No, ayudamos a revisar contratos de arrendamiento, negociar términos y manejar toda la documentación necesaria para garantizar una transición sin problemas a tu nuevo hogar."
+        "answer": "Se deberá de pagar: 2 meses de fianza (o depósito en garantía), honorarios de agencia (lo que equivale a 1 mes de renta + IVA o 10% de una anualidad + IVA), mes de renta, ITP y suministros."
       },
       "5": {
         "question": "¿Se pueden evitar los honorarios de agencia?",
-        "answer": "Nuestro servicio incluye asistencia para encontrar propiedades adecuadas, organizar visitas, negociar términos de arrendamiento y manejar toda la documentación necesaria para garantizar una transición sin problemas a tu nuevo hogar."
+        "answer": "Los honorarios de agencia forman parte del proceso habitual de alquiler y, como inquilinos, debemos asumirlos. Solo en casos excepcionales —cuando existe un trato directo con el propietario— podría evitarse este coste, aunque dichas opciones son poco frecuentes."
       },
       "6": {
         "question": "¿Es solo para estudiantes?",
-        "answer": "1. Contáctanos para discutir tus necesidades. 2. Te ayudaremos a encontrar propiedades adecuadas. 3. Organizaremos visitas y asistiremos con las negociaciones. 4. Completa toda la documentación necesaria para una transición sin problemas."
+        "answer": "Ofrecemos un servicio pensado para estudiantes y para todas aquellas personas que vienen a España por estudios, trabajo u otras experiencias temporales."
       },
       "7": {
         "question": "¿Qué incluye su servicio?",
-        "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
-      },
-      "8": {
-        "question": "Cuáles son los pasos a seguir?",
-        "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
-      },
-      "9": {
-        "question": "¿Qué debe incluir mi carta de presentación?",
-        "answer": "1. Tu información de contacto (nombre, número de teléfono, correo electrónico). 2. Una breve introducción sobre ti. 3. Tus razones para mudarte y lo que estás buscando en un nuevo hogar. 4. Cualquier requisito o preferencia específica que tengas."
+        "answer": "Nuestro servicio incluye la asesoría completa e integral, búsqueda personalizada de propiedades 100% verificadas, la gestión integral de todo el proceso de renta y la bienvenida más el inventario detallado de lo que hay en el departamento."
       }
     }
   },
