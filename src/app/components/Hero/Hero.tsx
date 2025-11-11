@@ -33,6 +33,8 @@ interface HeroProps {
   logoSubtitle?: string;
   country?: string;
   priority?: boolean; // Para optimizar la carga above-the-fold
+  logoTextSize?: string; // Tamaño personalizado del logo (ej: "clamp(80px, 10vw, 120px)")
+  titleSize?: string; // Tamaño personalizado del título (ej: "clamp(20px, 4vw, 40px)")
 }
 
 export default function Hero({
@@ -52,6 +54,8 @@ export default function Hero({
   title = "We do the room. You do the city.",
   logoSubtitle = "Your trusty home hunters",
   country = "spain",
+  logoTextSize = "clamp(96px, 12vw, 150px)",
+  titleSize = "clamp(24px, 4.5vw, 48px)",
 }: HeroProps) {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
@@ -228,7 +232,7 @@ export default function Hero({
         {/* Logo */}
         <h1
           className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
-          style={{ fontSize: "clamp(96px, 12vw, 150px)", lineHeight: "0.9" }}
+          style={{ fontSize: logoTextSize, lineHeight: "0.9" }}
         >
           {logoText}
         </h1>
@@ -255,7 +259,7 @@ export default function Hero({
             <h2
               className="font-extrabold tracking-tight text-center uppercase whitespace-pre-wrap text-white/95 drop-shadow-sm"
               style={{
-                fontSize: "clamp(24px, 4.5vw, 48px)",
+                fontSize: titleSize,
                 lineHeight: "1.05",
               }}
             >

@@ -29,6 +29,7 @@ export default function AboutPage({
       <Hero
         logoText="mi piso"
         title={`${t("title")} / ${t("partners")}`}
+        titleSize="clamp(32px, 5.5vw, 74px)"
         media={{
           kind: "image",
           src: heroImageSrc,
