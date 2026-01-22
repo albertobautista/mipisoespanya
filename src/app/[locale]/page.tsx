@@ -99,8 +99,7 @@ export default function Page({ params }: Props) {
 
       {/* HERO con video */}
       <Hero
-        logoText="mi piso"
-        title={t("title")}
+        logoImage="/images/logos/horizontal-oliva.png"
         media={{
           kind: "video",
           src: heroVideoSrc,

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { CityStrickers } from "../CittyStickers";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { HoverVideoCard } from "../HoverVideoCard";
 import { items } from "./data";
@@ -24,7 +24,8 @@ interface FooterProps {
       | "email";
     href: string;
   }[];
-  bigLogoText?: string;
+  logoImage?: string;
+  citiesImage?: string;
   bg?: string; // tailwind color class para fondo
 }
 
@@ -34,7 +35,7 @@ export default function Footer({
     {
       label: "whatsapp",
       href: `https://wa.me/+34658509768?text=${encodeURIComponent(
-        "Hola, me gustaría más información."
+        "Hola, me gustaría más información.",
       )}`,
     },
   ],
@@ -47,7 +48,7 @@ export default function Footer({
     {
       icon: "whatsapp",
       href: `https://wa.me/+34658509768?text=${encodeURIComponent(
-        "Hola, me gustaría más información."
+        "Hola, me gustaría más información.",
       )}`,
     },
     {
@@ -55,9 +56,9 @@ export default function Footer({
       href: `mailto:mipisorelocation@gmail.com`,
     },
   ],
-  bigLogoText = "MiPiso",
-
-  bg = "bg-green",
+  logoImage,
+  citiesImage,
+  bg = "bg-dark-green",
 }: FooterProps) {
   const t = useTranslations("footer");
 
@@ -72,9 +73,9 @@ export default function Footer({
   }));
   return (
     <footer>
-      <header className="w-screen  bg-green py-12 text-center">
+      <header className="w-screen bg-light-green py-12 text-center">
         <div className="max-w-8xl mx-auto px-6">
-          <h2 className="text-3xl uppercase font-poiret md:text-5xl font-bold tracking-tight text-neutral-900">
+          <h2 className="text-3xl uppercase font-poiret md:text-5xl font-bold tracking-tight text-white">
             {t("title")}
           </h2>
         </div>
@@ -94,7 +95,7 @@ export default function Footer({
         </div>
       </div>
       {/* Top grid */}
-      <div className={`${bg} text-[#0f0f0f]`}>
+      <div className={`${bg} text-white`}>
         <div className="mx-auto max-w-7xl px-6 pt-16 md:pt-20">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
             {/* Contacto y ayuda */}
@@ -107,7 +108,7 @@ export default function Footer({
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="hover:underline"
+                      className="hover:underline "
                       target="_blank"
                     >
                       {item.label}
@@ -149,7 +150,7 @@ export default function Footer({
                     <Link
                       key={idx}
                       href={s.href}
-                      className="grid h-12 w-12 place-items-center rounded-full bg-black/10 hover:bg-black/20 transition"
+                      className="grid h-12 w-12 place-items-center rounded-full text-white bg-white hover:bg-white/90 transition"
                       aria-label={s.icon}
                       target="_blank"
                     >
@@ -162,40 +163,34 @@ export default function Footer({
           </div>
 
           {/* Big logo + claim */}
-          <div className="mt-10 grid  grid-cols-1 items-end md:gap-8 md:mt-2 md:grid-cols-6">
-            {/* Logo ocupa las tres primeras columnas */}
-            <div className="md:col-span-4">
-              <h1
-                className=" select-none uppercase whitespace-pre-wrap font-poiret leading-none font-extrabold tracking-tight text-[#121212] drop-shadow-sm"
-                style={{
-                  fontSize: "clamp(90px, 18vw, 230px)",
-                  lineHeight: "1.05",
-                }}
-              >
-                {bigLogoText}
-              </h1>
-            </div>
-            <div className="md:col-span-2 ">
-              <CityStrickers
-                items={[
-                  { label: "Salamanca", bg: "#3ec4a0" },
-                  { label: "Chamberi", bg: "#eea37a" },
-                  { label: "El retiro", bg: "#f0a400" },
-                  { label: "lista", bg: "#0a5dd8", fg: "#081a2f" },
-                  { label: "almagro", bg: "#8aa0b6" },
-                  { label: "gracia", bg: "#5e63ff" },
-                  { label: "eixample", bg: "#7cc8ff", fg: "#0b2746" },
-                  { label: "sariiá", bg: "#ff4b2e" },
-                  { label: "san gervasi ", bg: "#d11669" },
-                ]}
-                fontSize="sm"
-                height={300}
-              />
-            </div>
+          <div className="mt-10 grid grid-cols-1 gap-6 items-center md:mt-14 md:grid-cols-6 md:gap-8">
+            {logoImage && (
+              <div className="md:col-span-4 flex items-center justify-center md:justify-start">
+                <Image
+                  src={logoImage}
+                  alt="Mi Piso Logo"
+                  width={500}
+                  height={250}
+                  className="w-4/5 md:w-1/2 h-auto object-contain"
+                />
+              </div>
+            )}
+
+            {citiesImage && (
+              <div className="md:col-span-2 md:col-start-5 flex items-center justify-center">
+                <Image
+                  src={citiesImage}
+                  alt="Cities"
+                  width={500}
+                  height={450}
+                  className="w-5/6 md:w-6/6 h-auto object-contain"
+                />
+              </div>
+            )}
           </div>
 
           {/* Bottom bar */}
-          <div className="mt-10 border-t border-black/10 py-6 text-sm text-black/70">
+          <div className="mt-10 border-t border-white/10 py-6 text-sm text-white/70">
             <div className="flex flex-col justify-end md:flex-row">
               <p>© Mi Piso {t("rights")}</p>
             </div>

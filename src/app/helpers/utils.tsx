@@ -7,9 +7,9 @@ export function getSocialIcon(
     | "twitter"
     | "youtube"
     | "whatsapp"
-    | "email"
+    | "email",
 ) {
-  const cls = "h-7 w-7 text-black";
+  const cls = "h-7 w-7 text-dark-green";
   switch (kind) {
     case "instagram":
       return (

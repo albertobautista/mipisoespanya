@@ -62,7 +62,7 @@ export default function FeatureGridHero({
 
       {/* Contenido */}
       <div className="mx-auto flex h-full max-w-7xl flex-col items-center gap-8 px-4 py-12 sm:px-6 lg:px-8">
-        <header className="text-center text-light-green">
+        <header className="text-center text-white">
           <h2 className="text-5xl uppercase font-poiret font-extrabold tracking-tight sm:text-6xl lg:text-8xl">
             {title}
           </h2>
@@ -76,16 +76,16 @@ export default function FeatureGridHero({
           {items.map((it, idx) => (
             <li
               key={idx}
-              className="rounded-xl bg-green/90 p-8 w-full h-40 flex items-center justify-center max-w-sm mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+              className="rounded-xl bg-light-green/90 p-8 w-full h-40 flex items-center justify-center max-w-sm mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <div className="flex items-start gap-3">
                 <span
-                  className="inline-flex h-16 w-16  shrink-0 items-center justify-center rounded-xl"
+                  className="inline-flex h-16 w-16  shrink-0 items-center justify-center rounded-xl text-white"
                   aria-hidden
                 >
                   {it.icon}
                 </span>
-                <p className="text-2xl font-cocomat leading-6 text-neutral-900 font-extrabold">
+                <p className="text-2xl font-cocomat leading-6 text-white font-extrabold">
                   {it.title}
                 </p>
               </div>

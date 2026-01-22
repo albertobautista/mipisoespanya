@@ -31,6 +31,9 @@
       "ogImageAlt": "Preguntas frecuentes Mi Piso España"
     }
   },
+  "citiesData": {
+    "tapAgain": "toca de nuevo para ver detalles"
+  },
   "home": {
     "title": "We do the housing, you do the city.",
     "logoSubtitle": "Sus confiables cazadores de casas",
@@ -39,8 +42,8 @@
     "menu": {
       "home": "Inicio",
       "our-story": "Nuestra historia",
-      "reviews": "Reseñas",
-      "faqs": "Preguntas frecuentes / Socios"
+      "reviews": "Reviews",
+      "faqs": "FAQs / Partners"
     },
     "information": {
       "0": {
@@ -103,7 +106,7 @@
       }
     },
     "whatMakesUsUnique": {
-      "title": "Qué nos hace únicos",
+      "title": "La forma en que marcamos la diferencia",
       "services": {
         "0": {
           "title": "Tu hogar ideal, a tu medida."
@@ -121,7 +124,7 @@
           "title": "Guía y consejos sobre estilo de vida."
         },
         "5": {
-          "title": "Más de 300 estudiantes satisfechos."
+          "title": "Más de 300 clientes satisfechos."
         }
       }
     }
@@ -151,7 +154,7 @@
     }
   },
   "reviews": {
-    "title": "Reseñas",
+    "title": "Reviews",
     "readMore": "Leer más",
     "showLess": "Mostrar menos",
     "reviews": {
@@ -224,14 +227,14 @@
         "subtitle": "Paloma y Ana nos brindaron un excelente servicio: fueron muy rápidas en presentarnos opciones ajustadas a nuestro presupuesto y zona, visitaron los pisos por nosotros ya que vivíamos en otra ciudad, y se mantuvieron transparentes durante todo el proceso. Gracias a su apoyo encontramos nuestro nuevo hogar de manera ágil y sin complicaciones."
       },
       "17": {
-        "title": "Mario e Isabella",
-        "subtitle": "El servicio por parte de Paloma y Ana ha sido excelente! El proceso de encontrar un piso se nos hacia un poco complicado viviendo fuera de Barcelona pero gracias a ellas y sus conocimientos en el tema, nos mantuvo tranquilos de que encontraríamos el piso que buscabamos. Escucharon nuestros requisitos y reconocemos el trabajo que hicieron por encontrarlo. Estamos muy agradecidos por todas sus atenciones. Lo recomendamos muchisimo!!."
+        "title": "Patricio y Camila",
+        "subtitle": "Estamos encantados con Mi Piso; hicieron que el proceso fuera muy sencillo y me encontraron un lugar en tiempo récord. Un servicio excelente y un equipo humano de primera."
       }
     }
   },
   "faqs": {
-    "title": "Preguntas Frecuentes",
-    "partners": "Socios",
+    "title": "FAQS",
+    "partners": "Partners",
     "partnersTitle": "Algunos de los socios que confían en nosotros",
     "universities": "Universidades",
     "agencies": "Agencias",
@@ -262,11 +265,11 @@
       },
       "6": {
         "question": "¿Es solo para estudiantes?",
-        "answer": "Ofrecemos un servicio pensado para estudiantes y para todas aquellas personas que vienen a España por estudios, trabajo u otras experiencias temporales."
+        "answer": "Nuestro servicio apoya a cualquier persona que se traslade a España, ya sea por estudios o por motivos profesionales, y también trabajamos directamente con empresas que reubican a sus empleados."
       },
       "7": {
         "question": "¿Qué incluye su servicio?",
-        "answer": "Nuestro servicio incluye la asesoría completa e integral, búsqueda personalizada de propiedades 100% verificadas, la gestión integral de todo el proceso de renta y la bienvenida más el inventario detallado de lo que hay en el departamento."
+        "answer": "Nuestro servicio incluye apoyo integral durante todo el proceso de reubicación. Realizamos una búsqueda de vivienda totalmente personalizada y visitamos personalmente cada propiedad para garantizar que sea real, segura y cumpla con nuestros estándares de calidad. Trabajamos exclusivamente con propiedades 100% verificadas. Negociamos directamente con las agencias inmobiliarias, presentamos toda la documentación requerida en su nombre y gestionamos todo el proceso de alquiler, desde el primer contacto hasta la firma del contrato. A su llegada, le damos la bienvenida a la ciudad, le acompañamos a su nuevo hogar y realizamos un inventario detallado y una revisión del estado para asegurarnos de que todo esté en perfecto estado, para que pueda mudarse con total tranquilidad."
       }
     }
   },
@@ -326,7 +329,7 @@
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
-    "title": "Historias de éxito de nuestros clientes",
+    "title": "Un hogar para cada historia.",
     "contact": {
       "label": "Contacto y Ayuda",
       "whatsapp": "Chatea con nosotros por WhatsApp",

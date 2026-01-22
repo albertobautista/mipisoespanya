@@ -34,7 +34,7 @@ const social: {
   {
     icon: "whatsapp",
     href: `https://wa.me/+34658509768?text=${encodeURIComponent(
-      "Hola, me gustaría más información."
+      "Hola, me gustaría más información.",
     )}`,
   },
   { icon: "email", href: `mailto:mipisorelocation@gmail.com` },
@@ -52,11 +52,11 @@ function useLockBodyScroll(locked: boolean) {
 
     body.setAttribute(
       "style",
-      `${prevBodyStyle}; position: fixed; top: -${scrollY}px; left: 0; right: 0; width: 100%; overflow: hidden; touch-action: none;`
+      `${prevBodyStyle}; position: fixed; top: -${scrollY}px; left: 0; right: 0; width: 100%; overflow: hidden; touch-action: none;`,
     );
     html.setAttribute(
       "style",
-      `${prevHtmlStyle}; overflow: hidden; height: 100%;`
+      `${prevHtmlStyle}; overflow: hidden; height: 100%;`,
     );
 
     return () => {
@@ -133,7 +133,7 @@ export default function Menu({
                 key={item.id}
                 href={{ pathname: item.href }}
                 locale={locale}
-                className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
+                className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-white"
               >
                 {t(`menu.${item.id}`)}
               </Link>
@@ -180,6 +180,11 @@ export default function Menu({
                     />
                   </Link>
                   <div className="flex items-center gap-3">
+                    <WhatsappButton
+                      phone="+34658509768"
+                      variant="icon"
+                      message="Ponte en contacto"
+                    />
                     <LocaleSwitcher />
                     <button
                       className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/20"
@@ -341,7 +346,7 @@ export default function Menu({
                     </div>
                   </div>
                 </div>,
-                document.body
+                document.body,
               )}
           </>
         )}
@@ -399,6 +404,11 @@ export default function Menu({
 
             {/* Mobile */}
             <div className="flex w-full justify-end items-center gap-3 md:hidden">
+              <WhatsappButton
+                phone="+34658509768"
+                variant="icon"
+                message="Ponte en contacto"
+              />
               <LocaleSwitcher />
               <button
                 className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/20"

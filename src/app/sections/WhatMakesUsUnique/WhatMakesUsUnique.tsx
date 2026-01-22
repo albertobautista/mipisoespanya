@@ -11,7 +11,7 @@ const WhatMakesUsUnique = ({ title, items }: WhatMakesUsUniqueProps) => {
   return (
     <section>
       <GridData
-        backgroundSrc="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=1920&auto=format&fit=crop"
+        backgroundSrc="/images/what-makes-us-unique/image-1.webp"
         backgroundAlt="Calles europeas al atardecer"
         title={title}
         items={items}

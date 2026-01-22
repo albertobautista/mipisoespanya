@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NextImage from "next/image";
+import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 /**
  * Numa-style Cities Hover — columnas simétricas (3 por lado)
@@ -10,6 +12,7 @@ import NextImage from "next/image";
  * - Bordes discretos: rounded-sm
  * - Hover suave: scale(1.01)
  * - Anti-flicker: debounce + preload sólo de la activa
+ * - Mobile: primer tap muestra ciudad, segundo tap navega
  */
 
 export type CityImage = { src: string; alt?: string };
@@ -34,12 +37,28 @@ export default function NumaCitiesHover({
   hideSidesBelow = "sm",
   className = "",
 }: Props) {
+  const router = useRouter();
+  const t = useTranslations("citiesData");
   const [active, setActive] = React.useState(0);
+  const [lastClickedIndex, setLastClickedIndex] = React.useState<number | null>(
+    null,
+  );
   const debounceRef = React.useRef<number | null>(null);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    // Detectar si es mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const hideSidesClass = React.useMemo(
     () => `${hideSidesBelow}:flex`,
-    [hideSidesBelow]
+    [hideSidesBelow],
   );
   const current = cities[active] ?? cities[0];
 
@@ -50,19 +69,39 @@ export default function NumaCitiesHover({
 
   const handleActivate = React.useCallback(
     (idx: number) => {
-      if (idx === active) return; // ya activa
-      if (debounceRef.current) window.clearTimeout(debounceRef.current);
-      debounceRef.current = window.setTimeout(() => {
-        setActive(idx);
-        preloadCityMedia(cities[idx]); // sólo la nueva activa
-      }, 90);
+      if (isMobile) {
+        // En mobile: primer tap activa, segundo tap navega
+        if (lastClickedIndex === idx) {
+          // Segundo tap en el mismo elemento
+          const city = cities[idx];
+          if (city.href) {
+            router.push(city.href);
+          }
+          setLastClickedIndex(null);
+          return;
+        } else {
+          // Primer tap o diferente elemento
+          setActive(idx);
+          setLastClickedIndex(idx);
+          preloadCityMedia(cities[idx]);
+          return;
+        }
+      } else {
+        // En desktop: comportamiento original (hover)
+        if (idx === active) return;
+        if (debounceRef.current) window.clearTimeout(debounceRef.current);
+        debounceRef.current = window.setTimeout(() => {
+          setActive(idx);
+          preloadCityMedia(cities[idx]);
+        }, 90);
+      }
     },
-    [active, cities]
+    [active, cities, isMobile, lastClickedIndex, router],
   );
 
   return (
     <section
-      className={`relative w-full min-h-[70vh] ${className} selection:bg-black/90 selection:text-white`}
+      className={`relative bg-light-gray w-full min-h-[70vh] ${className} selection:bg-black/90 selection:text-white`}
     >
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-10 px-4 py-10 md:py-16 lg:grid-cols-[380px_minmax(420px,640px)_380px] lg:gap-16">
         {/* LEFT column (simétrica) */}
@@ -82,8 +121,12 @@ export default function NumaCitiesHover({
                 <li
                   key={c.name}
                   className="group"
-                  onMouseEnter={() => handleActivate(idx)}
-                  onFocus={() => handleActivate(idx)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleActivate(idx);
+                  }}
+                  onMouseEnter={() => !isMobile && handleActivate(idx)}
+                  onFocus={() => !isMobile && handleActivate(idx)}
                 >
                   <a
                     href={c.href ?? "#"}
@@ -97,7 +140,7 @@ export default function NumaCitiesHover({
                       aria-hidden
                       className={`-translate-y-[2px] text-4xl md:text-5xl lg:text-6xl font-bold leading-none ${
                         isActive
-                          ? c.accent ?? accentClassName
+                          ? (c.accent ?? accentClassName)
                           : "text-neutral-300"
                       } transition-colors duration-200`}
                       initial={false}
@@ -135,6 +178,11 @@ export default function NumaCitiesHover({
                       }}
                     >
                       {c.name}
+                      {isMobile && lastClickedIndex === idx && (
+                        <span className="ml-2 text-xs opacity-60">
+                          → {t("tapAgain")}
+                        </span>
+                      )}
                     </motion.span>
                   </a>
                 </li>

@@ -28,12 +28,12 @@ type Media = VideoMedia | ImageMedia;
 
 interface HeroProps {
   media?: Media;
-  logoText?: string;
+  logoImage?: string;
   title?: string;
   logoSubtitle?: string;
   country?: string;
   priority?: boolean; // Para optimizar la carga above-the-fold
-  logoTextSize?: string; // Tamaño personalizado del logo (ej: "clamp(80px, 10vw, 120px)")
+  logoImageSize?: string; // Tamaño personalizado del logo (ej: "clamp(80px, 10vw, 120px)")
   titleSize?: string; // Tamaño personalizado del título (ej: "clamp(20px, 4vw, 40px)")
 }
 
@@ -50,11 +50,11 @@ export default function Hero({
     preload: "metadata",
     fallbackImage: "/images/heros/default-hero.webp",
   },
-  logoText = "Mi piso",
-  title = "We do the room. You do the city.",
-  logoSubtitle = "Your trusty home hunters",
-  country = "spain",
-  logoTextSize = "clamp(96px, 12vw, 150px)",
+  logoImage,
+  title,
+  logoSubtitle,
+  country,
+  logoImageSize = "clamp(350px, 30vw, 650px)",
   titleSize = "clamp(24px, 4.5vw, 48px)",
 }: HeroProps) {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -80,9 +80,9 @@ export default function Hero({
       if (connection) {
         const isEffectivelySlowConnection = Boolean(
           connection.effectiveType === "slow-2g" ||
-            connection.effectiveType === "2g" ||
-            connection.effectiveType === "3g" ||
-            (connection.downlink && connection.downlink < 1.5)
+          connection.effectiveType === "2g" ||
+          connection.effectiveType === "3g" ||
+          (connection.downlink && connection.downlink < 1.5),
         );
         setIsSlowConnection(isEffectivelySlowConnection);
       }
@@ -91,7 +91,7 @@ export default function Hero({
     // Detectar si es móvil para optimizar el comportamiento
     const isMobile =
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
+        navigator.userAgent,
       );
 
     // En móviles o conexiones lentas, mostrar imagen por defecto
@@ -228,14 +228,24 @@ export default function Hero({
       </div>
 
       {/* CONTENIDO */}
-      <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8">
+
+      <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8 justify-center">
         {/* Logo */}
-        <h1
-          className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
-          style={{ fontSize: logoTextSize, lineHeight: "0.9" }}
-        >
-          {logoText}
-        </h1>
+        {logoImage && (
+          <div
+            className="mt-20 sm:mt-24 md:mt-28 select-none flex items-center justify-center"
+            style={{ width: logoImageSize }}
+          >
+            <Image
+              src={logoImage}
+              alt="Logo"
+              width={500}
+              height={500}
+              className="w-full h-full object-contain"
+              priority={true}
+            />
+          </div>
+        )}
 
         {/* País + subtítulo */}
         <div className="flex flex-col gap-1 mt-1 text-white/90">

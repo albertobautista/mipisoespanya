@@ -32,7 +32,7 @@ const agencies = [
   { src: "/images/partners/ukio.png", alt: "Ukio" },
   { src: "/images/partners/alting.png", alt: "Alting", height: 140 },
   { src: "/images/partners/atemporal.png", alt: "Atemporal", height: 140 },
-  { src: "/images/partners/dobleb.webp", alt: "Dobleb", height: 140 },
+  { src: "/images/partners/dobleb.png", alt: "Dobleb", height: 140 },
 ];
 
 const Faqs = ({ title, items }: FaqsProps) => {

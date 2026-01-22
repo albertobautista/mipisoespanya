@@ -66,21 +66,21 @@ function TextLine({
     isLast
       ? [colors.inactive, colors.active, colors.active]
       : [colors.inactive, colors.active, colors.inactive],
-    { clamp: true }
+    { clamp: true },
   );
 
   const opacity = useTransform(
     scrollYProgress,
     [range.in, range.mid, range.out],
     isLast ? [0.3, 1, 1] : [0.3, 1, 0.3],
-    { clamp: true }
+    { clamp: true },
   );
 
   const y = useTransform(
     scrollYProgress,
     [range.in, range.mid, range.out],
     finalAnimation === "quiet" && isLast ? [0, 0, 0] : [yDelta, 0, -yDelta],
-    { clamp: true }
+    { clamp: true },
   );
 
   return (
@@ -115,7 +115,7 @@ function ImageSlide({
     scrollYProgress,
     [range.in, range.mid, range.out],
     isLast ? [0, 1, 1] : [0, 1, 0],
-    { clamp: true }
+    { clamp: true },
   );
 
   const scale = useTransform(
@@ -124,7 +124,7 @@ function ImageSlide({
     finalAnimation === "quiet" && isLast
       ? [1, 1, 1]
       : [1 - scaleDelta, 1, 1 - scaleDelta],
-    { clamp: true }
+    { clamp: true },
   );
 
   return (
@@ -137,6 +137,7 @@ function ImageSlide({
         alt={item.image.alt}
         fill
         className="object-cover"
+        style={{ objectPosition: "50% 35%" }}
         priority={isFirst}
         sizes="(min-width:1024px) 40vw, 100vw"
       />

@@ -31,6 +31,9 @@
       "ogImageAlt": "Mi Piso España FAQs"
     }
   },
+  "citiesData": {
+    "tapAgain": "tap again to see details"
+  },
   "home": {
     "title": "We do the housing, you do the city.",
     "logoSubtitle": "Your trusrty home hunters",
@@ -103,7 +106,7 @@
       }
     },
     "whatMakesUsUnique": {
-      "title": "What makes us unique",
+      "title": "How we make the difference",
       "services": {
         "0": {
           "title": "Your ideal home, tailored to you."
@@ -121,7 +124,7 @@
           "title": "Local area guidance and lifestyle tips."
         },
         "5": {
-          "title": "Over 300 satisfied students."
+          "title": "Over 300 satisfied relocated clients."
         }
       }
     }
@@ -224,8 +227,8 @@
         "subtitle": "Paloma and Ana provided us with excellent service: they were very quick to show us with options that fit our budget and area, they visited the properties for us since we lived in another city, and they remained transparent throughout the entire process. Thanks to their support, we found our new home quickly and easily."
       },
       "17": {
-        "title": "Mario e Isabella",
-        "subtitle": "Paloma and Ana's service was excellent! The process of finding an apartment was a bit complicated for us living outside of Barcelona, ​​but thanks to them and their expertise, we were reassured that we would find the apartment we were looking for. They listened to our requirements, and we appreciate the work they did to find it. We are very grateful for all their help. We highly recommend them!!"
+        "title": "Patricio y Camila",
+        "subtitle": "We are delighted with Mi Piso; they made the process very easy and found me a place in record time. Excellent service and a top-notch team."
       }
     }
   },
@@ -262,11 +265,11 @@
       },
       "6": {
         "question": "Is your service only for students?",
-        "answer": "Our service is designed for students as well as for anyone coming to Spain for studies, work, or other temporary experiences."
+        "answer": "Our service supports anyone moving to Spain, whether for studies or professional reasons, and we also work directly with companies relocating their employees."
       },
       "7": {
         "question": "What does your service include?",
-        "answer": "Our service includes comprehensive assistance throughout the entire process, personalized search for 100% verified properties full management of the rental process and a welcome and detailed inventory check upon arrival."
+        "answer": "Our service includes comprehensive support throughout the entire relocation process. We carry out a fully personalized housing search and personally visit each property to ensure it is real, safe, and meets our quality standards. We work exclusively with 100% verified properties. We negotiate directly with real estate agencies, present all required documentation on your behalf, and manage the entire rental process from the first contact to the contract signing. Upon your arrival, we welcome you in the city, accompany you to your new home, and conduct a detailed inventory and condition check to ensure everything is in perfect order, so you can move in with complete peace of mind."
       }
     }
   },
@@ -326,7 +329,7 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "title": "Success stories from our clients",
+    "title": "A home for every story.",
     "contact": {
       "label": "Contact and Help",
       "whatsapp": "Chat with us on WhatsApp",

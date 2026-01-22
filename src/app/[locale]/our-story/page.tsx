@@ -23,9 +23,8 @@ export default function AboutPage({
   }));
 
   return (
-    <main>
+    <main className="bg-light-gray">
       <Hero
-        logoText="mi piso"
         title={t("title")}
         logoTextSize="clamp(60px, 8vw, 90px)"
         titleSize="clamp(32px, 5.5vw, 64px)"

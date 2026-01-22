@@ -36,17 +36,6 @@ export default function StepShowcase({
         className,
       ].join(" ")}
     >
-      {/* Número */}
-      <div
-        className={[
-          "md:col-span-1 text-2xl md:text-3xl font-medium tracking-wide font-cocomat text-neutral-800",
-          imageFirst ? "order-1" : "order-1",
-        ].join(" ")}
-        aria-hidden
-      >
-        {typeof number === "number" && number < 10 ? `0${number}` : number}
-      </div>
-
       {/* Texto */}
       <div
         className={[

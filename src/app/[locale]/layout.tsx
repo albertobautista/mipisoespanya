@@ -55,7 +55,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div className="min-h-screen flex flex-col">
         <main className="flex-grow">{children}</main>
-        <Footer />
+        <Footer
+          logoImage="/images/logos/horizontal-oliva.png"
+          citiesImage="/images/footer/banners.png"
+        />
       </div>
     </NextIntlClientProvider>
   );

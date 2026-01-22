@@ -25,9 +25,8 @@ export default function AboutPage({
   }));
 
   return (
-    <main>
+    <main className="bg-light-gray">
       <Hero
-        logoText="mi piso"
         title={t("title")}
         titleSize="clamp(32px, 5.5vw, 74px)"
         media={{

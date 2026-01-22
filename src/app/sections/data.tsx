@@ -49,7 +49,7 @@ export const cards = [
       src: "/images/how-we-work/how-we-work-1.webp",
       alt: "Demo 1",
     },
-    backgroundClass: "bg-neutral-100",
+    backgroundClass: "bg-light-gray",
   },
   {
     title: "Texto a la izquierda, imagen a la derecha",
@@ -57,7 +57,7 @@ export const cards = [
       src: "/images/how-we-work/how-we-work-2.webp",
       alt: "Demo 1",
     },
-    backgroundClass: "bg-neutral-100",
+    backgroundClass: "bg-light-gray",
   },
   {
     title: "Texto a la izquierda, imagen a la derecha",
@@ -65,7 +65,7 @@ export const cards = [
       src: "/images/how-we-work/how-we-work-3.webp",
       alt: "Demo 1",
     },
-    backgroundClass: "bg-neutral-100",
+    backgroundClass: "bg-light-gray",
   },
   {
     title: "Texto a la izquierda, imagen a la derecha",
@@ -73,7 +73,7 @@ export const cards = [
       src: "/images/how-we-work/how-we-work-4.webp",
       alt: "Demo 1",
     },
-    backgroundClass: "bg-neutral-100",
+    backgroundClass: "bg-light-gray",
   },
 ];
 

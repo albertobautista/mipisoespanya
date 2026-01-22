@@ -148,4 +148,13 @@ export const reviewsItems: Review[] = [
       alt: "Review 17",
     },
   },
+  {
+    title: "Five Star dasdas",
+    subtitle:
+      "My stay at Mi Piso was truly a five star experience in every way.",
+    image: {
+      src: "/images/reviews/review-18.webp",
+      alt: "Review 18",
+    },
+  },
 ];
