@@ -87,7 +87,7 @@ export default function NumaCitiesHover({
           return;
         }
       } else {
-        // En desktop: comportamiento original (hover)
+        // En desktop: solo cambiar las imágenes (hover)
         if (idx === active) return;
         if (debounceRef.current) window.clearTimeout(debounceRef.current);
         debounceRef.current = window.setTimeout(() => {
@@ -97,6 +97,23 @@ export default function NumaCitiesHover({
       }
     },
     [active, cities, isMobile, lastClickedIndex, router],
+  );
+
+  const handleClick = React.useCallback(
+    (idx: number, e: React.MouseEvent) => {
+      if (isMobile) {
+        e.preventDefault();
+        handleActivate(idx);
+      } else {
+        // En desktop: navegar directamente
+        e.preventDefault();
+        const city = cities[idx];
+        if (city.href) {
+          router.push(city.href);
+        }
+      }
+    },
+    [cities, isMobile, handleActivate, router],
   );
 
   return (
@@ -121,10 +138,7 @@ export default function NumaCitiesHover({
                 <li
                   key={c.name}
                   className="group"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleActivate(idx);
-                  }}
+                  onClick={(e) => handleClick(idx, e)}
                   onMouseEnter={() => !isMobile && handleActivate(idx)}
                   onFocus={() => !isMobile && handleActivate(idx)}
                 >

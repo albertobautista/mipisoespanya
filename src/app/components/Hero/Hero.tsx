@@ -29,11 +29,13 @@ type Media = VideoMedia | ImageMedia;
 interface HeroProps {
   media?: Media;
   logoImage?: string;
+  logoText?: string;
   title?: string;
   logoSubtitle?: string;
   country?: string;
   priority?: boolean; // Para optimizar la carga above-the-fold
   logoImageSize?: string; // Tamaño personalizado del logo (ej: "clamp(80px, 10vw, 120px)")
+  logoTextSize?: string; // Tamaño personalizado del logo en texto (ej: "clamp(80px, 10vw, 120px)")
   titleSize?: string; // Tamaño personalizado del título (ej: "clamp(20px, 4vw, 40px)")
 }
 
@@ -51,10 +53,12 @@ export default function Hero({
     fallbackImage: "/images/heros/default-hero.webp",
   },
   logoImage,
+  logoText,
   title,
   logoSubtitle,
   country,
   logoImageSize = "clamp(350px, 30vw, 650px)",
+  logoTextSize = "clamp(66px, 12vw, 150px)",
   titleSize = "clamp(24px, 4.5vw, 48px)",
 }: HeroProps) {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -229,9 +233,9 @@ export default function Hero({
 
       {/* CONTENIDO */}
 
-      <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8 justify-center">
+      <div className="relative z-10 mx-auto flex min-h-[70svh] md:min-h-[85svh] lg:min-h-[90svh] max-w-7xl flex-col px-4 sm:px-6 md:px-8 justify-center gap-10">
         {/* Logo */}
-        {logoImage && (
+        {logoImage ? (
           <div
             className="mt-20 sm:mt-24 md:mt-28 select-none flex items-center justify-center"
             style={{ width: logoImageSize }}
@@ -245,7 +249,14 @@ export default function Hero({
               priority={true}
             />
           </div>
-        )}
+        ) : logoText ? (
+          <h1
+            className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
+            style={{ fontSize: logoTextSize, lineHeight: "0.9" }}
+          >
+            {logoText}
+          </h1>
+        ) : null}
 
         {/* País + subtítulo */}
         <div className="flex flex-col gap-1 mt-1 text-white/90">
