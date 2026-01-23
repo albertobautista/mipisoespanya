@@ -13,6 +13,22 @@ html { scroll-behavior: smooth; }
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Gloock';
+  src: url('/fonts/Gloock-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-light-green: #737549;
   --color-green:#8b924a ;
@@ -22,5 +38,7 @@ html { scroll-behavior: smooth; }
 
   --font-poiret:'Poiret One', system-ui;
   --font-cocomat: 'CocomatPro', sans-serif;
+  --font-gloock: 'Gloock', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
