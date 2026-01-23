@@ -86,7 +86,7 @@ export default function Menu({
     // Precargar la imagen del logo para evitar delays
     if (typeof window !== "undefined") {
       const logoImage = document.createElement("img");
-      logoImage.src = "/images/logos/text-white.png";
+      logoImage.src = "/images/logos/monograma-avena.png";
     }
   }, []); // Controla cuándo renderizar/desmontar el Portal para evitar parpadeos
   React.useEffect(() => {
@@ -171,10 +171,10 @@ export default function Menu({
                     className="flex items-center gap-2"
                   >
                     <Image
-                      src="/images/logos/text-white.png"
+                      src="/images/logos/monograma-avena.png"
                       alt="Mi Piso Logo"
-                      width={140}
-                      height={36}
+                      width={100}
+                      height={100}
                       className="object-contain"
                       priority
                     />
@@ -263,10 +263,10 @@ export default function Menu({
                           className="flex items-center gap-2"
                         >
                           <Image
-                            src="/images/logos/text-white.png"
+                            src="/images/logos/monograma-avena.png"
                             alt="Mi Piso Logo"
-                            width={140}
-                            height={36}
+                            width={100}
+                            height={100}
                             className="object-contain"
                             priority
                             loading="eager"
@@ -370,7 +370,7 @@ export default function Menu({
           >
             <Link href="/" locale={locale} className="flex items-center gap-2">
               <Image
-                src="/images/logos/text-white.png"
+                src="/images/logos/monograma-avena.png"
                 alt="Mi Piso Logo"
                 width={220}
                 height={52}
