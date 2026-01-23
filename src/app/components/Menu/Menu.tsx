@@ -133,7 +133,7 @@ export default function Menu({
                 key={item.id}
                 href={{ pathname: item.href }}
                 locale={locale}
-                className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-white"
+                className="transition-opacity uppercase font-montserratSemibold text-base lg:text-md hover:opacity-80 text-white"
               >
                 {t(`menu.${item.id}`)}
               </Link>
@@ -303,7 +303,7 @@ export default function Menu({
                               <Link
                                 href={item.href}
                                 locale={locale}
-                                className="block rounded-md font-cocomat px-3 py-4 text-lg font-semibold tracking-wide text-white hover:bg-white/10 transition"
+                                className="block rounded-md font-montserratSemibold px-3 py-4 text-lg tracking-wide text-white hover:bg-white/10 transition"
                                 onClick={() => setOpen(false)}
                               >
                                 {t(`menu.${item.id}`)}
@@ -385,7 +385,7 @@ export default function Menu({
                 <Link
                   key={item.id}
                   href={{ pathname: item.href }}
-                  className="transition-opacity uppercase font-cocomat font-bold text-base lg:text-md hover:opacity-80 text-light-green"
+                  className="transition-opacity uppercase font-montserratSemibold text-base lg:text-md hover:opacity-80 text-light-green"
                 >
                   {t(`menu.${item.id}`)}
                 </Link>

@@ -10,22 +10,25 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
   const t = await getTranslations("cities");
 
   // Agrupar por zona
-  const groupedByZone = priceRanges.reduce((acc, range) => {
-    if (!acc[range.zone]) {
-      acc[range.zone] = [];
-    }
-    acc[range.zone].push(range);
-    return acc;
-  }, {} as Record<string, PriceRange[]>);
+  const groupedByZone = priceRanges.reduce(
+    (acc, range) => {
+      if (!acc[range.zone]) {
+        acc[range.zone] = [];
+      }
+      acc[range.zone].push(range);
+      return acc;
+    },
+    {} as Record<string, PriceRange[]>,
+  );
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl px-4 mx-auto">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 font-poiret">
+          <h2 className="mb-4 text-3xl text-gray-900 font-montserratSemibold">
             {t("priceGuide")}
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-600 font-cocomat">
+          <p className="max-w-2xl mx-auto text-gray-600 font-montserrat">
             {t("priceGuideSubtitle")}
           </p>
         </div>
@@ -37,7 +40,7 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
               key={zone}
               className="p-6 transition-shadow duration-300 border shadow-sm bg-gradient-to-br from-light-gray to-gray/20 rounded-2xl hover:shadow-md border-gray/30"
             >
-              <h3 className="mb-6 text-xl font-bold text-center font-poiret text-dark-green">
+              <h3 className="mb-6 text-xl  text-center font-montserrat text-dark-green">
                 {zone}
               </h3>
               <div className="space-y-4">
@@ -48,15 +51,15 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-3 h-3 rounded-full bg-gradient-to-r from-light-green to-green"></div>
-                      <span className="font-medium font-cocomat text-dark-green">
+                      <span className="font-medium font-montserrat text-dark-green">
                         {range.rooms}
                       </span>
                     </div>
                     <div className="text-right">
-                      <span className="text-lg font-bold font-cocomat text-green">
+                      <span className="text-lg font-bold font-montserrat text-green">
                         €{range.priceRange}
                       </span>
-                      <div className="text-xs text-gray font-cocomat">
+                      <div className="text-xs text-gray font-montserrat">
                         / {t("priceRange").split("(")[1]}
                       </div>
                     </div>
@@ -72,7 +75,7 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
           <div className="overflow-hidden bg-white border shadow-sm rounded-2xl border-gray/30">
             {/* Header de la tabla */}
             <div className="text-white bg-gradient-to-r from-green to-dark-green">
-              <div className="grid grid-cols-3 gap-4 p-4 text-sm font-semibold font-cocomat">
+              <div className="grid grid-cols-3 gap-4 p-4 text-sm font-semibold font-montserrat">
                 <div>{t("zone")}</div>
                 <div className="text-center">{t("rooms")}</div>
                 <div className="text-right">{t("priceRange")}</div>
@@ -86,13 +89,13 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
                   key={index}
                   className="grid grid-cols-3 gap-4 p-4 transition-colors duration-200 hover:bg-light-gray/70"
                 >
-                  <div className="text-sm font-medium font-cocomat text-dark-green">
+                  <div className="text-sm font-medium font-montserrat text-dark-green">
                     {range.zone}
                   </div>
-                  <div className="text-sm text-center font-cocomat text-dark-green/80">
+                  <div className="text-sm text-center font-montserrat text-dark-green/80">
                     {range.rooms}
                   </div>
-                  <div className="text-sm font-bold text-right font-cocomat text-green">
+                  <div className="text-sm font-bold text-right font-montserrat text-green">
                     €{range.priceRange}
                   </div>
                 </div>
@@ -102,7 +105,7 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
 
           {/* Nota explicativa en mobile */}
           <div className="p-4 mt-4 border rounded-lg bg-light-green/20 border-light-green/30">
-            <p className="text-xs text-center text-dark-green font-cocomat">
+            <p className="text-xs text-center text-dark-green font-montserrat">
               * {t("priceDisclaimer")}
             </p>
           </div>
@@ -110,7 +113,7 @@ const PriceGuide = async ({ priceRanges }: PriceGuideProps) => {
 
         {/* Nota explicativa en desktop */}
         <div className="hidden md:block mt-8 text-center">
-          <p className="text-sm text-gray font-cocomat">
+          <p className="text-sm text-gray font-montserrat">
             * {t("priceDisclaimerLong")}
           </p>
         </div>

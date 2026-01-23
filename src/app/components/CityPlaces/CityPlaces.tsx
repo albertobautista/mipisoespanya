@@ -12,7 +12,7 @@ const CityPlaces = async ({ city }: CityPlacesProps) => {
   return (
     <section className="py-16 bg-light-green/">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center font-poiret text-gray-900">
+        <h2 className="text-4xl mb-12 text-center font-montserratSemibold text-gray-900">
           {t("bestNeighborhoods")}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -21,7 +21,7 @@ const CityPlaces = async ({ city }: CityPlacesProps) => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <h3 className="font-semibold text-lg font-cocomat text-gray-900 text-center">
+              <h3 className="font-semibold text-lg font-montserrat text-gray-900 text-center">
                 {neighborhood}
               </h3>
             </div>

@@ -103,7 +103,7 @@ function Item({
         onClick={onToggle}
         className={`w-full flex cursor-pointer items-center justify-between gap-4 py-4 sm:py-5 text-left ${titleClass}`}
       >
-        <span className="font-medium text-2xl leading-snug font-cocomat">
+        <span className="font-medium text-2xl leading-snug font-montserrat">
           {q}
         </span>
         <motion.svg
@@ -139,7 +139,7 @@ function Item({
             className="overflow-hidden"
           >
             <div
-              className={`pb-5 sm:pb-6 pr-8 font-cocomat ${answerClass} text-gray-600 leading-relaxed`}
+              className={`pb-5 sm:pb-6 pr-8 font-montserrat ${answerClass} text-gray-600 leading-relaxed`}
             >
               {a}
             </div>

@@ -63,7 +63,7 @@ export default function FeatureGridHero({
       {/* Contenido */}
       <div className="mx-auto flex h-full max-w-7xl flex-col items-center gap-8 px-4 py-12 sm:px-6 lg:px-8">
         <header className="text-center text-white">
-          <h2 className="text-5xl uppercase font-poiret font-extrabold tracking-tight sm:text-6xl lg:text-8xl">
+          <h2 className="text-5xl uppercase font-montserratSemibold tracking-tight sm:text-6xl lg:text-7xl">
             {title}
           </h2>
         </header>
@@ -85,7 +85,7 @@ export default function FeatureGridHero({
                 >
                   {it.icon}
                 </span>
-                <p className="text-2xl font-cocomat leading-6 text-white font-extrabold">
+                <p className="text-2xl font-montserrat leading-6 text-white font-extrabold">
                   {it.title}
                 </p>
               </div>

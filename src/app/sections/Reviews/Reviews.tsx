@@ -28,7 +28,7 @@ const Reviews = ({ items }: ReviewsProps) => {
           href="https://maps.app.goo.gl/16vy95P3oD6zVQtf8"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-3 bg-dark-green text-white rounded-lg hover:bg-light-green transition-colors font-cocomat font-bold text-sm uppercase inline-block"
+          className="px-8 py-3 bg-dark-green text-white rounded-lg hover:bg-light-green transition-colors font-montserratSemibold text-sm uppercase inline-block"
         >
           {t("viewMore")}
         </a>

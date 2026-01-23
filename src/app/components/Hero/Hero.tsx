@@ -251,7 +251,7 @@ export default function Hero({
           </div>
         ) : logoText ? (
           <h1
-            className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-poiret text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
+            className="mt-20 sm:mt-24 md:mt-28 select-none font-extrabold uppercase font-gloock text-green [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]"
             style={{ fontSize: logoTextSize, lineHeight: "0.9" }}
           >
             {logoText}
@@ -261,13 +261,13 @@ export default function Hero({
         {/* País + subtítulo */}
         <div className="flex flex-col gap-1 mt-1 text-white/90">
           <p
-            className="uppercase font-poiret"
+            className="uppercase font-montserratSemibold"
             style={{ fontSize: "clamp(28px, 5vw, 60px)", lineHeight: "1" }}
           >
             {country}
           </p>
           <p
-            className="uppercase font-poiret"
+            className="uppercase font-montserrat"
             style={{ fontSize: "clamp(18px, 3.5vw, 26px)", lineHeight: "1.1" }}
           >
             {logoSubtitle}
@@ -275,10 +275,10 @@ export default function Hero({
         </div>
 
         {/* Headline */}
-        <div className="flex flex-col max-w-6xl gap-4 pb-16 mx-auto mt-auto sm:pb-20 md:pb-24 font-poiret sm:gap-6 md:gap-8">
+        <div className="flex flex-col max-w-6xl gap-4 pb-16 mx-auto mt-auto sm:pb-20 md:pb-24  sm:gap-6 md:gap-8">
           {!!title && (
             <h2
-              className="font-extrabold tracking-tight text-center uppercase whitespace-pre-wrap text-white/95 drop-shadow-sm"
+              className="font-gloock tracking-tight text-center uppercase whitespace-pre-wrap text-white/95 drop-shadow-sm"
               style={{
                 fontSize: titleSize,
                 lineHeight: "1.05",

@@ -29,12 +29,12 @@ export default function PromoCard({ title, subtitle, image }: PromoCardProps) {
 
       {/* Contenido */}
       <div className="mt-4 flex flex-col flex-1">
-        <h3 className="text-lg sm:text-xl font-cocomat md:text-2xl font-semibold leading-tight">
+        <h3 className="text-lg sm:text-xl font-montserratSemibold md:text-2xl leading-tight">
           {title}
         </h3>
 
         <p
-          className={`mt-2 text-sm sm:text-base font-cocomat text-gray-600 ${
+          className={`mt-2 text-sm sm:text-base font-montserrat text-gray-600 ${
             expanded ? "" : "line-clamp-4"
           }`}
         >
@@ -45,7 +45,7 @@ export default function PromoCard({ title, subtitle, image }: PromoCardProps) {
         <div className="mt-2">
           <button
             onClick={() => setExpanded((v) => !v)}
-            className="text-sm cursor-pointer font-semibold text-green font-cocomat underline underline-offset-4 hover:text-light-green transition-colors"
+            className="text-sm cursor-pointer  text-green font-montserrat underline underline-offset-4 hover:text-light-green transition-colors"
           >
             {expanded ? t("showLess") : t("readMore")}
           </button>

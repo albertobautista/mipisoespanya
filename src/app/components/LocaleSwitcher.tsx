@@ -10,7 +10,7 @@ export function LocaleSwitcher() {
   return (
     <nav
       aria-label="Language"
-      className="flex items-center gap-1 text-sm font-cocomat font-bold text-white"
+      className="flex items-center gap-1 text-sm font-montserratSemibold text-white"
     >
       <Link
         href={{ pathname }}

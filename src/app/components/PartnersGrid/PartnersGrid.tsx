@@ -36,7 +36,7 @@ export default function PartnersGrid({
       {/* Título centrado */}
       {title && (
         <h2
-          className="text-center font-poiret text-black font-semibold uppercase tracking-wide"
+          className="text-center font-montserratSemibold text-black uppercase tracking-wide"
           style={{
             fontSize: "clamp(30px, 3vw, 36px)",
             lineHeight: "1.15",
@@ -66,7 +66,7 @@ function ColumnBlock({
 }) {
   return (
     <div className="flex flex-col items-center text-center">
-      <h3 className="uppercase font-poiret text-black text-3xl sm:text-4xl mb-6">
+      <h3 className="uppercase font-montserratSemibold text-black text-3xl sm:text-4xl mb-6">
         {data.heading}
       </h3>
 

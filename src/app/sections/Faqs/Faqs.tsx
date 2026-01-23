@@ -40,7 +40,7 @@ const Faqs = ({ title, items }: FaqsProps) => {
   return (
     <section>
       <div className="max-w-7xl items-center mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-4">
-        <h2 className="text-3xl sm:text-4xl font-semibold font-cocomat">
+        <h2 className="text-3xl sm:text-4xl font-montserratSemibold">
           {title}
         </h2>
         <div>

@@ -75,7 +75,7 @@ export default function Footer({
     <footer>
       <header className="w-screen bg-light-green py-12 text-center">
         <div className="max-w-8xl mx-auto px-6">
-          <h2 className="text-3xl uppercase font-poiret md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl uppercase font-montserratSemibold md:text-5xl tracking-tight text-white">
             {t("title")}
           </h2>
         </div>
@@ -100,7 +100,7 @@ export default function Footer({
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
             {/* Contacto y ayuda */}
             <div>
-              <h3 className="mb-4 font-semibold text-lg font-cocomat">
+              <h3 className="mb-4 font-semibold text-lg font-montserrat">
                 {t("contact.label")}
               </h3>
               <ul className="space-y-3">
@@ -108,7 +108,7 @@ export default function Footer({
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="hover:underline "
+                      className="hover:underline font-montserrat"
                       target="_blank"
                     >
                       {item.label}
@@ -116,7 +116,11 @@ export default function Footer({
                   </li>
                 ))}
                 <li>
-                  <a href="mailto:mipisorelocation@gmail.com" target="_blank">
+                  <a
+                    href="mailto:mipisorelocation@gmail.com"
+                    target="_blank"
+                    className="font-montserrat"
+                  >
                     mipisorelocation@gmail.com
                   </a>
                 </li>
@@ -125,9 +129,7 @@ export default function Footer({
 
             {/* Numa */}
             <div>
-              <h3 className="mb-4 font-semibold text-lg font-cocomat">
-                Mi piso
-              </h3>
+              <h3 className="mb-4 text-lg font-montserrat">Mi piso</h3>
               <ul className="space-y-3">
                 {about.map((item) => (
                   <li key={item.label}>
@@ -142,7 +144,7 @@ export default function Footer({
             {/* Social */}
             <div className="space-y-6">
               <div>
-                <h3 className="mb-3 font-semibold text-lg font-cocomat">
+                <h3 className="mb-3 font-semibold text-lg font-montserrat">
                   {t("social.followUs")}
                 </h3>
                 <div className="flex items-center gap-4">

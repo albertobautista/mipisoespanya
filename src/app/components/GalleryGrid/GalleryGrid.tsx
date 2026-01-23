@@ -12,7 +12,7 @@ const GalleryGrid = async ({ city }: GalleryGridProps) => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold font-poiret mb-12 text-center text-gray-900">
+        <h2 className="text-4xl font-montserratSemibold mb-12 text-center text-gray-900">
           {t("discover", { city: city.name })}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

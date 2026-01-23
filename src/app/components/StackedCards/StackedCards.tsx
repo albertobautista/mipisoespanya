@@ -97,12 +97,12 @@ function SectionCard({
 
   // Columnas preparadas
   const TextCol = (
-    <div className="space-y-4 md:space-y-6 font-cocomat ">
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-900">
+    <div className="space-y-4 md:space-y-6 font-monteserrat">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-monteserrat leading-tight text-neutral-900">
         {item.title}
       </h2>
       {item.body ? (
-        <h2 className="text-neutral-700 text-base md:text-2xl leading-relaxed">
+        <h2 className="text-neutral-700 text-base md:text-2xl font-monteserrat leading-relaxed">
           {item.body}
         </h2>
       ) : null}

@@ -152,7 +152,7 @@ export default function NumaCitiesHover({
                     {/* Flecha grande y responsiva */}
                     <motion.span
                       aria-hidden
-                      className={`-translate-y-[2px] text-4xl md:text-5xl lg:text-6xl font-bold leading-none ${
+                      className={`-translate-y-[2px] text-4xl md:text-5xl lg:text-6xl font-gloock  leading-none ${
                         isActive
                           ? (c.accent ?? accentClassName)
                           : "text-neutral-300"
@@ -173,7 +173,7 @@ export default function NumaCitiesHover({
 
                     {/* Label */}
                     <motion.span
-                      className={`text-5xl font-extrabold tracking-tight md:text-6xl ${
+                      className={`text-5xl font-gloock tracking-tight md:text-6xl ${
                         isActive
                           ? `${
                               c.accent ?? accentClassName

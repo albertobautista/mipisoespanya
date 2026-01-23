@@ -43,7 +43,7 @@ export default function StepShowcase({
           imageFirst ? "md:order-2" : "md:order-2",
         ].join(" ")}
       >
-        <h2 className="text-2xl font-cocomat leading-tight font-semibold text-neutral-900">
+        <h2 className="text-2xl font-montserrat leading-tight  text-neutral-900">
           {title}
         </h2>
       </div>

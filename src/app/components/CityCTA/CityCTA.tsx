@@ -12,7 +12,7 @@ const CityCTA = async ({ city }: CityCTAProps) => {
   return (
     <section className="py-16 bg-gray text-black">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-6 font-poiret">
+        <h2 className="text-4xl mb-6 font-montserratSemibold">
           {t("readyToMove", { city: city.name })}
         </h2>
         <p className="text-xl mb-8 opacity-90">{t("ctaDescription")}</p>
