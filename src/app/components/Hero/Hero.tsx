@@ -58,53 +58,14 @@ export default function Hero({
   logoSubtitle,
   country,
   logoImageSize = "clamp(350px, 30vw, 650px)",
-  logoTextSize = "clamp(66px, 12vw, 150px)",
+  logoTextSize = "clamp(50px, 12vw, 150px)",
   titleSize = "clamp(24px, 4.5vw, 48px)",
 }: HeroProps) {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  // Detectar conexión lenta
-  const [isSlowConnection, setIsSlowConnection] = useState(false);
-
-  useEffect(() => {
-    // Detectar tipo de conexión si está disponible
-    if ("connection" in navigator) {
-      const connection = (
-        navigator as Navigator & {
-          connection?: {
-            effectiveType?: string;
-            downlink?: number;
-          };
-        }
-      ).connection;
-      if (connection) {
-        const isEffectivelySlowConnection = Boolean(
-          connection.effectiveType === "slow-2g" ||
-          connection.effectiveType === "2g" ||
-          connection.effectiveType === "3g" ||
-          (connection.downlink && connection.downlink < 1.5),
-        );
-        setIsSlowConnection(isEffectivelySlowConnection);
-      }
-    }
-
-    // Detectar si es móvil para optimizar el comportamiento
-    const isMobile =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent,
-      );
-
-    // En móviles o conexiones lentas, mostrar imagen por defecto
-    if (isMobile || isSlowConnection) {
-      setShowVideo(false);
-    } else {
-      setShowVideo(true);
-    }
-  }, [isSlowConnection]);
 
   const handleVideoLoad = () => {
     setVideoLoaded(true);
